@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-
 // Import Google Fonts
 const link = document.createElement('link');
 link.rel = 'stylesheet';
