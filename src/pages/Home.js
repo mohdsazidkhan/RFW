@@ -1,6 +1,6 @@
 import React from 'react';
 import VideoBackground from '../components/VideoBackground';
-
+import homeAbout from '../images/home_about.jpg'
 const Home = () => {
   return (
     <div className="home-page">
@@ -21,7 +21,7 @@ const Home = () => {
       </VideoBackground>
 
       {/* The Latest from Riyadh Fashion Week Section */}
-      <section className="latest-section">
+      {/* <section className="latest-section">
         <div className="section-container">
           <div className="latest-content">
             <div className="latest-text">
@@ -36,7 +36,35 @@ const Home = () => {
             <h4><strong>ABOUT</strong></h4>
           </div>
         </div>
-      </section>
+      </section> */}
+<section className="latest-section">
+  <div className="section-container">
+    <div className="latest-content">
+      
+      {/* LEFT SIDE */}
+      <div className="latest-text">
+        <h2 className="section-title">
+          THE LATEST<br/>FROM RIYADH<br/>FASHION WEEK
+        </h2>
+        <p className="section-description">
+          Step into the captivating realm of THE THIRD EDITION OF Riyadh Fashion Week, 
+          where style intertwines with innovation, tradition finds its muse in creativity, 
+          and aspirations grace the runway. Prepare to immerse yourself in the vibrant Saudi 
+          Arabia's fashion scene, as we present a week-long celebration that honors elegance, 
+          artistic expression, and cultural fusion.
+        </p>
+        <button className="btn btn-outline">LEARN MORE</button>
+      </div>
+
+      {/* RIGHT SIDE (Single Collage Image) */}
+      <div className="latest-gallery">
+        <img src={homeAbout} alt="Riyadh Fashion Week Gallery" className="collage-img"/>
+        <h4 className="vertical-text"><strong>ABOUT</strong></h4>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* Featured Calendar Section */}
       <section className="calendar-section">
