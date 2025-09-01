@@ -25,7 +25,13 @@ const Header = () => {
         {/* Logo */}
         <div className="header-logo">
           <Link to="/" onClick={closeMenu}>
-            <img src="/logo.webp" alt="RFW Logo" className="logo-image" />
+          <img
+          src="/logo.webp"
+          alt="RFW Logo"
+          className="logo-image"
+          style={{ filter: theme === "dark" ? "invert(1)" : "none" }}
+        />
+
           </Link>
         </div>
 

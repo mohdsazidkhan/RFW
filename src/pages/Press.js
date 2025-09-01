@@ -7,7 +7,7 @@ const Press = () => {
       {/* Hero Section */}
       {/* Press Resources Section */}
      <section className="press-resources-section">
-  <div className="section-container">
+  <div className="section-container-press">
     <div className="press-resources-content">
       <div className="press-resources-grid">
   {pressArray.map((resource, index) => (
@@ -28,7 +28,7 @@ const Press = () => {
         }
         lang={resource.lang || "en"} 
       >
-        <div className="resource-title">{resource.title}</div>
+        <div className="resource-title" style={{direction:resource.lang==="ar"?"rtl":"ltr",textAlign:resource.lang==="ar"?"right":"left"}}>{resource.title}</div>
         <div className="resource-description">{resource.description}</div>
         <button className="resource-button">
           {resource.button}

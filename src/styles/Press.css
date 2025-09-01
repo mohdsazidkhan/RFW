@@ -4,7 +4,7 @@
   padding: 6rem 0;
   color: var(--rfw-black);
 }
-.section-container{
+.section-container-press{
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -111,5 +111,6 @@
   .resource-content[lang^="ar"] {
     text-align: right !important;
     align-items: flex-end !important;
+    direction: rtl;
   }
 }
