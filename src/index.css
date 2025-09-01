@@ -959,13 +959,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
-/* Press Page Styles */
-.press-page {
-  background: #000;
-  color: var(--rfw-white);
-}
-
 /* Press Hero Section */
 .press-hero-section {
   position: relative;
@@ -1106,118 +1099,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-/* Press Resources Section */
-.press-resources-section {
-  background: var(--rfw-white);
-  padding: 6rem 0;
-  color: var(--rfw-black);
-}
 
-.press-resources-content {
-  text-align: center;
-}
-
-.press-resources-title {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 700;
-  font-family: 'Playfair Display', serif;
-  color: var(--rfw-black);
-  margin-bottom: 3rem;
-  line-height: 1.2;
-}
-
-.press-resources-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.press-resource-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 2rem 1rem;
-  background: #f8f8f8;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.press-resource-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.resource-icon {
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: 'Playfair Display', serif;
-  color: var(--rfw-black);
-  opacity: 0.8;
-}
-
-.resource-name {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--rfw-black);
-  text-align: center;
-}
-
-  .resource-description {
-    font-size: 0.875rem;
-    color: var(--rfw-black);
-    opacity: 0.7;
-    text-align: center;
-    line-height: 1.4;
-  }
-  
-  @media (max-width: 768px) {
-    .press-resources-grid {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-    }
-    
-    .press-resource-item {
-      padding: 1.5rem 1rem;
-    }
-    
-    .resource-icon {
-      font-size: 1.5rem;
-    }
-    
-    .resource-name {
-      font-size: 1rem;
-    }
-    
-    .resource-description {
-      font-size: 0.8rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .press-resources-grid {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1rem;
-    }
-    
-    .press-resource-item {
-      padding: 1rem 0.5rem;
-    }
-    
-    .resource-icon {
-      font-size: 1.25rem;
-    }
-    
-    .resource-name {
-      font-size: 0.9rem;
-    }
-    
-    .resource-description {
-      font-size: 0.75rem;
-    }
-  }
 
 /* Contact Page Styles */
 .contact-page {

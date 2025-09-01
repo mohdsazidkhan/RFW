@@ -27,7 +27,7 @@ export const pressArray = [
     title: `حديث "هي" مع الرئيس التنفيذي لهيئة الأزياء بوراك شاكماك: تجليات الإبداع والتمكين في صناعة الأزياء السعودية`,
     description:`تشهد المملكة انطلاقة جديدة نحو مستقبل مزدهر في عالم الموضة، حيث تتلاقى الأصوات النسائية والشبابية لتشكل روح فارقة في هذا القطاع. وعلى ذلك تخوض "هي" حديث ملهم مع الرئيس التنفيذي لهيئة الأزياء، بوراك شاكماك، أثناء أسبوع الأزياء في الرياض. نغوص في أعماق هذه الصناعة المتنامية، مستكشفين الدور الحيوي لأسابيع الأزياء، والإنجازات المبهرة التي تحققت، وكيف تشكل النساء والشباب القوى الدافعة وراء هذه النهضة. `,
     button: "Read Full Article",
-    image: require('../../images/pressimages/HIA.webp')
+    image: require('../../images/pressimages/HIA.webp'),lang:"ar"
   },
   {
     title: "Riyadh Fashion Week celebrates Saudi creativity and heritage.",
@@ -54,7 +54,7 @@ export const pressArray = [
     title: `.أسبوع الموضة في الرياض يعود بنسخته الثاني`,
     description: `تستضيف هيئة الأزياء السعودية النسخة الثانية من أسبوع الموضة في الرياض، وتستمر لمدة خمسة أيام، من 17 إلى 21 أكتوبر/تشرين الأول، بحسب الصفحة الرسمية للحدث على موقع إنستغرام.`,
     button: "Read Full Article",
-    image: require('../../images/pressimages/ARABNEWS.webp')
+    image: require('../../images/pressimages/ARABNEWS.webp'),lang:"ar"
   },
   {
     title: "Riyadh Fashion Week returns this October…here’s the tea.",
@@ -66,7 +66,7 @@ export const pressArray = [
     title: "Riyadh Fashion Week returns for second edition.",
     description: `DUBAi:After a historic inaugural edition last year, Riyadh Fashion Week is set to return for its sophomore season – and soon.
 
-Hosted by the Saudi Fashion Commission, the second edition of the Riyadh Fashion Week will run for five days, from Oct. 17 – 21, according to the event’s official Instagram page. `,
+    Hosted by the Saudi Fashion Commission, the second edition of the Riyadh Fashion Week will run for five days, from Oct. 17 – 21, according to the event’s official Instagram page. `,
     button: "Read Full Article",
     image: require('../../images/pressimages/ARABNEWS.webp')
   },
@@ -77,225 +77,242 @@ Hosted by the Saudi Fashion Commission, the second edition of the Riyadh Fashion
     image: require('../../images/pressimages/Mille.webp')
   },
   {
-    title: "The Art of Fashion Photography",
-    description: "Understanding the role of photography in capturing fashion’s essence.",
+    title: "Riyadh Fashion Week Returns for its Second Edition next Month",
+    description: "Riyadh Fashion Week is finally returning for its second edition on October 17 to 21, 2024, in Saudi Arabia. After its first event proved a massive success, this year’s fashion week aims to be even bigger and more extravagant, with a volley of a new features and a much more extensive program. Hosted by the Fashion Commission, the livestreamed event intends to put Riyadh on the map of the international fashion scene.. ",
     button: "Read Full Article",
-    image: require('../images/articles/fashion-photography.webp')
+    image: require('../../images/pressimages/ESQUIRE.webp')
   },
   {
-    title: "Men’s Fashion Trends 2025",
-    description: "A roundup of the latest trends and styles in men’s fashion.",
+    title: "Second Edition of Riyadh Fashion Week: Celebrating Fashion Innovation.",
+    description: "As Riyadh Fashion Week (RFW) gears up for its second edition from October 17 to 21, 2024, anticipation is high for an event that promises to empress. Hosted by the Fashion Commission, this year’s expanded five-day program aims to elevate Saudi Arabia’s position as a hub for global fashion innovation and creativity.",
     button: "Read Full Article",
-    image: require('../images/articles/mens-fashion-2025.webp')
+    image: require('../../images/pressimages/whatwomanwant.webp')
   },
   {
-    title: "Fashion Accessories That Pop",
-    description: "How to use accessories to add flair to your outfit.",
+    title: "سبوع الرياض للأزياء يعود بنسخته الثانية مع برنامج موسّع: 5 أيام للاحتفاء بالتميّز والابتكار والتفرّد",
+    description: `بعد النجاح الكبير الذي حققه في دورته الافتتاحية، يعود أسبوع الرياض للأزياء بنسخته الثانية إلى العاصمة السعودية بين 17 و21 تشرين الأول/أكتوبر 2024، ليقدّم لعشّاق الأزياء عروضاً أكبر وأكثر جاذبية، وبرنامجاً موسّعاً وفعاليات جديدة`,
     button: "Read Full Article",
-    image: require('../images/articles/fashion-accessories.webp')
+    image: require('../../images/pressimages/laha.webp'),lang:"ar"
   },
   {
-    title: "History of Haute Couture",
-    description: "Tracing the origins and evolution of haute couture fashion.",
+    title: "Everything we know about Riyadh Fashion Week 2024 happening next month.",
+    description: "You’re in for a treat Exciting times are coming up ahead, with the second edition of Riyadh Fashion Week almost upon us. Happening in mid-October, Riyadh Fashion Week 2024 will be bringing design excellence to a runway near you.",
     button: "Read Full Article",
-    image: require('../images/articles/haute-couture-history.webp')
+    image: require('../../images/pressimages/whatson.webp')
   },
   {
-    title: "The Future of Fashion Retail",
-    description: "Predicting changes in the retail landscape for fashion brands.",
+    title: "Riyadh Fashion Week 2024: A Celebration Of Style & Innovation",
+    description: "The Saudi capital is set to dazzle once again as Riyadh Fashion Week returns for its second edition in mid-October 2024. Fashion lovers and industry leaders alike can look forward to five days of creativity, luxury, and groundbreaking design, all courtesy of the Kingdom’s finest fashion minds. ",
     button: "Read Full Article",
-    image: require('../images/articles/fashion-retail-future.webp')
+    image: require('../../images/pressimages/SAUDIARABIA.webp')
   },
   {
-    title: "Bold Colors to Try This Season",
-    description: "Experiment with bold colors and make a statement with your look.",
+    title: "RIYADH FASHION WEEK IS RETURNING AND IT IS SOONER THAN YOU THINK.",
+    description: "Riyadh Fashion Week is back, and it’s ready to make an even bigger splash in 2024. Mark your calendars from October 17 to 21 as Saudi Arabia’s capital transforms into a global fashion hotspot once again. With its second edition, Riyadh Fashion Week promises an expanded lineup that will showcase the best of Saudi fashion, while also drawing international attention.",
     button: "Read Full Article",
-    image: require('../images/articles/bold-colors.webp')
+    image: require('../../images/pressimages/BURO.webp')
   },
   {
-    title: "Celebrity Fashion Influence",
-    description: "How celebrities shape and drive fashion trends.",
+    title: "أسبوع الموضة في الرياض يعود بنسخته الثانية للاحتفال بابتكار الأزياء والتميز العالمي",
+    description: `يعود أسبوع الموضة بالرياض بنسخته الثانية مع برنامج موسع على مدار 5 أيام في الفترة ما بين الـ17 حتى الـ21 أكتوبر من 2024، وبناءً على النجاح الذي حققه الحدث الافتتاحي، يتوقع أن يكون مهرجان RFW للعام الحالي أكبر وأكثر ديناميكية، بمجموعة من البرامج الموسعة والميزات الجديدة، حيث يهدف ذلك الحدث الذي تستضيفه لجنة الأزياء، والمقرر بثه مباشرة، لدعم تطوير صناعة الأزياء على كلا المستويين المحلي والدولي.`,
     button: "Read Full Article",
-    image: require('../images/articles/celebrity-fashion.webp')
+    image: require('../../images/pressimages/BAZAAR.webp'),lang:"ar"
   },
   {
-    title: "DIY Fashion: Customize Your Style",
-    description: "Tips and tricks to personalize your wardrobe creatively.",
+    title: "Mohammed Ashi opens Riyadh’s first-ever fashion week",
+    description: "The poignant eveningwear of Saudi designer Mohammed Ashi served as the inaugural Riyadh Fashion Week’s opening act last night. Dozens of elegantly clad Saudi men and women, celebrities and members of the press met inside a temporary rectangular structure in front of the King Fahd National Library last night to witness Ashi’s latest collection, 8pm.",
     button: "Read Full Article",
-    image: require('../images/articles/diy-fashion.webp')
+    image: require('../../images/pressimages/ArabNew2.webp')
   },
   {
-    title: "Fashion Marketing Trends",
-    description: "Key marketing strategies transforming the fashion industry.",
+    title: "Riyadh Fashion Week Is Set To Return For Its Second Edition",
+    description: `Riyadh Fashion Week (RFW) is set to return for its second edition from the 17th to the 21st of October 2024, in Saudi Arabia’s capital. 
+
+According to organisers, this year’s event will be even bigger and more dynamic, with a range of new features and an extended programme. `,
     button: "Read Full Article",
-    image: require('../images/articles/fashion-marketing.webp')
+    image: require('../../images/pressimages/AEWorld.webp')
   },
   {
-    title: "Vintage Fashion Revival",
-    description: "The comeback of vintage styles and their modern twist.",
+    title: "Saudi fashion sector witnesses historic step as first-ever Riyadh Fashion Week kicks off",
+    description: "Saudi designer Mohammed Ashi opened the much-anticipated event in Saudi Arabia's fashion sector, which took place on the evening of Oct. 20 in the Kingdom's capital, marking the start of the first-ever Riyadh Fashion Week",
     button: "Read Full Article",
-    image: require('../images/articles/vintage-fashion.webp')
+    image: require('../../images/pressimages/SaudiGazette2.webp')
   },
   {
-    title: "Sustainable Fashion Brands to Support",
-    description: "A list of brands committed to ethical and sustainable practices.",
+    title: "How To Watch Riyadh Fashion Week: Ashi Studio To Show Tonight",
+    description: "The fashion industry is gearing up for a momentous occasion: the inaugural Riyadh Fashion Week. This much-anticipated four-day event, hosted by the Saudi Fashion Commission, is set to unfold in all its grandeur, starting tonight amidst the notable backdrop of King Abdullah Financial District.",
     button: "Read Full Article",
-    image: require('../images/articles/sustainable-brands.webp')
+    image: require('../../images/pressimages/BAZAAR (1).webp')
   },
   {
-    title: "Fashion Illustration Today",
-    description: "The resurgence of fashion illustration in modern design.",
+    title: "Riyadh Fashion Week has started",
+    description: "The first Riyadh Fashion Week is here. Do you have your outfit picked out?Not only is it the first official Riyadh Fashion Week, it is also the first Saudi Fashion Week",
     button: "Read Full Article",
-    image: require('../images/articles/fashion-illustration.webp')
+    image: require('../../images/pressimages/ztimeOut.webp')
   },
   {
-    title: "The Psychology of Fashion",
-    description: "How clothing affects mood, confidence, and social perception.",
+    title: "Saudi fashion sector witnesses historic step as first-ever Riyadh Fashion Week kicks off",
+    description: "The Saudi Fashion Commission had announced earlier that the renowned Mohammed Ashi, founder of Ashi Studio, will return to Riyadh, staging his first fashion show in his hometown.",
     button: "Read Full Article",
-    image: require('../images/articles/fashion-psychology.webp')
+    image: require('../../images/pressimages/zaywa.webp')
   },
   {
-    title: "Fashion Week Highlights Worldwide",
-    description: "Highlights and memorable moments from fashion weeks globally.",
+    title: "RIYADH FASHION WEEK IS MAKE A BIG RETURN IN 2024: EVERYTHING TO KNOW.",
+    description: `Back for its second edition, Riyadh Fashion Week is set to captivate the region again in 2024.
+
+Hosted by the Saudi Fashion Commission, yet another level of unrivalled creative expression in the fashion space is set to be unveiled next season.`,
     button: "Read Full Article",
-    image: require('../images/articles/fashion-week-highlights.webp')
+    image: require('../../images/pressimages/GRAZIA (1).webp')
   },
   {
-    title: "Style Tips for Every Body Type",
-    description: "How to choose clothing that enhances your unique body shape.",
+    title: "Ashi Studio Opens Riyadh Fashion Week",
+    description: "Paying tribute to the breath-taking beauty of Mother Nature at night, the KSA-born couturier makes history as the first designer to show at the inaugural fashion week",
     button: "Read Full Article",
-    image: require('../images/articles/style-tips.webp')
+    image: require('../../images/pressimages/Bazaar3.webp')
   },
   {
-    title: "The Impact of Social Media on Fashion",
-    description: "Examining social media’s role in fashion marketing and trends.",
+    title: "Meet the Arab designers set to dazzle at Riyadh Fashion Week",
+    description: "After attending star-studded showcases in London, Milan, and Paris, the global fashion community is set to disembark in Riyadh for Saudi Arabia’s first ever fashion week. Celebrities, VIPs, buyers, and industry stakeholders will gather to witness 30 of the kingdom’s top designers take over the runway from October 20 to 23.",
     button: "Read Full Article",
-    image: require('../images/articles/social-media-fashion.webp')
+    image: require('../../images/pressimages/JingDaily.webp')
   },
   {
-    title: "Fashion and Sustainability Innovations",
-    description: "Technological innovations shaping sustainable fashion’s future.",
+    title: "Riyadh Fashion Week: Schedule, Dates, How To Attend And More",
+    description: "Bazaar Arabia’s guide to the inaugural four-day event, taking place next week in KSA",
     button: "Read Full Article",
-    image: require('../images/articles/sustainability-innovations.webp')
+    image: require('../../images/pressimages/BAzaar2.webp')
   },
   {
-    title: "The Role of Fashion in Pop Culture",
-    description: "How fashion influences and reflects popular culture.",
+    title: "Saudi Arabia to launch fashion week in Riyadh to tap opportunities",
+    description: "PARIS: The Saudi Fashion Commission announced that Saudi Arabia will play host to an official fashion week from Oct. 20-23 at an event at Paris’s Hôtel d’Évreux on Monday.",
     button: "Read Full Article",
-    image: require('../images/articles/fashion-pop-culture.webp')
+    image: require('../../images/pressimages/Dailysun.webp')
+  },{
+    title: "30 Saudi brands to be showcased during first Riyadh Fashion Week",
+    description: "RIYADH: Thirty Saudi brands will take to the runway at the inaugural Riyadh Fashion Week next month.",
+    button: "Read Full Article",
+    image: require('../../images/pressimages/Arab+news.webp')
   },
   {
-    title: "Leather Alternatives in Fashion",
-    description: "Exploring eco-friendly alternatives to traditional leather.",
+    title: "Riyadh Fashion Week reveals schedule of debut season in October",
+    description:"Riyadh Fashion Week has unveiled the official schedule of its debut season in late October with four days of shows, featuring runway displays by over 30 designers.",
     button: "Read Full Article",
-    image: require('../images/articles/leather-alternatives.webp')
+    image: require('../../images/pressimages/FashionNetwork.webp')
   },
   {
-    title: "The Evolution of Denim",
-    description: "From workwear to high fashion: the iconic journey of denim.",
+    title: "Saudi Arabia to host first fashion week spotlighting local brands",
+    description: "In what is set to be a first for the country, Saudi Arabia will be hosting Riyadh Fashion Week from October 20 to 23 with a lineup of 30 local brands showcased on the runway.",
     button: "Read Full Article",
-    image: require('../images/articles/denim-evolution.webp')
+    image: require('../../images/pressimages/Fashion+union.webp')
   },
   {
-    title: "Fashion Capitals of the World",
-    description: "Discover the cities that define global fashion movements.",
+    title: "Riyadh Fashion Week: 30 KSA Brands To Show At Saudi Arabia’s First Fashion Week",
+    description: "Hosted by the Saudi Fashion Commission, the upcoming event will feature a lineup of 30 brands from the Kingdom.",
     button: "Read Full Article",
-    image: require('../images/articles/fashion-capitals.webp')
+    image: require('../../images/pressimages/BAZAAR (1).webp')
   },
   {
-    title: "Bridal Fashion Trends 2025",
-    description: "The latest styles in bridal fashion for this year.",
+    title: "Riyadh Fashion Week: Everything You Need to Know About the First Edition",
+    description: "Saudi Arabia’s inaugural Riyadh Fashion Week is officially scheduled to debut from 20-23 October. An impressive lineup of 30 Saudi brands will grace the runway, accompanied by a plethora of world renowned celebrities, VIPs, buyers and key industry stakeholders set to storm the capital in celebration of Saudi’s rapidly emerging fashion scene.",
     button: "Read Full Article",
-    image: require('../images/articles/bridal-fashion.webp')
+    image: require('../../images/pressimages/GQ.webp')
   },
   {
-    title: "How to Build a Capsule Wardrobe",
-    description: "Creating a functional and stylish capsule wardrobe step-by-step.",
+    title: "Saudi Arabia’s Riyadh Fashion Week to Make its Debut with 30 Local Brands",
+    description: "From October 20-23, saudi arabia will be buzzing with the inaugural edition of Riyadh Fashion Week, showcasing a dazzling lineup of 30 local brands on the runway.",
     button: "Read Full Article",
-    image: require('../images/articles/capsule-wardrobe.webp')
+    image: require('../../images/pressimages/Voguearaboaenglish.webp')
   },
   {
-    title: "The Story Behind Iconic Brands",
-    description: "Origins and stories of some of the world’s best-known labels.",
+    title: `أسبوع الرياض للموضة.. التفاصيل الكاملة لانطلاق أول أسبوع للموضة بالمملكة`,
+    description: `تنطلق في العاصمة السعودية الرياض في شهر أكتوبر المقبل فعاليات أسبوع الرياض للموضة تحت تنظيم وإشراف هيئة الأزياء السعودية. وينطلق أسبوع الرياض للموضة من قلب العاصمة السعودية الرياض في 20 من أكتوبر المقبل ويستمر حتى 23 من ذات الشهر ليقدم أحدث خطوط الموضة حول العالم لعشاق الأزياء.ة”.`,
     button: "Read Full Article",
-    image: require('../images/articles/iconic-brands.webp')
+    image: require('../../images/pressimages/Hia (1).webp'),lang:"ar"
   },
   {
-    title: "Fashion Event Planning Guide",
-    description: "Tips for organizing memorable and successful fashion events.",
+    title: "Saudi Arabia’s first fashion week to showcase 30 brands",
+    description:"Thirty Saudi brands will rule the ramp at the inaugural “Riyadh Fashion Week” that will be held in the capital from October 20-23.",
     button: "Read Full Article",
-    image: require('../images/articles/event-planning.webp')
+    image: require('../../images/pressimages/Trade+arabia.webp')
   },
   {
-    title: "The Business of Fashion",
-    description: "An insight into the economics and management of fashion brands.",
+    title:`الرياض تطلق 30 علامة تجارية سعودية في أول أسبوع للموضة العالمي`,
+    description: `شهد العاصمة السعودية “الرياض“ أواخر شهر أكتوبر المقبل، أول حدث رسمي لأسبوع الأزياء الذي يجمع مشاهير مجتمع الموضة العالمي تحت شعار “أسبوع الرياض للموضة”.`,
     button: "Read Full Article",
-    image: require('../images/articles/business-of-fashion.webp')
+    image: require('../../images/pressimages/Arabian.webp'),
+    lang:"ar"
   },
   {
-    title: "Color Psychology in Fashion",
-    description: "How colors influence perception and style choices.",
+    title: `أول أسبوع للموضة في الرياض سينطلق الشهر القادم بمشاركة 30 علامة سعودية`,
+    description:`أنت على موعد مع أول أسبوع للموضة في الرياض الشهر القادم بمشاركة 30 علامة أزياء سعودية`,
     button: "Read Full Article",
-    image: require('../images/articles/color-psychology.webp')
+    image: require('../../images/pressimages/Vogue (1).webp'),lang:"ar"
   },
   {
-    title: "Global Textile Traditions",
-    description: "Exploring diverse textile techniques from around the world.",
+    title: `لأول مرة 30 علامة ستجتمع في أسبوع الموضة في الرياض`,
+    description: `تمكنت الرياض من جذب 30 علامة تجارية خلال أسبوع الموضة الذي سيستمر من 20 إلى 23 أكتوبر.`,
     button: "Read Full Article",
-    image: require('../images/articles/global-textiles.webp')
+    image: require('../../images/pressimages/Marie+Claire.webp'),lang:"ar"
   },
   {
-    title: "Upcycling Fashion: A Trend With Purpose",
-    description: "Turning old clothing into new treasures with creativity.",
+    title: "Saudi Arabia’s first fashion week set to dazzle with 30 Saudi brands’ lineup",
+    description: "The inauguration of the first ever “Riyadh Fashion Week” will light up the heart of Saudi Arabia’s capital from Oct. 20-23 with a lineup of 30 Saudi brands taking over the runway.",
     button: "Read Full Article",
-    image: require('../images/articles/upcycling-fashion.webp')
+    image: require('../../images/pressimages/SaudiGazette2.webp')
   },
   {
-    title: "Fashion Influencers to Follow",
-    description: "Profiles of influential figures shaping today’s fashion scene.",
+    title: "Saudi Arabia’s first fashion week set to dazzle with 30 Saudi brands’ lineup",
+    description:"It will gather the global fashion community, including celebrities, VIPs, buyers and key industry stakeholders to celebrate Saudi’s rapidly emerging fashion scene",
     button: "Read Full Article",
-    image: require('../images/articles/fashion-influencers.webp')
+    image: require('../../images/pressimages/zaywa.webp')
   },
   {
-    title: "The Intersection of Art & Fashion",
-    description: "How artists and designers collaborate to create visual magic.",
+    title: "Saudi Fashion Commission announces plans for October Fashion Week in Riyadh",
+    description: "The Saudi Fashion Commission has announced plans to debut its first Fashion Week in Riyadh,to be staged from October 20 to 23.",
     button: "Read Full Article",
-    image: require('../images/articles/art-fashion.webp')
+    image: require('../../images/pressimages/FashionNetwork.webp')
   },
   {
-    title: "Fashion Education Pathways",
-    description: "Various routes to pursue a career in fashion design and business.",
+    title: "The First Fashion Week in Saudi Arabia Will Happen This October",
+    description: "Mark your calendars! Saudi Arabia’s first fashion week has been scheduled to take place in Riyadh this Autumn.",
     button: "Read Full Article",
-    image: require('../images/articles/fashion-education.webp')
+    image: require('../../images/pressimages/press2.webp')
+  },
+
+  {
+    title: "AT PARIS FASHION WEEK, THE SAUDI FASHION COMMISSION ANNOUNCES THE FIRST FASHION WEEK IN SAUDI ",
+    description: "Set your calendars for the the first Fashion Week in Saudi. Held by the Saudi Fashion Commission, the inaugural event is slated to run between the 20th and the 23rd of next October.",
+    button: "Read Full Article",
+    image: require('../../images/pressimages/pressee.webp')
   },
   {
-    title: "The Role of Diversity in Fashion",
-    description: "Celebrating inclusive representation across fashion platforms.",
+    title: "audi Fashion Commission announces fashion week plans",
+    description:"The Saudi Fashion Commission has announced its plans to launch the nation's inaugural fashion week, set to take place in Riyadh.",
     button: "Read Full Article",
-    image: require('../images/articles/diversity-fashion.webp')
+    image: require('../../images/pressimages/presssd.webp')
   },
   {
-    title: "Ethical Fashion Certifications",
-    description: "Understanding certifications that vouch for ethical brand practices.",
+    title: "Saudi Arabia announces first ever Fashion Week ",
+    description: "As emerging Saudi brands continue to make their mark on the international Fashion Weeks, the Kingdom is set to get one of its own, announcing a first ever Saudi Fashion Week.",
     button: "Read Full Article",
-    image: require('../images/articles/ethical-certifications.webp')
+    image: require('../../images/pressimages/ESQUIRE.webp')
   },
   {
-    title: "Fashion and Music Collaborations",
-    description: "Exploring creative partnerships between musicians and fashion houses.",
-    button: "Read Full Article",
-    image: require('../images/articles/music-fashion.webp')
+    title: "Everything You Need To Know About Saudi Fashion Week",
+    description:"The Saudi Fashion Commission has announced that the Saudi Fashion Week will take place from 20 to 23 October 2023 in the nation’s capital city, Riyadh.",
+     button: "Read Full Article",
+    image: require('../../images/pressimages/pressaee.webp')
   },
-  {
-    title: "How to Start a Fashion Blog",
-    description: "A beginner’s guide to launching and growing a fashion blog.",
+   {
+    title: "Saudi Arabia to host first ever Fashion Week in October",
+    description: "The first-ever Saudi Arabian fashion week will take place in the capital, Riyadh this October.  ",
     button: "Read Full Article",
-    image: require('../images/articles/fashion-blog.webp')
+    image: require('../../images/pressimages/gcc.webp')
   },
-  {
-    title: "Emerging Textile Technologies",
-    description: "Innovations pushing the boundaries of fabric and design.",
+   {
+    title: "Saudi Arabia announces plans to host its first official fashion week ",
+    description: "If you’ve been patiently waiting for Saudi Arabia to debut its very own version of fashion week, you’re in luck as plans for Saudi Fashion Week have been announced.",
     button: "Read Full Article",
-    image: require('../images/articles/textile-technologies.webp')
+    image: require('../../images/pressimages/whatson.webp')
   }
 ];
