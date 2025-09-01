@@ -1,0 +1,165 @@
+/* Responsive styles for Video Background Component */
+
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  .video-background-section {
+    min-height: 100vh;
+  }
+  
+  .video-background-container {
+    height: 100vh;
+  }
+  
+  .video-background-video {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  .content-wrapper {
+    min-height: 100vh;
+    padding: 0 var(--mobile-page-padding);
+  }
+  
+  .content {
+    padding: 0 var(--mobile-page-padding);
+  }
+  
+  .hero-section {
+    padding-top: 100px;
+  }
+  
+  .hero-content {
+    padding: 0 1rem;
+  }
+  
+  .hero-banner-image {
+    max-height: 150px;
+  }
+  
+  .hero-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+  }
+  
+  .hero-subtitle {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+  }
+  
+  .hero-dates-numbers {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  
+  .hero-dates-month {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+  }
+}
+
+/* Tablet devices (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .video-background-section {
+    min-height: 100vh;
+  }
+  
+  .video-background-container {
+    height: 100vh;
+  }
+  
+  .content-wrapper {
+    min-height: 100vh;
+    padding: 0 var(--page-padding);
+  }
+  
+  .hero-section {
+    padding-top: 110px;
+  }
+  
+  .hero-content {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Desktop devices (1024px and above) */
+@media (min-width: 1024px) {
+  .video-background-section {
+    min-height: 100vh;
+  }
+  
+  .video-background-container {
+    height: 100vh;
+  }
+  
+  .content-wrapper {
+    min-height: 100vh;
+    padding: 0 var(--page-padding);
+  }
+  
+  .hero-content {
+    padding: 0 2rem;
+  }
+}
+
+/* Large desktop devices (1400px and above) */
+@media (min-width: 1400px) {
+  .content {
+    max-width: var(--max-page-width);
+  }
+  
+  .hero-content {
+    max-width: 900px;
+  }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+  .video-background-section {
+    min-height: 100vh;
+  }
+  
+  .hero-section {
+    padding-top: 80px;
+  }
+  
+  .hero-content {
+    padding: 0 1rem;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .video-background-video {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .video-background-video {
+    animation: none;
+  }
+  
+  .hero-shapes {
+    animation: none;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .video-overlay {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Print styles */
+@media print {
+  .video-background-section {
+    background: var(--rfw-black);
+  }
+  
+  .video-background-video {
+    display: none;
+  }
+  
+  .video-overlay {
+    display: none;
+  }
+}
