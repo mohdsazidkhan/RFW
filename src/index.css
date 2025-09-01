@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   --rfw-gold: #D4AF37;
   --rfw-gold-light: #E5C158;
   --rfw-gold-dark: #B8941F;
-  --max-page-width: 1400px;
+  --max-page-width: 85vw;
   --page-padding: 4vw;
   --mobile-page-padding: 6vw;
 }
@@ -449,8 +449,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'SOLAR-VESTA-SERIF', sans-serif;
   line-height: normal;
 }
-
-/* Section Container */
+/* 
 .section-container {
   max-width: var(--max-page-width);
   margin: 0 auto;
@@ -458,7 +457,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-/* Latest Section */
 .latest-section {
   background: var(--rfw-white);
   padding: 6rem 0;
@@ -477,6 +475,50 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--rfw-black);
 }
 
+
+.section-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.latest-text {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: 'Times New Roman', serif; 
+}
+
+.section-description {
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.btn-outline {
+  padding: 15px 40px;
+  border: 1px solid #000;
+  background: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #000;
+  color: #fff;
+}
+
+
 .section-title {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 600;
@@ -484,6 +526,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
   line-height: 1.2;
   color: #000;
+  text-align: left;
 }
 .newsletter-section .section-title,
 .newsletter-section .section-description{
@@ -491,7 +534,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section-description {
   text-align: justify;
-  font-size: 1.35rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 2rem;
   color: #000;
@@ -573,7 +616,83 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   white-space: nowrap;
+} */
+.latest-section {
+  background: #fff;
+  padding: 6rem 0;
+  position: relative;
 }
+
+.section-container {
+  max-width: 85vw;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.latest-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: start;
+  position: relative;
+}
+
+/* LEFT SIDE */
+.section-title {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-family: 'Times New Roman', serif;
+}
+
+.section-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 2.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn-outline {
+  padding: 12px 32px;
+  border: 1px solid #000;
+  background: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* RIGHT SIDE - Single Image */
+.latest-gallery {
+  position: relative;
+}
+
+.collage-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Vertical ABOUT text */
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  right: -2rem;
+  top: 0%;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
 
 /* Calendar Section */
 .calendar-section {
@@ -593,7 +712,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .vertical-text-left {
   position: absolute;
-  left: -3rem;
+  left: -6rem;
   top: 8vh;
   transform: translateY(-50%) rotate(-90deg);
   font-size: 1.25rem;
@@ -771,7 +890,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Button Styles */
 .btn {
-  display: inline-block;
+  display: flex;
   padding: 0.75rem 2rem;
   font-weight: 700;
   text-decoration: none;
@@ -1577,8 +1696,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-social-icons .social-icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   fill: var(--rfw-black);
   transition: fill 0.3s ease;
 }
@@ -2792,7 +2911,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-nav {
   display: flex;
-  gap: 1.56rem;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -2951,7 +3070,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: bottom;
   background-repeat: no-repeat;
   color: var(--rfw-white);
-  padding: 6rem 0;
+  padding: 6rem 4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
 }
@@ -2973,9 +3092,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-container {
-  max-width: 1400px;
+  max-width: 85vw;
+  
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2rem 0 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
