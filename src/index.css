@@ -1341,7 +1341,7 @@ h1, h2, h3, h4, h5, h6 {
 .rfw-logo-hero {
   font-size: clamp(4rem, 10vw, 8rem);
   font-weight: 700;
-  font-family: 'Playfair Display', serif;
+  font-family: 'SOLAR-VESTA-SERIF', serif;
   color: var(--rfw-white);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
@@ -1362,7 +1362,7 @@ h1, h2, h3, h4, h5, h6 {
 .calendar-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
-  font-family: 'Playfair Display', serif;
+  font-family: 'SOLAR-VESTA-SERIF', serif;
   color: var(--rfw-black);
   margin-bottom: 1rem;
   line-height: 1.1;
@@ -1439,7 +1439,7 @@ h1, h2, h3, h4, h5, h6 {
 .event-designer {
   font-size: 1.5rem;
   font-weight: 700;
-  font-family: 'Playfair Display', serif;
+  font-family: 'SOLAR-VESTA-SERIF', serif;
   color: var(--rfw-black);
 }
 
@@ -1520,7 +1520,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Designers Main Section */
 .designers-main-section {
   background: var(--rfw-black);
-  padding: 6rem 0;
+  padding: 6rem 0 0 0;
   color: var(--rfw-white);
 }
 
@@ -1534,14 +1534,18 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
+  padding: 0 6rem;
   margin-bottom: 5rem;
   align-items: start;
+  background-color: var(--rfw-black);
+
 }
 
 .designers-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 700;
-  font-family: 'Inter', sans-serif;
+  font-size: 38.504px;
+  line-height: 50.8869px;
+  font-weight: 200;
+  font-family:'SOLAR-VESTA-SERIF' !important;
   color: var(--rfw-white);
   line-height: 1.1;
   text-transform: uppercase;
@@ -1550,209 +1554,129 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .designers-description {
-  font-size: 1.125rem;
+  font-family: sans-serif;
   line-height: 1.7;
   color: var(--rfw-white);
-  opacity: 0.9;
-  margin: 0;
-  text-align: justify;
-  font-family: 'Inter', sans-serif;
-}
-
-/* Designers Grid */
-.designers-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.designer-profile {
-  background: var(--rfw-black);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 1.5rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  border-radius: 6px;
-}
-
-.designer-profile:hover {
-  border-color: var(--rfw-gold);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.designer-image {
-  margin-bottom: 1.5rem;
-}
-
-.designer-image-placeholder {
-  width: 120px;
-  height: 120px;
-  background: var(--rfw-white);
-  color: var(--rfw-black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: 'Inter', sans-serif;
-  margin: 0 auto;
-  border-radius: 6px;
-  margin-bottom: 1.5rem;
-}
-
-.designer-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.designer-name {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--rfw-white);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
   margin: 0;
-  line-height: 1.2;
-  font-family: 'Inter', sans-serif;
+  letter-spacing: normal;
+   font-size: 17px;
+  line-height: 20.4px;
 }
 
-.designer-category {
-  font-size: 0.875rem;
-  color: var(--rfw-white);
-  opacity: 0.7;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin: 0;
-  line-height: 1.3;
-  font-family: 'Inter', sans-serif;
-}
-
-.btn-learn-more {
-  background: transparent;
-  color: var(--rfw-white);
-  border: 1px solid var(--rfw-white);
-  padding: 0.75rem 1.5rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-top: 1rem;
-  border-radius: 4px;
-  font-family: 'Inter', sans-serif;
-}
-
-.btn-learn-more:hover {
-  background: var(--rfw-white);
-  color: var(--rfw-black);
-}
 
 /* Designer Detail Page Styles */
-.designer-detail-page {
-  background: var(--rfw-black);
-  color: var(--rfw-white);
+.designer-detail-page{
+  background-color: #000;
 }
-
-/* Designer Detail Main Section */
 .designer-detail-main-section {
-  background: var(--rfw-black);
-  padding: 6rem 0;
-  color: var(--rfw-white);
-  min-height: 80vh;
+  background: #000;
+  min-height: 100vh;
+  padding: 0;
 }
-
-.designer-detail-content {
+.section-container {
   max-width: 1400px;
   margin: 0 auto;
+  width: 100%;
 }
-
-/* Designer Detail Grid */
+.designer-detail-content {
+  width: 100%;
+  padding: 40px 0;
+}
 .designer-detail-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
 }
-
-/* Left Column - Text Content */
 .designer-detail-text {
+  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-}
-
-.designer-detail-name {
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 700;
-  font-family: 'Playfair Display', serif;
-  color: var(--rfw-white);
-  line-height: 1.1;
+  justify-content: flex-start;
+  color: #fff;
+  padding: 4rem 2rem 0 2rem;
+  min-width: 0;
   text-transform: uppercase;
-  margin: 0;
 }
-
+.section-container-detail{
+  max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+.designer-detail-name {
+  font-size: 3rem;
+  font-family: 'SOLAR-VESTA-SERIF', serif;
+  font-weight: 700;
+  margin-bottom: 2.2rem;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-transform: uppercase;
+}
 .designer-detail-bio {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.bio-paragraph {
-  font-size: 1.125rem;
-  line-height: 1.7;
-  color: var(--rfw-white);
+  font-family: sans-serif;
+   font-family: sans-serif;
+  font-size: 17px;
+  line-height: 20.4px;
+  letter-spacing: normal;
+  font-weight: 300;
   opacity: 0.9;
-  margin: 0;
+  color: #fff;
+  text-align: left;
+  max-width: 650px;
+  margin-bottom: 20px;
 }
-
 .btn-back-to-designers {
   background: transparent;
-  color: var(--rfw-white);
-  border: 1px solid var(--rfw-white);
-  padding: 1rem 2rem;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.85rem 2.5rem;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
+  border-radius: 5px;
   align-self: flex-start;
-  margin-top: 1rem;
+  transition: background 0.2s, color 0.2s;
 }
-
-.btn-back-to-designers:hover {
-  background: var(--rfw-white);
-  color: var(--rfw-black);
+.btn-back-to-designers:hover,
+.btn-back-to-designers:focus {
+  background: #fff;
+  color: #000;
 }
-
-/* Right Column - Image */
 .designer-detail-image {
+  flex: 1 1 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  justify-content: flex-end;
+  background: #000;
+  min-width: 0;
 }
-
-.designer-portrait-placeholder {
-  width: 400px;
-  height: 500px;
-  background: var(--rfw-white);
-  color: var(--rfw-black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+.designer-detail-photo {
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  max-height: none;
+  object-fit: cover;
+  display: block;
 }
-
-.portrait-initials {
-  font-size: 4rem;
-  font-weight: 700;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
+@media (max-width: 900px) {
+  .designer-detail-grid {
+    flex-direction: column;
+  }
+  .designer-detail-text,
+  .designer-detail-image {
+    padding: 2rem 1rem 0 1rem;
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  .designer-detail-photo {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
 }
 
 /* About Hero Section */
@@ -1802,7 +1726,7 @@ h1, h2, h3, h4, h5, h6 {
 .about-vertical-text {
   font-size: clamp(2rem, 6vw, 4rem);
   font-weight: 700;
-  font-family: 'Playfair Display', serif;
+  font-family: 'SOLAR-VESTA-SERIF', serif;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg);
@@ -1818,7 +1742,7 @@ h1, h2, h3, h4, h5, h6 {
 .about-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
-  font-family: 'Playfair Display', serif;
+  font-family: 'SOLAR-VESTA-SERIF', serif;
   margin-bottom: 2rem;
   line-height: 1.1;
   color: var(--rfw-white);
@@ -1918,7 +1842,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
   font-weight: 700;
   color: var(--rfw-white);
-  font-family: 'Playfair Display', serif;
+  font-family: 'SOLAR-VESTA-SERIF', serif;
 }
 
 .gallery-nav {

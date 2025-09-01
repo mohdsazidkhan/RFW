@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-
+import { designers } from "../utils/data/Designers";
 const DesignerDetail = () => {
   const { designerSlug } = useParams();
+  console.log(designerSlug,"designerSlug")
+
+
+  const [designerDetails,setDesignerDetails]=useState(null)
+  useEffect(()=>{
+    if(designerSlug){
+      let filterDesigner = designers.find((item)=>item.id===designerSlug);
+      setDesignerDetails(filterDesigner)
+    }
+  },[designerSlug])
+  console.log(designerDetails,"designerDetails")
   const navigate = useNavigate();
   // Convert slug back to designer name for display
   const designerName = designerSlug
     .split('-')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
+
 
   // Sample designer data - in a real app, this would come from an API or database
   const designerData = {
@@ -27,43 +39,37 @@ The atelier aspires to create high-quality couture and ready-to-wear garments th
 
   return (
     <div className="designer-detail-page">
-      {/* Main Content Section */}
-      <section className="designer-detail-main-section">
-        <div className="section-container">
-          <div className="designer-detail-content">
-            {/* Two Column Layout */}
-            <div className="designer-detail-grid">
-              {/* Left Column - Text Content */}
-              <div className="designer-detail-text">
-                <h1 className="designer-detail-name">{designerData.name}</h1>
-                <div className="designer-detail-bio">
-                  {designerData.bio.split('\n\n').map((paragraph, index) => (
-                    <p key={index} className="bio-paragraph">
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-                <button 
-                  className="btn btn-back-to-designers"
-                  onClick={() => navigate('/designers')}
-                >
-                  ← BACK TO DESIGNERS
-                </button>
-              </div>
-              
-              {/* Right Column - Image */}
-              <div className="designer-detail-image">
-                <div className="designer-portrait-placeholder">
-                  <div className="portrait-initials">
-                    {designerData.name.split(' ').map(word => word[0]).join('')}
-                  </div>
-                </div>
-              </div>
+  <section className="designer-detail-main-section">
+    <div className="section-container-detail">
+      <div className="designer-detail-content">
+        <div className="designer-detail-grid">
+          {/* Left Column: Text */}
+          <div className="designer-detail-text">
+            <h1 className="designer-detail-name">{designerDetails?.name}</h1>
+            <div className="designer-detail-bio">
+              {designerDetails?.content}
             </div>
+            <button 
+              className="btn btn-back-to-designers"
+              onClick={() => navigate('/designers')}
+            >
+              ← BACK TO DESIGNERS
+            </button>
+          </div>
+          {/* Right Column: Image */}
+          <div className="designer-detail-image">
+            <img
+              src={designerDetails?.logo}
+              alt={designerDetails?.name}
+              className="designer-detail-photo"
+            />
           </div>
         </div>
-      </section>
+      </div>
     </div>
+  </section>
+</div>
+
   );
 };
 
