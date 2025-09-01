@@ -5,20 +5,22 @@ const Header = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const isActive = (path) => {
-    return location.pathname === path;
+  const isActive = (path) => location.pathname === path;
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
+
+  // Detect theme based on page - UPDATED LOGIC
+  const getTheme = () => {
+    // Only these pages should have dark theme
+    const darkPages = ['/press', '/contact']; 
+    return darkPages.includes(location.pathname) ? 'dark' : 'light';
   };
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const theme = getTheme();
 
   return (
-    <header className="common-header">
+    <header className={`common-header ${theme}`}>
       <div className="header-container">
         {/* Logo */}
         <div className="header-logo">
@@ -29,42 +31,20 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="header-nav header-nav-desktop">
-          <Link 
-            to="/" 
-            className={`nav-link ${isActive('/') ? 'active' : ''}`}
-          >
-            HOME
-          </Link>
-          <Link 
-            to="/about" 
-            className={`nav-link ${isActive('/about') ? 'active' : ''}`}
-          >
-            ABOUT
-          </Link>
-          <Link 
-            to="/casting" 
-            className={`nav-link ${isActive('/casting') ? 'active' : ''}`}
-          >
-            CASTING
-          </Link>
-          <Link 
-            to="/sponsorship" 
-            className={`nav-link ${isActive('/sponsorship') ? 'active' : ''}`}
-          >
-            SPONSORSHIP & PARTNERSHIP
-          </Link>
-          <Link 
-            to="/press" 
-            className={`nav-link ${isActive('/press') ? 'active' : ''}`}
-          >
-            PRESS
-          </Link>
-          <Link 
-            to="/contact" 
-            className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
-          >
-            CONTACT US
-          </Link>
+          {['/', '/about', '/casting', '/sponsorship', '/press', '/contact'].map((path) => (
+            <Link
+              key={path}
+              to={path}
+              className={`nav-link ${isActive(path) ? 'active' : ''}`}
+              onClick={closeMenu}
+            >
+              {path === '/' ? 'HOME' :
+               path === '/about' ? 'ABOUT' :
+               path === '/casting' ? 'CASTING' :
+               path === '/sponsorship' ? 'SPONSORSHIP & PARTNERSHIP' :
+               path === '/press' ? 'PRESS' : 'CONTACT US'}
+            </Link>
+          ))}
         </nav>
 
         {/* Mobile Menu Toggle Button */}
@@ -81,48 +61,20 @@ const Header = () => {
         {/* Mobile Navigation Overlay */}
         <div className={`mobile-nav-overlay ${isMenuOpen ? 'open' : ''}`}>
           <nav className="header-nav header-nav-mobile">
-            <Link 
-              to="/" 
-              className={`nav-link ${isActive('/') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              HOME
-            </Link>
-            <Link 
-              to="/about" 
-              className={`nav-link ${isActive('/about') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              ABOUT
-            </Link>
-            <Link 
-              to="/casting" 
-              className={`nav-link ${isActive('/casting') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              CASTING
-            </Link>
-            <Link 
-              to="/sponsorship" 
-              className={`nav-link ${isActive('/sponsorship') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              SPONSORSHIP & PARTNERSHIP
-            </Link>
-            <Link 
-              to="/press" 
-              className={`nav-link ${isActive('/press') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              PRESS
-            </Link>
-            <Link 
-              to="/contact" 
-              className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
-              onClick={closeMenu}
-            >
-              CONTACT US
-            </Link>
+            {['/', '/about', '/casting', '/sponsorship', '/press', '/contact'].map((path) => (
+              <Link
+                key={path}
+                to={path}
+                className={`nav-link ${isActive(path) ? 'active' : ''}`}
+                onClick={closeMenu}
+              >
+                {path === '/' ? 'HOME' :
+                 path === '/about' ? 'ABOUT' :
+                 path === '/casting' ? 'CASTING' :
+                 path === '/sponsorship' ? 'SPONSORSHIP & PARTNERSHIP' :
+                 path === '/press' ? 'PRESS' : 'CONTACT US'}
+              </Link>
+            ))}
           </nav>
         </div>
       </div>

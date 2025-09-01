@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/Contact.css'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -32,16 +33,14 @@ const Contact = () => {
               <h1 className="contact-title">CONTACT US.</h1>
               <div className="contact-details">
                 <div className="contact-item">
-                  <span className="contact-label">Email:</span>
                   <a href="mailto:info@riyadhfashionweek.com" className="contact-email">
                     INFO@RIYADHFASHIONWEEK.COM
                   </a>
                 </div>
                 <div className="contact-item">
-                  <span className="contact-label">Address:</span>
                   <span className="contact-address">RIYADH, SAUDI ARABIA</span>
-          </div>
-        </div>
+                </div>
+              </div>
               
               {/* Social Media Icons */}
               <div className="contact-social-icons">
@@ -80,63 +79,66 @@ const Contact = () => {
             </div>
             
             {/* Right Column - Contact Form */}
-            <div className="contact-form-column">
-              <form className="contact-form" onSubmit={handleSubmit}>
-                <div className="form-group">
-                  <label className="form-label">NAME (REQUIRED)</label>
-                  <div className="name-fields">
-                  <input
-                    type="text"
-                      name="firstName"
-                      placeholder="FIRST NAME"
-                    className="form-input"
-                      value={formData.firstName}
-                      onChange={handleChange}
-                    required
-                  />
-                  <input
-                      type="text"
-                      name="lastName"
-                      placeholder="LAST NAME"
-                    className="form-input"
-                      value={formData.lastName}
-                      onChange={handleChange}
-                    required
-                  />
-                </div>
-                </div>
-                
-                <div className="form-group">
-                  <label className="form-label">EMAIL (REQUIRED)</label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="EMAIL ADDRESS"
-                    className="form-input"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                
-                <div className="form-group">
-                  <label className="form-label">MESSAGE (REQUIRED)</label>
-                  <textarea
-                    name="message"
-                    placeholder="YOUR MESSAGE"
-                    className="form-textarea"
-                    rows="5"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                  ></textarea>
-                </div>
-                
-                <button type="submit" className="btn btn-contact">
-                  SEND
-                </button>
-              </form>
-            </div>
+           {/* Right Column - Contact Form */}
+<div className="contact-form-column">
+  <form className="contact-form" onSubmit={handleSubmit}>
+    <div className="form-group">
+      <label className="form-label">NAME <span className='form-label-required'>(REQUIRED)</span></label>
+      <div className="name-fields">
+        <div className="name-field">
+          <label className="name-sub-label">FIRST NAME</label>
+          <input
+            type="text"
+            name="firstName"
+            className="form-input"
+            value={formData.firstName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="name-field">
+          <label className="name-sub-label">LAST NAME</label>
+          <input
+            type="text"
+            name="lastName"
+            className="form-input"
+            value={formData.lastName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+      </div>
+    </div>
+    
+    <div className="form-group">
+      <label className="form-label">EMAIL <span className='form-label-required'>(REQUIRED)</span></label>
+      <input
+        type="email"
+        name="email"
+        className="form-input"
+        value={formData.email}
+        onChange={handleChange}
+        required
+      />
+    </div>
+    
+    <div className="form-group">
+      <label className="form-label">MESSAGE <span className='form-label-required'>(REQUIRED)</span></label>
+      <textarea
+        name="message"
+        className="form-textarea"
+        rows="5"
+        value={formData.message}
+        onChange={handleChange}
+        required
+      ></textarea>
+    </div>
+    
+    <button type="submit" className="btn btn-contact">
+      SEND
+    </button>
+  </form>
+</div>
           </div>
         </div>
       </section>

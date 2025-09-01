@@ -4,7 +4,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 const DesignerDetail = () => {
   const { designerSlug } = useParams();
   const navigate = useNavigate();
-
   // Convert slug back to designer name for display
   const designerName = designerSlug
     .split('-')

@@ -1,4 +1,5 @@
-import React from 'react';
+import CastingIMG from '../images/Casting_IMG.webp';
+import '../styles/Casting.css';
 
 const Casting = () => {
   return (
@@ -23,30 +24,35 @@ const Casting = () => {
               <div className="casting-english">
                 <h2 className="casting-title">LIGHTS, CAMERA, FASHION!</h2>
                 <p className="casting-description">
-                  RIYADH FASHION WEEK FROM OCTOBER 16 TO 21 IS THE REGION'S MOST PROMINENT FASHION EVENT, BRINGING TOGETHER THE BEST DESIGNERS, MODELS, AND FASHION ENTHUSIASTS FROM AROUND THE WORLD.
+                  BRIGHT FASHION WEEK RETURNS IN A NEW LIGHT FROM OCTOBER 18 TO 21.  
+                  WITH THE CONSTITUTION OF THE BROWN AND STEPHEN TOWARDS EVERY DAY, IT WOULD BE NOT AN EXISTING MODELS FROM A CHOSEN TO GET ONTO THE RUNWAY AND TAKE AWAY. THEY RECOGNIZED PROPERLY FASHION RIGHT.  
                 </p>
                 <p className="casting-description">
-                  IF YOU'RE READY TO OWN THE SPOTLIGHT AND SHOWCASE YOUR TALENT, THIS IS YOUR CHANCE.
+                  IF YOU'RE READY TO OWN THE SPOTLIGHT AND SHOWCASE YOUR TALENT, THIS IS YOUR CHANCE.  
                 </p>
                 <p className="casting-deadline">
                   SUBMIT YOUR APPLICATION BEFORE SUNDAY, SEPTEMBER 7, 2025.
                 </p>
-                <button className="btn btn-casting">APPLY NOW</button>
+                <button className="btn btn-casting english">APPLY NOW</button>
               </div>
 
               {/* Arabic Content */}
               <div className="casting-arabic">
                 <h2 className="casting-title">أضواء، كاميرا، أزياء!</h2>
                 <p className="casting-description">
-                  أسبوع الرياض للأزياء من 16 إلى 21 أكتوبر هو أهم حدث أزياء في المنطقة، يجمع أفضل المصممين والعارضات وعشاق الأزياء من جميع أنحاء العالم.
+                  يعود أسبوع الأزياء المشرق في ضوء جديد من 18 إلى 21 أكتوبر.  
+                  مع دستور البراون وستيفن نحو كل يوم، لن تكون العارضات الحالية من المختارين للصعود على المنصة والاستيلاء. لقد تعرفوا بشكل صحيح على حق الموضة.  
                 </p>
                 <p className="casting-description">
-                  إذا كنت مستعداً لامتلاك الأضواء وإظهار موهبتك، فهذه هي فرصتك.
+                  إذا كنت مستعداً لامتلاك الأضواء وإظهار موهبتك، فهذه هي فرصتك.  
                 </p>
                 <p className="casting-deadline">
                   قدم طلبك قبل الأحد 7 سبتمبر 2025.
                 </p>
-                <button className="btn btn-casting">قدم الآن</button>
+                
+                <div className="divider"></div>
+                
+                <button className="btn btn-casting arabic">قدم الآن</button>
               </div>
             </div>
 
@@ -54,9 +60,7 @@ const Casting = () => {
             <div className="casting-image-content">
               <div className="runway-image-container">
                 <div className="runway-image">
-                  <div className="image-overlay">
-                    <div className="image-text">SAUDI ARABIA IS THE FUTURE</div>
-                  </div>
+                  <img src={CastingIMG} alt="Casting" className="casting-image" />
                 </div>
               </div>
             </div>
