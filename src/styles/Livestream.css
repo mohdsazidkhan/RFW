@@ -1,0 +1,91 @@
+/* Livestream Page */
+.livestream-page {
+  background: #f2f2f2;
+}
+
+/* Hero */
+.livestream-hero-section {
+  position: relative;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+}
+
+.livestream-hero-background {
+  position: absolute;
+  inset: 0;
+}
+
+.livestream-hero-image {
+  position: absolute;
+  inset: 0;
+  background: url('../images/live_stream_banner.webp') center/cover no-repeat;
+}
+
+.livestream-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.livestream-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 1rem;
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.livestream-hero-title {
+  font-family: 'SOLAR-VESTA-SERIF', serif;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  margin: 0 0 .5rem 0;
+}
+
+.livestream-hero-subtitle {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: .06em;
+  margin: 0;
+}
+
+/* Video Section */
+.livestream-video-section {
+  background: #e7e7e7;
+  padding: 40px 0 60px 0;
+}
+
+.section-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4vw;
+}
+
+.video-frame-wrapper {
+    background: #ffffff;
+    padding: 0;
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  background: #000;
+}
+
+.yt-iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .livestream-hero-title { font-size: 32px; }
+  .livestream-hero-subtitle { font-size: 12px; }
+}
+
+

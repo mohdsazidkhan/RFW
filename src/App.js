@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import Calendar from './pages/Calendar';
 import Designers from './pages/Designers';
 import DesignerDetail from './pages/DesignerDetail';
+import Livestream from './pages/Livestream';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/press" element={<Press />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/calendar" element={<Calendar />} />
+            <Route path="/livestream" element={<Livestream />} />
             <Route path="/designers" element={<Designers />} />
             <Route path="/designer/:designerSlug" element={<DesignerDetail />} />
           </Routes>
