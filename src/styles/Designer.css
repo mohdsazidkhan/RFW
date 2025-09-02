@@ -60,14 +60,14 @@
 }
 
 .designer-name {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 300;
   color: var(--rfw-black);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: normal;
   margin: 0;
   line-height: 1.2;
-  font-family: 'Inter', sans-serif;
+  font-family: 'SOLAR-VESTA-SERIF', serif;
     text-align: left;
 }
 
@@ -87,16 +87,15 @@
   background: transparent;
   color: var(--rfw-black);
   border: 1px solid var(--rfw-black);
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem ;
   font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-top: 1rem;
-  border-radius: 4px;
-  font-family: 'Inter', sans-serif;
+  margin-top: 5px;
+  font-family: sans-serif;
   max-width: 150px;
 }
 
