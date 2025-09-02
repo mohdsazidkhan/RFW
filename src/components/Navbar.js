@@ -32,7 +32,6 @@ const Navbar = () => {
         <div className="header-inner">
           {/* Background */}
           <div className="header-background"></div>
-
           {/* Desktop Header */}
           <div className="header-display-desktop">
             {/* Title and nav wrapper */}
@@ -48,7 +47,6 @@ const Navbar = () => {
                   </Link>
                 </div>
               </div>
-              
               {/* Nav */}
               <div className="header-nav">
                 <div className="header-nav-wrapper">
