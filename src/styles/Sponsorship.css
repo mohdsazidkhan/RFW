@@ -6,7 +6,11 @@
   justify-content: center;
   overflow: hidden;
 }
-
+.sponsorship-section-container{
+    max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
 .sponsorship-hero-background {
   position: absolute;
   top: 0;
@@ -122,6 +126,7 @@
   letter-spacing: normal;
   font-weight: 300;
   opacity: 0.9;
+  text-align: justify;
 }
 
 .contact-info {
@@ -182,6 +187,7 @@
 
 /* Responsive Design */
 @media (max-width: 968px) {
+ 
   .why-sponsor-content {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -193,12 +199,16 @@
 }
 
 @media (max-width: 576px) {
+   .sponsorship-section-container{
+    padding: 10px;
+  }
   .why-sponsor-section {
     padding: 4rem 0;
   }
   
   .fashion-show-image {
-    height: 300px;
+          height: 198px;
+        width: 83%;
   }
 }
 .previous-partners-section {
@@ -309,6 +319,10 @@
   }
 }
 @media (max-width: 420px) {
+  .previous-partners-title {
+        font-size: 30px;
+        text-align: center;
+}
   .partners-grid {
     grid-template-columns: 1fr;
     gap: 0.5rem;
@@ -319,9 +333,16 @@
     min-height: 60px;
     height: 60px;
   }
-
-  .partner-logo-image {
-    width: 65px;
-    height: 30px;
-  }
+.partners-grid .partner-logo:nth-child(9) {
+    margin-left: 0px;
+}
+.contact-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--rfw-black);
+    letter-spacing: 0.05em;
+}
+.why-sponsor-description{
+  font-size: 14px;
+}
 }

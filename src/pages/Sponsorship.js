@@ -33,7 +33,7 @@ const previousPartners = [
 
       {/* Why Sponsor Section */}
    <section className="why-sponsor-section">
-  <div className="section-container">
+  <div className="sponsorship-section-container">
     <div className="why-sponsor-content">
       {/* Left Column - Text Content */}
       <div className="why-sponsor-text">
@@ -60,7 +60,7 @@ const previousPartners = [
 
       {/* Previous Partners Section */}
    <section className="previous-partners-section">
-  <div className="section-container">
+  <div className="sponsorship-section-container">
     <div className="previous-partners-content">
       <h2 className="previous-partners-title">PREVIOUS PARTNERS</h2>
       <div className="partners-grid">

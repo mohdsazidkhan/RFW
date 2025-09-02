@@ -2148,12 +2148,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Dark theme (black background) */
 .common-header.dark .nav-link {
-  color: black;
+  color: var(--rfw-white);
 }
 .common-header.dark .nav-link:hover,
 .common-header.dark .nav-link.active {
   font-weight: 700;
-  color: black;
+  color: var(--rfw-white);
 }
 
 /* Light theme (white background) */

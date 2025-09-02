@@ -60,9 +60,9 @@ const Header = () => {
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
-          <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
-          <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
-          <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span style={{ filter: theme === "dark" ? "invert(1)" : "none" }} className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span  style={{ filter: theme === "dark" ? "invert(1)" : "none" }} className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span style={{ filter: theme === "dark" ? "invert(1)" : "none" }} className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
         </button>
 
         {/* Mobile Navigation Overlay */}
