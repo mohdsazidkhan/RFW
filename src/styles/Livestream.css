@@ -29,12 +29,12 @@
 }
 
 .livestream-hero-content {
-  position: relative;
-  z-index: 1;
-  padding: 3rem 1rem;
-  color: #fff;
-  max-width: 1200px;
-  margin: 0 auto;
+ position: relative;
+    z-index: 1;
+    padding: 3rem 1rem;
+    color: #fff;
+    max-width: 367px;
+    margin: 75px auto 0 69px;
 }
 
 .livestream-hero-title {
@@ -86,6 +86,9 @@
 @media (max-width: 768px) {
   .livestream-hero-title { font-size: 32px; }
   .livestream-hero-subtitle { font-size: 12px; }
+  .livestream-hero-content{
+    margin: 10px ;
+  }
 }
 
 
