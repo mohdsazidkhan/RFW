@@ -45,7 +45,7 @@ export  const designers = [
       id: "awaken",
       name: "Awaken",
       desc: "STREETWEAR",
-      logo: require("../../images/designers/atelier-hikayat.webp"),
+      logo: require("../../images/designers/awaken.webp"),
       content: "Committed and motivated business owner with almost six years’ experience in retail and fashion designing. Proven track of analyzing the fashion plans and proposals and identifying affordable durable and high-quality sources of materials and manufactures. Highly knowledgeable about fashion industry, designing, development, project management, creative directing and leadership"
     },
     {

@@ -1536,10 +1536,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Designers Main Section */
 .designers-main-section {
   background: var(--rfw-black);
-  padding: 6rem 0 0 0;
+  padding: 10rem 0 0 0;
   color: var(--rfw-white);
 }
-
+.designers-page .section-container-white{
+  max-width: 100%;
+}
 .designers-content {
   max-width: 1400px;
   margin: 0 auto;
@@ -1598,6 +1600,9 @@ h1, h2, h3, h4, h5, h6 {
 .designer-detail-content {
   width: 100%;
   padding: 40px 0;
+}
+.designer-detail-page .designer-detail-content {
+  padding: 10rem 0;
 }
 .designer-detail-grid {
   display: flex;
@@ -2169,7 +2174,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--rfw-white);
   text-decoration: none;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   transition: all 0.3s ease;
   padding: 0.5rem 0;

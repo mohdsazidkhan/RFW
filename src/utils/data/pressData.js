@@ -4,28 +4,28 @@ export const pressArray = [
     description: "Lo ha detto forte e chiaro una T-shirt: «Saudi Arabia is the future». A parlare è il brand Hindamme che, con un solo, semplice, slogan, ha saputo catturare lo stato d'animo di questa cinque giorni della Riyadh Fashion Week, in cui brand locali, tradizionali ed emergenti, hanno presentato le loro collezioni couture e ready to wear, per donna e per uomo. ",
     button: "Read Full Article",
     image: require('../../images/pressimages/VOGUE.webp'),
-    url: "https://www.vogue.it/moda/article/riyadh-fashion-week-2024-seconda-edizione"
+    url: "https://www.vogue.it/article/riyadh-fashion-week-2024-brand-da-conoscere"
   },
   {
     title: "Riyadh Fashion Week Emerges as Key Force Shaping Saudi Arabia's Design Scene.",
     description: "The Kingdom was abuzz last week with the second edition of Riyadh Fashion Week, which showcased 37 local brands across ready-to-wear and couture.",
     button: "Read Full Article",
     image: require('../../images/pressimages/WWD.webp'),
-    url: "https://wwd.com/fashion-news/fashion-features/riyadh-fashion-week-saudi-arabia-design-scene"
+    url: "https://wwd.com/fashion-news/designer-luxury/riyadh-fashion-week-abadia-mona-kaf-1236702420/"
   },
   {
     title: "Worldview | Riyadh Fashion Week's Grand Ambitions",
     description: "Riyadh Fashion Week takes steps towards regional hub status. The second edition of Saudi Arabia's annual fashion week event took place from Oct. 17-21 across three venues in the capital including the Tuwaiq Palace. Twenty-seven designer brands including Mona Al Shebil, Abadia, Razan Alazzouni, Kaf by Kaf, Waad Aloqaili, Yahya Albishri, Adnan Akbar, Tima Abid, 1886 and Honayda presented their collections on the runway. ",
     button: "Read Full Article",
     image: require('../../images/pressimages/BOF.webp'),
-    url: "https://www.businessoffashion.com/articles/global-markets/riyadh-fashion-week-grand-ambitions"
+    url: "https://drive.google.com/file/d/18iGQzSdPjKkou95kclp0JnM8sU5Z-ao9/view?usp=sharing"
   },
   {
     title: "RIYADH FASHION WEEK RETURNS THIS MONTH: GRAZIA BRINGS YOU THE FULL SCHEDULE.",
     description: "The Kingdom of Saudi Arabia never shies away from a pivoting fashion moment. Returning for its second edition after a phenomenal first-of-firsts, Riyadh Fashion Week (RFW) comes back with a fresh turning point with the Kingdom's best..",
     button: "Read Full Article",
     image: require('../../images/pressimages/GRAZIA.webp'),
-    url: "https://graziamagazine.com/riyadh-fashion-week-2024-schedule"
+    url: "https://graziamagazine.com/me/articles/riyadh-fashion-week-2025-schedule/"
   },
   {
     title: `حديث "هي" مع الرئيس التنفيذي لهيئة الأزياء بوراك شاكماك: تجليات الإبداع والتمكين في صناعة الأزياء السعودية`,
@@ -33,21 +33,21 @@ export const pressArray = [
     button: "Read Full Article",
     image: require('../../images/pressimages/HIA.webp'),
     lang:"ar",
-    url: "https://hia.com.sa/riyadh-fashion-week-burak-cekmak-interview"
+    url: "https://www.hiamag.com/%D9%85%D9%88%D8%B6%D8%A9/%D9%85%D8%B4%D8%A7%D9%87%D9%8A%D8%B1-%D9%88-%D9%85%D9%88%D8%B6%D8%A9/1773567-%D8%AD%D8%AF%D9%8A%D8%AB-%D9%87%D9%8A-%D9%85%D8%B9-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A-%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%A3%D8%B2%D9%8A%D8%A7%D8%A1-%D8%A8%D9%88%D8%B1%D8%A7%D9%83-%D8%B4%D8%A7%D9%83%D9%85%D8%A7%D9%83-%D8%AA%D8%AC%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%A8%D8%AF%D8%A7%D8%B9"
   },
   {
     title: "Riyadh Fashion Week celebrates Saudi creativity and heritage.",
     description: "DUBAI: The second day of Riyadh Fashion Week unfolded with a vibrant celebration of Saudi fashion, featuring an impressive lineup of six runway shows. Notable designers included Waad Aloqaili, Fatima Abdulqader, Khawla Alaiban, Ashwaq Al-Marshad, Atelier Hekayat and a grand finale by Yahya Albishri.",
     button: "Read Full Article",
     image: require('../../images/pressimages/ARABNEWS.webp'),
-    url: "https://www.arabnews.com/riyadh-fashion-week-celebrates-saudi-creativity-heritage"
+    url: "https://www.arabnews.com/node/2575901/lifestyle"
   },
   {
     title: "Riyadh Fashion Week Set to Return for Second Edition.",
     description: "Following a successful debut last year, Riyadh Fashion Week is gearing up for its second INSTALMENT, scheduled for October 17 to 21. Organized by the Saudi Fashion Commission, the upcoming event promises to showcase the creative talents of over 30 Saudi designers, further solidifying Riyadh's reputation as a vibrant global fashion destination. ",
     button: "Read Full Article",
     image: require('../../images/pressimages/MAGZOID.webp'),
-    url: "https://magzoid.com/riyadh-fashion-week-second-edition-2024"
+    url: "https://destinationksa.com/en/riyadh-fashion-week/"
   },
   {
     title: "FRunway Alert: Riyadh Fashion Week Is Returning.",
@@ -57,7 +57,7 @@ export const pressArray = [
     The glittering event is an ode to all things fashion and is set to bring some of the biggest names in the industry to our backyard for a second time..`,
     button: "Read Full Article",
     image: require('../../images/pressimages/Destination.webp'),
-    url: "https://destinationksa.com/riyadh-fashion-week-2024-returning"
+    url: "https://www.tuwaqnews.com/%D8%A3%D8%B3%D8%A8%D9%88%D8%B9-%D8%A7%D9%84%D9%85%D9%88%D8%B6%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%8A%D8%B9%D9%88%D8%AF-%D8%A8%D9%86%D8%B3%D8%AE%D8%AA%D9%87-%D8%A7%D9%84%D8%AB/"
   },
   {
     title: `.أسبوع الموضة في الرياض يعود بنسخته الثاني`,
