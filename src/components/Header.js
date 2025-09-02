@@ -37,7 +37,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="header-nav header-nav-desktop">
-          {['/', '/about', '/casting', '/sponsorship', '/press', '/contact'].map((path) => (
+          {['/', '/about', '/casting', '/calendar', '/sponsorship', '/press', '/contact'].map((path) => (
             <Link
               key={path}
               to={path}
@@ -47,6 +47,7 @@ const Header = () => {
               {path === '/' ? 'HOME' :
                path === '/about' ? 'ABOUT' :
                path === '/casting' ? 'CASTING' :
+               path === '/calendar' ? 'CALENDAR' :
                path === '/sponsorship' ? 'SPONSORSHIP & PARTNERSHIP' :
                path === '/press' ? 'PRESS' : 'CONTACT US'}
             </Link>
@@ -67,7 +68,7 @@ const Header = () => {
         {/* Mobile Navigation Overlay */}
         <div className={`mobile-nav-overlay ${isMenuOpen ? 'open' : ''}`}>
           <nav className="header-nav header-nav-mobile">
-            {['/', '/about', '/casting', '/sponsorship', '/press', '/contact'].map((path) => (
+            {['/', '/about', '/casting', '/calendar', '/sponsorship', '/press', '/contact'].map((path) => (
               <Link
                 key={path}
                 to={path}
@@ -77,6 +78,7 @@ const Header = () => {
                 {path === '/' ? 'HOME' :
                  path === '/about' ? 'ABOUT' :
                  path === '/casting' ? 'CASTING' :
+                 path === '/calendar' ? 'CALENDAR' :
                  path === '/sponsorship' ? 'SPONSORSHIP & PARTNERSHIP' :
                  path === '/press' ? 'PRESS' : 'CONTACT US'}
               </Link>
