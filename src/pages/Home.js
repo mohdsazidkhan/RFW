@@ -20,23 +20,7 @@ const Home = () => {
         </section>
       </VideoBackground>
 
-      {/* The Latest from Riyadh Fashion Week Section */}
-      {/* <section className="latest-section">
-        <div className="section-container">
-          <div className="latest-content">
-            <div className="latest-text">
-              <h2 className="section-title">THE LATEST<br/> FROM RIYADH<br/>  FASHION WEEK</h2>
-              <p className="section-description">
-                Step into the captivating realm of THE THIRD EDITION OF Riyadh Fashion Week, where style intertwines with innovation, tradition finds its muse in creativity, and aspirations grace the runway. Prepare to immerse yourself in the vibrant Saudi Arabia's fashion scene, as we present a week-long celebration that honors elegance, artistic expression, and cultural fusion.
-              </p>
-              <button className="btn btn-outline">LEARN MORE</button>
-            </div>
-            <div className="latest-gallery">
-            </div>
-            <h4><strong>ABOUT</strong></h4>
-          </div>
-        </div>
-      </section> */}
+      
 <section className="latest-section">
   <div className="section-container">
     <div className="latest-content">
@@ -100,6 +84,24 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Final Autoplay Video Section */}
+      <section className="final-video-section">
+          <div className="final-video-wrapper">
+            <video
+              className="final-video"
+              autoPlay
+              loop
+              muted
+              playsInline
+              webkit-playsinline="true"
+            >
+              <source src="/RFW-Video.MOV" type="video/quicktime" />
+              <source src="/RFW-Video.MOV" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+        </div>
+      </section>
+
       {/* Newsletter Section */}
       <section className="newsletter-section">
         <div className="section-container">
@@ -125,6 +127,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
     </div>
   );
 };
