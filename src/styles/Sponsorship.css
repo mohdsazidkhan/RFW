@@ -1,6 +1,6 @@
 .sponsorship-hero-section {
   position: relative;
-  min-height: 80vh;
+  min-height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
   right: 0;
   bottom: 0;
   z-index: 2;
-  background: url('../images/Sponsership.jpg') center/cover no-repeat;
+  background: url('../images/Sponsership_new.webp') center/cover no-repeat;
 }
 
 .sponsorship-hero-overlay {
@@ -38,29 +38,30 @@
   bottom: 0;
   background: linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0.4) 50%,
-    rgba(0, 0, 0, 0.7) 100%
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.2) 100%
   );
   z-index: 3;
 }
 
 .sponsorship-hero-content {
-  position: relative;
-  z-index: 4;
-  text-align: center;
-  color: var(--rfw-white);
-  padding: 2rem;
-  max-width: 800px;
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    color: var(--rfw-white);
+    padding: 5rem 3rem;
+    max-width: 800px;
+    margin-top: 20vh;
 }
 
 .sponsorship-hero-title {
-  font-size: 38.504px;
+  font-size: 2.6rem;
   font-weight: 700;
-  font-family: sans-serif;
+    font-family: 'SOLAR-VESTA-SERIF', serif;
   text-transform: uppercase;
   line-height: 50.8869px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
@@ -116,6 +117,7 @@
   text-transform: uppercase;
   letter-spacing: normal;
   text-align: left;
+  margin-bottom: 2rem;
 }
 
 .why-sponsor-description {
@@ -134,7 +136,7 @@
 }
 
 .contact-text {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--rfw-black);
   letter-spacing: 0.05em;
@@ -224,7 +226,7 @@
 .previous-partners-title {
   font-size: 38.504px;
   font-weight: 700;
-  font-family: sans-serif;
+  font-family: 'SOLAR-VESTA-SERIF', serif;
   color: var(--rfw-black);
   line-height: 50.8869px;
   text-transform: uppercase;
@@ -271,8 +273,8 @@
 }
 
 .partner-logo-image {
-  width: 120px;
-  height: 70px;
+  width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -102,6 +102,11 @@
   opacity: 0.9;
   letter-spacing: normal;
 }
+.casting-arabic .casting-description,
+.casting-arabic .casting-title{
+   direction: rtl;
+}
+
 
 .casting-deadline {
   font-size: 1rem;
@@ -122,6 +127,7 @@
   transition: all 0.3s ease;
   cursor: pointer;
   font-size: 0.9rem;
+  margin-top: 1rem;
 }
 
 .btn-casting.english {

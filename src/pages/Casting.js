@@ -33,26 +33,28 @@ const Casting = () => {
                 <p className="casting-deadline">
                   SUBMIT YOUR APPLICATION BEFORE SUNDAY, SEPTEMBER 7, 2025.
                 </p>
-                <button className="btn btn-casting english">APPLY NOW</button>
+                <a target="_blank" rel="noopener noreferrer" href="https://events.srmgdigital.com/show-form/28" className="btn btn-casting english">APPLY NOW</a>
               </div>
 
               {/* Arabic Content */}
               <div className="casting-arabic">
                 <h2 className="casting-title">أضواء، كاميرا، أزياء!</h2>
                 <p className="casting-description">
-                  يعود أسبوع الأزياء المشرق في ضوء جديد من 18 إلى 21 أكتوبر.  
-                  مع دستور البراون وستيفن نحو كل يوم، لن تكون العارضات الحالية من المختارين للصعود على المنصة والاستيلاء. لقد تعرفوا بشكل صحيح على حق الموضة.  
+                  يعود أسبوع الأزياء في الرياض بحلّة جديدة من 16 إلى 21 أكتوبر، ليجمع بين الأناقة والإبداع تحت أنظار العالم. ندعو العارضين والعارضات من مختلف أنحاء المملكة للانضمام إلى منصة العرض والمشاركة في هذا الحدث الأبرز في عالم الموضة بالمنطقة.
+
+
                 </p>
                 <p className="casting-description">
-                  إذا كنت مستعداً لامتلاك الأضواء وإظهار موهبتك، فهذه هي فرصتك.  
+                  إن كنت مستعدًا لخطف الأضواء وإبراز موهبتك، فهذه هي فرصتك.
                 </p>
                 <p className="casting-deadline">
-                  قدم طلبك قبل الأحد 7 سبتمبر 2025.
+                  قدّم طلبك قبل الأحد 7 سبتمبر 2025  
+
                 </p>
                 
                 <div className="divider"></div>
                 
-                <button className="btn btn-casting arabic">قدم الآن</button>
+                <a target="_blank" rel="noopener noreferrer" href="https://events.srmgdigital.com/show-form/27" className="btn btn-casting arabic">قدم الآن</a>
               </div>
             </div>
 

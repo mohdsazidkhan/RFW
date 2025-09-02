@@ -29,10 +29,10 @@ const Press = () => {
         lang={resource.lang || "en"} 
       >
         <div className="resource-title" style={{direction:resource.lang==="ar"?"rtl":"ltr",textAlign:resource.lang==="ar"?"right":"left"}}>{resource.title}</div>
-        <div className="resource-description">{resource.description}</div>
-        <button className="resource-button">
+        <div className="resource-description" style={{direction:resource.lang==="ar"?"rtl":"ltr",textAlign:resource.lang==="ar"?"right":"left"}}>{resource.description}</div>
+        <a className="resource-button" href={resource.url} target='_blank' rel="noopener noreferrer">
           {resource.button}
-        </button>
+        </a>
       </div>
     </div>
   ))}

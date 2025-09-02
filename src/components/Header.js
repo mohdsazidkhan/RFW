@@ -43,6 +43,7 @@ const Header = () => {
               to={path}
               className={`nav-link ${isActive(path) ? 'active' : ''}`}
               onClick={closeMenu}
+              style={{ filter: theme === "dark" ? "invert(1)" : "none" }}
             >
               {path === '/' ? 'HOME' :
                path === '/about' ? 'ABOUT' :

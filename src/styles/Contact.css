@@ -9,12 +9,15 @@
 .contact-main-section {
   background: #ffffff;
   padding: 80px 0;
-  color: #000000;
+  
   min-height: 100vh;
   display: flex;
   align-items: center;
 }
-
+.contact-text a{
+  text-decoration: underline;
+  color: #000000;
+}
 .section-container {
   max-width: 95vw;
   margin: 0 auto;
