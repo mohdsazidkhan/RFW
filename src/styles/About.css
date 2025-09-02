@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 0;
+  padding-top: 20vh;
   overflow: hidden;
 }
 
@@ -13,8 +13,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("../images/AboutHeroSection.webp") center/cover no-repeat;
+  background: url("../images/AboutHeroSection.webp");
   z-index: 1;
+  background-repeat: no-repeat;
+  background-position-x: -180px;
+  background-size: cover;
 }
 
 .about-hero-shapes {
@@ -39,14 +42,14 @@
   gap: 4rem;
   align-items: center;
   padding: 0 20.3vw;
-  min-height: 100vh;
+  min-height: 130vh;
   align-items: baseline;
   margin-top: 20px;
 }
 
 .about-vertical-text {
-  font-size: 37.9px;
-  line-height: 37.9px;
+  font-size: 44px;
+  line-height: 60px;
   font-weight: 200;
   font-family: "SOLAR-VESTA-SERIF", serif;
   writing-mode: vertical-rl;
@@ -56,7 +59,7 @@
   color: #fff;
   opacity: 0.92;
   letter-spacing: normal;
-  margin-right: 1.5vw;
+  margin-right: 0;
   min-width: 0;
 }
 
@@ -66,16 +69,16 @@
   align-items: center;
   gap: 3vw;
   width: 100%;
-  max-width: 800px;
+  max-width: 880px;
   position: absolute;
   left: 26vw;
 }
 
 .about-title {
-  font-size: 44.648px;
+  font-size: 45px;
   font-weight: 700;
   font-family: "SOLAR-VESTA-SERIF", serif;
-  line-height: 44.648px;
+  line-height: 60px;
   color: #fff;
   max-width: 315px;
   letter-spacing: normal;
@@ -86,16 +89,16 @@
 }
 
 .about-description {
-  font-size: 17px;
+  font-size: 1.2rem;
   color: #fff;
   opacity: 0.96;
   letter-spacing: normal;
   font-family: sans-serif;
-  max-width: 385px;
+  max-width: 500px;
   text-align: justify;
   font-weight: 400;
-  line-height: 20.4px;
-  flex: 1 1 0;
+  line-height: 1.25rem;
+  flex: 1 1;
   margin-top: 0;
 }
 
@@ -118,40 +121,48 @@
     padding: 2rem 1.2rem;
     min-height: unset;
   }
+  .about-hero-section {
+    min-height: 120vh;
+    padding-top: 40vh;
+}
   .about-vertical-text {
-    /* writing-mode: horizontal-tb; */
-    transform: none;
-    font-size: 2rem;
-    margin: 0 0 1rem 0;
+      writing-mode: horizontal-tb;
+      transform: none;
+      font-size: 2rem;
+      margin: 0 2rem 0 0;
+      text-align: right;
+
   }
   .about-main-content {
     flex-direction: column;
-    gap: 0.7em;
-    position: relative;
-    left: 0;
-    top: 0;
+        gap: 0.7em;
+        position: relative;
+        left: auto;
+        top: 0;
+        right: 0;
+        align-items: flex-end;
   }
   .quote-content {
     margin: 0 auto;
     text-align: center;
-    padding: 50px !important;
+    padding: 30px !important;
 }
   .about-title {
-    font-size: 1.5rem;
-    margin-bottom: 0.4rem;
-    min-width: 0;
-    margin-right: 0;
+      font-size: 2rem;
+      margin-bottom: 0.4rem;
+      min-width: 0;
+      margin-right: 0;
+      line-height: normal;
   }
   .about-description {
-    font-size: 1rem;
+    font-size: .85rem;
     max-width: 100%;
   }
 }
 /* Quote Section */
 .quote-section {
-  background: var(--rfw-black);
+  background: var(--rfw-white);
   padding:  0;
-  color: var(--rfw-white);
 }
 
 .quote-content {
@@ -174,7 +185,7 @@
 .quote-author {
   font-family: sans-serif;
   font-size: 17px;
-  color: var(--rfw-black);
+  color: #717171;
   font-weight: 200;
   letter-spacing: normal;
   line-height: 20.4px;

@@ -283,16 +283,6 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
-
-.about-page,
-.casting-page,
-
-.press-page,
-.contact-page,
-.designers-page,
-.designer-detail-page {
-  padding-top: 100px;
-}
 .sponsorship-page{
   padding-top: 50px;
 }
@@ -1853,7 +1843,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .newsletter-form {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   
   .newsletter-input {
