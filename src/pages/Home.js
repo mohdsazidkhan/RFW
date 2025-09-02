@@ -38,7 +38,7 @@ const Home = () => {
           Arabia's fashion scene, as we present a week-long celebration that honors elegance, 
           artistic expression, and cultural fusion.
         </p>
-        <button className="btn btn-outline">LEARN MORE</button>
+        <a href="/about" className="btn btn-outline">LEARN MORE</a>
       </div>
 
       {/* RIGHT SIDE (Single Collage Image) */}

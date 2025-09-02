@@ -1601,6 +1601,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding: 40px 0;
 }
+.latest-text a{
+  display: inline-block;
+}
 .designer-detail-page .designer-detail-content {
   padding: 10rem 0;
 }
