@@ -27,6 +27,7 @@ const Home = () => {
       
       {/* LEFT SIDE */}
       <div className="latest-text">
+        <h4 className="vertical-text-mobile"><strong>ABOUT</strong></h4>
         <h2 className="section-title">
           THE LATEST<br/>FROM RIYADH<br/>FASHION WEEK
         </h2>

@@ -33,7 +33,7 @@
   }
   
   .hero-banner-image {
-    max-height: 150px;
+    max-height: 140px !important;
   }
   
   .hero-title {
@@ -41,15 +41,16 @@
   }
   
   .hero-subtitle {
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: clamp(1.2rem, 2vw, 1.2rem) !important;
+    margin: 2rem 0 !important;
   }
   
   .hero-dates-numbers {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(3rem, 5vw, 3rem) !important;
   }
   
   .hero-dates-month {
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-size: clamp(2rem, 2vw, 1.1rem) !important;
   }
 }
 
