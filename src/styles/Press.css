@@ -108,6 +108,7 @@
   outline: none;
 }
 /* Responsive Design */
+
 @media (max-width: 900px) {
   .press-resource-item,
   .press-resource-item.reverse-row {
@@ -118,10 +119,16 @@
   .resource-content {
     flex: 1 1 100%;
   }
+
    .resource-content:lang(ar),
   .resource-content[lang^="ar"] {
     text-align: right !important;
     align-items: flex-end !important;
     direction: rtl;
+  }
+}
+@media (max-width: 768px) {
+  .resource-content {
+    padding: 10px !important;
   }
 }
