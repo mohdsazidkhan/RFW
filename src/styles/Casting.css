@@ -87,26 +87,29 @@
 }
 
 .casting-title {
-  font-size: 23.144px;
+  font-size: 24px;
   font-weight: 700;
   font-family: sans-serif;
-  line-height: 31.8832px;
+  line-height: 32px;
   margin-bottom: 1rem;
   color: #16151D;
 }
+.casting-arabic .casting-title {
+  font-size: 36px;
+}
 
 .casting-description {
-  font-size: 17px;
-  line-height: 20.4px;
+  font-size: 18px;
+  line-height: 24px;
   color: var(--rfw-black);
   opacity: 0.9;
   letter-spacing: normal;
 }
+
 .casting-arabic .casting-description,
 .casting-arabic .casting-title{
    direction: rtl;
 }
-
 
 .casting-deadline {
   font-size: 1rem;
@@ -115,7 +118,11 @@
   letter-spacing: 0.05em;
   margin: 0;
 }
-
+.casting-arabic .casting-description,
+.casting-arabic .casting-deadline{
+  font-size: 24px;
+  line-height: 32px;
+}
 .btn-casting {
   background: var(--rfw-white);
   color: var(--rfw-black);
@@ -128,6 +135,10 @@
   cursor: pointer;
   font-size: 0.9rem;
   margin-top: 1rem;
+}
+.casting-arabic .btn-casting {
+  font-size: 1.2rem;
+  padding: 1rem 6rem;
 }
 
 .btn-casting.english {
@@ -199,6 +210,9 @@
   .btn-casting {
     align-self: stretch;
     text-align: center;
+  }
+  .casting-arabic .btn-casting {
+      padding: 1rem 4rem;
   }
   
   .casting-hero-section {

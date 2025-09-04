@@ -28,9 +28,9 @@ const Press = () => {
         }
         lang={resource.lang || "en"} 
       >
-        <div className="resource-title" style={{direction:resource.lang==="ar"?"rtl":"ltr",textAlign:resource.lang==="ar"?"right":"left"}}>{resource.title}</div>
-        <div className="resource-description" style={{direction:resource.lang==="ar"?"rtl":"ltr",textAlign:resource.lang==="ar"?"right":"left"}}>{resource.description}</div>
-        <a className="resource-button" href={resource.url} target='_blank' rel="noopener noreferrer">
+        <div className={`resource-title ${resource.lang==="ar"?"arabic":""}`} style={{direction:resource.lang==="ar"?"rtl":"ltr",textAlign:resource.lang==="ar"?"right":"left"}}>{resource.title}</div>
+        <div className={`resource-description ${resource.lang==="ar"?"arabic":""}`} style={{direction:resource.lang==="ar"?"rtl":"ltr",textAlign:resource.lang==="ar"?"right":"left"}}>{resource.description}</div>
+        <a className={`resource-button ${resource.lang==="ar"?"arabic":""}`} href={resource.url} target='_blank' rel="noopener noreferrer">
           {resource.button}
         </a>
       </div>
