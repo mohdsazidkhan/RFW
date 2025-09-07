@@ -1788,6 +1788,9 @@ h1, h2, h3, h4, h5, h6 {
   .section-container {
     padding: 0 2rem;
   }
+  .designer-detail-page .designer-detail-content {
+    padding: 3rem 0;
+  }
   .footer-links {
     min-width: 95px;
     text-align: left;
