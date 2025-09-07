@@ -201,10 +201,16 @@
   .contact-content {
     grid-template-columns: 1fr;
     gap: 60px;
+    margin-top: 50px;
   }
-
+.form-label-required {
+    font-size: 10px;
+}
   .contact-info-column {
     order: 2;
+  }
+  .name-fields label{
+    font-size: 12px;
   }
 
   .contact-form-column {

@@ -84,6 +84,7 @@
   }
   .sponsorship-hero-title {
     margin-bottom: 0.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -301,6 +302,13 @@
   .partners-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+
+  .why-sponsor-title{
+           font-size: 2rem;
+        line-height: 2.2rem;
   }
 }
 @media (max-width: 650px) {
