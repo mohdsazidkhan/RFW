@@ -102,7 +102,10 @@
   transition: all 0.3s ease;
   padding: 10px;
 }
-
+.designer-header .expand-icon{
+  margin-left: 1rem;
+  font-size: 2rem;
+}
 .day-accordion-header:hover {
   background-color: #333333;
 }
@@ -258,6 +261,10 @@
 @media (max-width: 768px) {
   .calendar-hero-section {
     min-height: 60vh;
+  }
+  .designer-header .expand-icon{
+    margin-left: 0;
+    font-size: 2rem;
   }
   .calendar-hero-content {
     padding: 1rem;

@@ -18,6 +18,9 @@ const Header = () => {
   };
 
   const theme = getTheme();
+  
+  // Check if logo and menu should be white (when menu is open on any page)
+  const shouldBeWhite = isMenuOpen;
 
   return (
     <header className={`common-header ${theme}`}>
@@ -29,7 +32,7 @@ const Header = () => {
           src="/logo.webp"
           alt="RFW Logo"
           className="logo-image"
-          style={{ filter: theme === "dark" ? "invert(1)" : "none" }}
+          style={{ filter: shouldBeWhite ? "none" : (theme === "dark" ? "invert(1)" : "none") }}
         />
 
           </Link>
@@ -60,9 +63,9 @@ const Header = () => {
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
-          <span style={{ filter: theme === "dark" ? "invert(1)" : "none" }} className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
-          <span  style={{ filter: theme === "dark" ? "invert(1)" : "none" }} className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
-          <span style={{ filter: theme === "dark" ? "invert(1)" : "none" }} className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span style={{ filter: shouldBeWhite ? "none" : (theme === "dark" ? "invert(1)" : "none") }} className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span style={{ filter: shouldBeWhite ? "none" : (theme === "dark" ? "invert(1)" : "none") }} className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
+          <span style={{ filter: shouldBeWhite ? "none" : (theme === "dark" ? "invert(1)" : "none") }} className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
         </button>
 
         {/* Mobile Navigation Overlay */}

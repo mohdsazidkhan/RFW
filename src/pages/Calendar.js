@@ -65,7 +65,7 @@ const Calendar = () => {
                             <h3 className="designer-name">{designer.name}</h3>
                             <div className="designer-time">TIME: {designer.time}</div>
                           </div>
-                          <div className="expand-icon" style={{ marginLeft: '16px', fontSize: '2rem' }}>
+                          <div className="expand-icon">
                             {expandedDesigner === designer.id ? <MdRemove /> : <MdAdd />}
                           </div>
                         </div>
