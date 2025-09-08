@@ -15,7 +15,7 @@ const previousPartners = [
   { name: "BEAST Radio", logo: require('../images/partners/MDLBEAST.webp'), url:"https://mdlbeast.com/" },
   { name: "Schweppes", logo: require('../images/partners/Schweppes.webp'), url:"https://www.schweppes.eu/" }
 ];
-
+const isMobile = window.innerWidth < 768;
   return (
     <div className="sponsorship-page">
       {/* Hero Section */}
@@ -64,14 +64,35 @@ const previousPartners = [
     <div className="previous-partners-content">
       <h2 className="previous-partners-title">PREVIOUS PARTNERS</h2>
       <div className="partners-grid">
-        {previousPartners.map((partner, index) => (
-          <div key={index} className="partner-logo">
-            <a className="partner-logo-image" href={partner.url} target='_blank' rel='noopener noreferrer'>
-           {partner.logo &&   <img src={partner.logo} alt={partner.name} className="partner-img" />}
-            </a>
-          </div>
-        ))}
+  {previousPartners.map((partner, index) => {
+    const isBlank = !partner.name && !partner.logo;
+
+    return (
+      <div
+        key={index}
+        style={{minHeight: isBlank && 0, height: isBlank && 0, boxShadow: isBlank && 'none', padding: isBlank && 0  }}
+        className={`partner-logo ${isBlank ? 'hidden md:block' : ''}`} // hide on mobile if blank
+      >
+        <a
+          className="partner-logo-image"
+          href={partner.url}
+          target="_blank"
+          style={{minHeight: isBlank && 0, height: isBlank && 0  }}
+          rel="noopener noreferrer"
+        >
+          {partner.logo && (
+            <img
+              src={partner.logo}
+              alt={partner.name || 'Partner'}
+              className="partner-img"
+            />
+          )}
+        </a>
       </div>
+    );
+  })}
+</div>
+
     </div>
   </div>
 </section>
