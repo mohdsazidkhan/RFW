@@ -91,7 +91,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'SOLAR-VESTA-SERIF', serif;
   font-weight: 600;
 }
-
+b, strong {
+  font-weight: 700;
+}
 /* Custom properties */
 :root {
   --rfw-black: #16151D;
@@ -620,7 +622,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .latest-content {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 1.5fr;
   gap: 3rem;
   align-items: start;
   position: relative;
@@ -635,21 +637,24 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   text-transform: uppercase;
   margin-bottom: 2rem;
-  font-family: 'Times New Roman', serif;
+  font-family: 'SOLAR-VESTA-SERIF', serif;
 }
 
 .section-description {
-  font-size: 1rem;
-  line-height: 1.7;
+  font-size: 1.1rem;
+  line-height: 1.2;
   text-transform: uppercase;
-  color: #222;
-  margin-bottom: 2.5rem;
+  text-align: justify;
+  color: #16151d;
+  margin-bottom: 1.5rem;
   font-family: 'Nunito Sans', sans-serif;
 }
 .newsletter-section .section-description{
   color: var(--rfw-white);
 }
-
+.latest-content .section-description{
+  text-align: justify;
+}
 .btn-outline {
   padding: 12px 32px;
   border: 1px solid #000;
@@ -680,9 +685,9 @@ h1, h2, h3, h4, h5, h6 {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   position: absolute;
-  right: -2rem;
-  top: 0%;
-  font-size: 1rem;
+  right: -3rem;
+  top: -1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.1em;
 }
@@ -693,7 +698,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Calendar Section */
 .calendar-section {
-  background: var(--rfw-black);
+  background: #050607;
   padding: 6rem 0;
   color: var(--rfw-white);
   position: relative;
@@ -701,8 +706,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .calendar-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
   align-items: center;
   position: relative;
 }
@@ -780,6 +785,7 @@ h1, h2, h3, h4, h5, h6 {
 .calendar-text .section-description{
   font-size: 1.25rem;
   line-height: 1.25;
+  text-align: justify;
 }
 .calendar-text .btn{
   padding: 1rem 5rem;
@@ -838,7 +844,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Newsletter Section */
 .newsletter-section {
-  background: var(--rfw-black);
+  background: #0a0a0a;
   padding: 6rem 0;
   color: var(--rfw-white);
 }
@@ -913,7 +919,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Button Styles */
 .btn {
   display: flex;
-  padding: 0.75rem 2rem;
+  padding: 0.65rem 1.5rem;
   font-weight: 700;
   text-decoration: none;
   border: 1px solid;
@@ -921,7 +927,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background: transparent;
   font-family: 'Nunito Sans', sans-serif;
 }
@@ -1536,7 +1542,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Designers Main Section */
 .designers-main-section {
   background: var(--rfw-black);
-  padding: 10rem 0 0 0;
+  padding: 12rem 0 0 0;
   color: var(--rfw-white);
 }
 .designers-page .section-container-white{
@@ -1552,7 +1558,7 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
-  padding: 0 6rem;
+  padding: 0;
   margin-bottom: 5rem;
   align-items: start;
   background-color: var(--rfw-black);
@@ -1560,8 +1566,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .designers-title {
-  font-size: 38.504px;
-  line-height: 50.8869px;
+  font-size: 50px;
+  line-height: 50px;
   font-weight: 200;
   font-family:'SOLAR-VESTA-SERIF' !important;
   color: var(--rfw-white);
@@ -1605,7 +1611,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 .designer-detail-page .designer-detail-content {
-  padding: 10rem 0;
+  padding: 15rem 0 0 0;
 }
 .designer-detail-grid {
   display: flex;
@@ -1619,7 +1625,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: flex-start;
   color: #fff;
-  padding: 4rem 2rem 0 2rem;
+  padding: 0;
   min-width: 0;
   text-transform: uppercase;
 }
@@ -1642,11 +1648,11 @@ h1, h2, h3, h4, h5, h6 {
    font-family: sans-serif;
   font-size: 17px;
   line-height: 20.4px;
+  text-align: justify;
   letter-spacing: normal;
   font-weight: 300;
   opacity: 0.9;
   color: #fff;
-  text-align: left;
   max-width: 650px;
   margin-bottom: 20px;
 }
@@ -1786,11 +1792,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .section-container {
-    padding: 0 2rem;
+    padding: 0 2rem !important;
   }
   .designer-detail-page .designer-detail-content {
     padding: 3rem 0;
   }
+  .calendar-text .btn {
+    padding: 1rem 2rem;
+}
   .footer-links {
     min-width: 95px;
     text-align: left;
@@ -1968,9 +1977,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 480px) {
-  .section-container {
-    padding: 0 1rem;
-  }
   
   .header-container {
     padding: 0 0.75rem;

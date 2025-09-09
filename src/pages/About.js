@@ -1,61 +1,112 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../styles/About.css'
 
 const About = () => {
-const IMAGE_WIDTH = 419;
-const IMAGE_HEIGHT = 240;
-const VISIBLE_COUNT=3;
+  const [imageWidth, setImageWidth] = useState(419);
+  const [imageHeight, setImageHeight] = useState(365);
+  const [visibleCount, setVisibleCount] = useState(3);
+
+  // Calculate responsive values based on screen width and height
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      
+      // Original image dimensions
+      const originalWidth = 1000;
+      const originalHeight = 494;
+      const aspectRatio = originalWidth / originalHeight; // 1000/494 = ~2.02
+      
+      // Show 1 image on mobile/tablet, 3 images on desktop
+      let visibleCount;
+      let calculatedWidth;
+      
+      if (width <= 768) {
+        visibleCount = 1;
+        calculatedWidth = width - 40; // 20px padding on each side
+      } else {
+        visibleCount = 3;
+        calculatedWidth = width / 3;
+      }
+      
+      // Calculate height based on aspect ratio to maintain proportions
+      const calculatedHeight = calculatedWidth / aspectRatio;
+      
+      setVisibleCount(visibleCount);
+      setImageWidth(calculatedWidth);
+      setImageHeight(calculatedHeight);
+    };
+
+    handleResize(); // Set initial values
+    window.addEventListener('resize', handleResize);
+    
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   const images = [
     {
       id: 1,
-      description: "Woman with dark hair wearing light blue sequined top and silver choker",
+      description: "Fashion show runway with models",
       background: "linear-gradient(45deg, #87CEEB, #4682B4)",
-       url:require('../images/AboutCarousel/carousel2.webp')
+      url: require('../images/AboutCarousel/carousel2.webp')
     },
     {
       id: 2,
-      description: "Woman with dark hair wearing pink sequined blazer",
+      description: "Model in pink sequined blazer",
       background: "linear-gradient(45deg, #FFB6C1, #FF69B4)",
-      url:require('../images/AboutCarousel/carousel1.webp')
+      url: require('../images/AboutCarousel/Carousel3.webp')
     },
     {
       id: 3,
-      description: "Runway scene with models in golden gowns on reflective runway",
+      description: "Runway scene with models in golden gowns",
       background: "linear-gradient(45deg, #FFD700, #DAA520)",
-       url:require('../images/AboutCarousel/Carousel3.webp')
+      url: require('../images/AboutCarousel/carousel1.webp')
     },
-       {
+    {
       id: 4,
-      description: "Woman with dark hair wearing light blue sequined top and silver choker",
+      description: "Fashion show audience and runway",
       background: "linear-gradient(45deg, #87CEEB, #4682B4)",
-       url:require('../images/AboutCarousel/carousel2.webp')
+      url: require('../images/AboutCarousel/carousel2.webp')
     },
     {
       id: 5,
-      description: "Woman with dark hair wearing pink sequined blazer",
+      description: "Model in elegant fashion attire",
       background: "linear-gradient(45deg, #FFB6C1, #FF69B4)",
-      url:require('../images/AboutCarousel/carousel1.webp')
+      url: require('../images/AboutCarousel/Carousel3.webp')
     },
     {
       id: 6,
-      description: "Runway scene with models in golden gowns on reflective runway",
+      description: "Fashion week runway show",
       background: "linear-gradient(45deg, #FFD700, #DAA520)",
-       url:require('../images/AboutCarousel/Carousel3.webp')
+      url: require('../images/AboutCarousel/carousel1.webp')
     },
+    {
+      id: 7,
+      description: "Fashion show with audience",
+      background: "linear-gradient(45deg, #87CEEB, #4682B4)",
+      url: require('../images/AboutCarousel/carousel2.webp')
+    },
+    {
+      id: 8,
+      description: "Model showcasing fashion design",
+      background: "linear-gradient(45deg, #FFB6C1, #FF69B4)",
+      url: require('../images/AboutCarousel/Carousel3.webp')
+    }
   ];
   const [startIndex, setStartIndex] = useState(0);
 
 
 const prevImage = () => {
-  setStartIndex((prev) =>
-    prev === 0 ? images.length - 1 : prev - 1
-  );
+  setStartIndex((prev) => {
+    const maxIndex = Math.max(0, images.length - visibleCount);
+    return prev === 0 ? maxIndex : prev - 1;
+  });
 };
 
 const nextImage = () => {
-  setStartIndex((prev) =>
-    (prev + 1) % images.length
-  );
+  setStartIndex((prev) => {
+    const maxIndex = Math.max(0, images.length - visibleCount);
+    return prev >= maxIndex ? 0 : prev + 1;
+  });
 };
 
 
@@ -91,53 +142,83 @@ const nextImage = () => {
           </div>
         </div>
       </section>
-
+    {console.log(window, 'window')}
       {/* Image Gallery Section */}
-<section className="gallery-reel">
-      <div className="gallery-reel-wrapper">
-        <div
-  className="gallery-reel-list-outer"
-  style={{
-    width: `${IMAGE_WIDTH * VISIBLE_COUNT}px`, // visible area width
-    height: `${IMAGE_HEIGHT}px`,
-    overflow: 'hidden',
-    margin: '0 auto',
-    position: 'relative'
-  }}
->
-        <div
-          className="gallery-reel-list-inner"
-          style={{
-           display: 'flex',
-      width: `${IMAGE_WIDTH * images.length}px`, // total images width
-      transition: 'transform 0.6s cubic-bezier(.4,0,.2,1)',
-      transform: `translateX(-${startIndex * IMAGE_WIDTH}px)`
-          }}
-        >
-          {images.map((image) => (
+      <section className="gallery-reel">
+        <div className="gallery-reel-wrapper">
+          <div
+            className="gallery-reel-list-outer"
+            style={{
+              width: '100%',
+              height: `${imageHeight}px`,
+              overflow: 'hidden',
+              position: 'relative'
+            }}
+          >
             <div
-              className="gallery-reel-item"
-              key={image.id}
+              className="gallery-reel-list-inner"
               style={{
-                width: `${IMAGE_WIDTH}px`,
-                height: `${IMAGE_HEIGHT}px`,
-                flex: '0 0 auto',
-                position: 'relative'
+                display: 'flex',
+                width: `${imageWidth * images.length}px`,
+                transition: 'transform 0.6s cubic-bezier(.4,0,.2,1)',
+                transform: `translateX(-${startIndex * imageWidth}px)`,
+                height: '100%'
               }}
             >
-              <img
-                src={image.url}
-                alt={image.description}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  display: 'block',
-                  borderRadius: '8px'
-                }}
-              />
-            </div>
-          ))}
+           {images.map((image, index) => (
+             <figure
+               className="gallery-reel-item"
+               key={image.id}
+               data-test="gallery-reel-item"
+               data-slide-url={image.id}
+               style={{
+                 width: `${imageWidth}px`,
+                 height: `${imageHeight}px`,
+                 flex: '0 0 auto',
+                 position: 'relative',
+                 margin: 0,
+                 padding: 0
+               }}
+               data-active={index === startIndex ? "true" : "false"}
+             >
+               <div className="gallery-reel-item-wrapper">
+                 <div 
+                   className="gallery-reel-item-src" 
+                   data-loaded="true" 
+                   data-visible="true"
+                   style={{
+                     width: '100%',
+                     height: '100%',
+                     position: 'relative',
+                     overflow: 'hidden'
+                   }}
+                 >
+                   <img
+                     data-src={image.url}
+                     data-image={image.url}
+                     data-image-dimensions="2386x1580"
+                     data-image-focal-point="0.5,0.5"
+                     alt={image.description}
+                     data-load="false"
+                     elementtiming="nbf-gallery-reel-item"
+                     src={image.url}
+                     width="2386"
+                     height="1580"
+                     sizes="75.50632911392405vh"
+                     style={{
+                       display: 'block',
+                       height: '100%',
+                       width: '100%',
+                       objectFit: 'cover',
+                       objectPosition: '50% 50%'
+                     }}
+                     loading="lazy"
+                     decoding="async"
+                   />
+                 </div>
+               </div>
+             </figure>
+           ))}
         </div>
 </div>
         {/* Arrow Controls */}

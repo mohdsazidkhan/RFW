@@ -27,11 +27,11 @@ const Casting = () => {
                   BRIGHT FASHION WEEK RETURNS IN A NEW LIGHT FROM OCTOBER 18 TO 21.  
                   WITH THE CONSTITUTION OF THE BROWN AND STEPHEN TOWARDS EVERY DAY, IT WOULD BE NOT AN EXISTING MODELS FROM A CHOSEN TO GET ONTO THE RUNWAY AND TAKE AWAY. THEY RECOGNIZED PROPERLY FASHION RIGHT.  
                 </p>
-                <p className="casting-description">
+                <p className="casting-description my-1">
                   IF YOU'RE READY TO OWN THE SPOTLIGHT AND SHOWCASE YOUR TALENT, THIS IS YOUR CHANCE.  
                 </p>
                 <p className="casting-deadline">
-                  SUBMIT YOUR APPLICATION BEFORE SUNDAY, SEPTEMBER 7, 2025.
+                  SUBMIT YOUR APPLICATION BEFORE <strong>SUNDAY, SEPTEMBER 7, 2025.</strong>
                 </p>
                 <a target="_blank" rel="noopener noreferrer" href="https://events.srmgdigital.com/show-form/28" className="btn btn-casting english">APPLY NOW</a>
               </div>
@@ -44,7 +44,7 @@ const Casting = () => {
 
 
                 </p>
-                <p className="casting-description">
+                <p className="casting-description my-1">
                   إن كنت مستعدًا لخطف الأضواء وإبراز موهبتك، فهذه هي فرصتك.
                 </p>
                 <p className="casting-deadline">

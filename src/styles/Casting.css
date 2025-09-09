@@ -44,7 +44,7 @@
 }
 
 .casting-hero-title {
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: 4rem;
   font-weight: 700;
   font-family: 'SOLAR-VESTA-SERIF', serif;
   color: var(--rfw-white);
@@ -89,7 +89,6 @@
 .casting-title {
   font-size: 24px;
   font-weight: 700;
-  font-family: sans-serif;
   line-height: 32px;
   margin-bottom: 1rem;
   color: #16151D;
@@ -99,7 +98,7 @@
 }
 
 .casting-description {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   color: var(--rfw-black);
   opacity: 0.9;
@@ -128,12 +127,12 @@
   color: var(--rfw-black);
   border: 2px solid var(--rfw-black);
   padding: 1rem 2.5rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: all 0.3s ease;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   margin-top: 1rem;
 }
 .casting-arabic .btn-casting {
@@ -170,9 +169,12 @@
 .runway-image {
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 0;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.my-1{
+  margin: 1rem 0;
 }
 
 .casting-image {

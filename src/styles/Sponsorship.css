@@ -67,9 +67,9 @@
 }
 
 .sponsorship-hero-subtitle {
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-size: 1.6rem;
   font-weight: 500;
-  letter-spacing: 0.05em;
+  letter-spacing: 0;
   opacity: 0.9;
   margin: 0;
 }
@@ -77,7 +77,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .sponsorship-hero-section {
-    min-height: 60vh;
+    min-height: 90vh;
   }
 
   .sponsorship-hero-content {
@@ -162,7 +162,7 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  border-radius: 8px;
+  border-radius: 0;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
@@ -211,8 +211,8 @@
   }
   
   .fashion-show-image {
-          height: 198px;
-        width: 83%;
+          height: 400px;
+        width: 100%;
   }
 }
 .previous-partners-section {
@@ -293,20 +293,11 @@
   background: transparent;
 }
 
-@media (max-width: 1200px) {
-  .partners-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-  }
-}
-@media (max-width: 900px) {
-  .partners-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.2rem;
-  }
-}
 @media (max-width: 768px) {
-
+    .partners-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+    }
   .why-sponsor-title{
            font-size: 2rem;
         line-height: 2.2rem;
@@ -316,10 +307,7 @@
 }
 }
 @media (max-width: 650px) {
-  .partners-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
+
 
   .partner-logo {
     padding: 1rem 0.5rem;
@@ -328,24 +316,21 @@
   }
 
   .partner-logo-image {
-    min-height: 70px;
-    height: 80px;
+    min-height: 100px;
+    height: 100px;
   }
 }
 @media (max-width: 420px) {
   .previous-partners-title {
-        font-size: 30px;
+        font-size: 28px;
         text-align: center;
 }
-  .partners-grid {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-  }
+  
 
   .partner-logo {
     padding: 0.7rem 0.2rem;
-    min-height: 60px;
-    height: 60px;
+    min-height: 100px;
+    height: 100px;
   }
   .previous-partners-section{
     padding: 0 0 20px 0 !important;

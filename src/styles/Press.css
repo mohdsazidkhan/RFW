@@ -5,7 +5,7 @@
   color: var(--rfw-black);
 }
 .section-container-press{
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 .press-resources-content {
@@ -61,7 +61,7 @@
   letter-spacing: -0.23144px;
   line-height: 31.8832px;
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: normal;
   color: #16151D;
   text-align: left;
   text-transform: uppercase;
@@ -114,6 +114,7 @@
   .press-resource-item.reverse-row {
     flex-direction: column !important;
     gap: 1.5rem;
+    padding: 20px;
   }
   .resource-image,
   .resource-content {
@@ -129,6 +130,6 @@
 }
 @media (max-width: 768px) {
   .resource-content {
-    padding: 10px !important;
+    padding: 0 !important;
   }
 }

@@ -70,14 +70,14 @@ const isMobile = window.innerWidth < 768;
     return (
       <div
         key={index}
-        style={{minHeight: isBlank && 0, height: isBlank && 0, boxShadow: isBlank && 'none', padding: isBlank && 0  }}
-        className={`partner-logo ${isBlank ? 'hidden md:block' : ''}`} // hide on mobile if blank
+        style={{display: isBlank && "none",minHeight: isBlank && 0,minWidth: isBlank && 0, height: isBlank && 0, boxShadow: isBlank && 'none', padding: isBlank && 0  }}
+        className={`partner-logo`} // hide on mobile if blank
       >
         <a
           className="partner-logo-image"
           href={partner.url}
           target="_blank"
-          style={{minHeight: isBlank && 0, height: isBlank && 0  }}
+          style={{display: isBlank && "none",minHeight: isBlank && 0,minWidth: isBlank && 0, height: isBlank && 0  }}
           rel="noopener noreferrer"
         >
           {partner.logo && (
