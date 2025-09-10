@@ -71,7 +71,7 @@
   line-height: 34px;
 }
 .resource-description {
-  font-family: 'SOLAR-VESTA-SERIF', serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 15px;
   color: #16151D;
   font-weight: 400;
@@ -131,5 +131,10 @@
 @media (max-width: 768px) {
   .resource-content {
     padding: 0 !important;
+  }
+  .resource-title {
+    font-size: 19px;
+    line-height: 25px;
+    margin-bottom: 2rem;
   }
 }
