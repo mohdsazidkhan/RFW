@@ -228,13 +228,14 @@
   .contact-main-section {
     padding: 60px 0;
   }
-
   .contact-title {
     font-size: 30px;
   }
-
   .name-fields {
-    grid-template-columns: 1fr;
     gap: 20px;
   }
+  .contact-social-icons {
+    margin-top: 90px;
+    margin-left: 0;
+}
 }

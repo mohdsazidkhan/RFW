@@ -2121,10 +2121,6 @@ b, strong {
     font-size: 0.75rem;
   }
   
-  .name-fields {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
   
   .gallery-images {
     max-width: 300px;
