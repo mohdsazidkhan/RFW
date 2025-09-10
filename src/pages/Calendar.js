@@ -32,17 +32,17 @@ const Calendar = () => {
         {/* Calendar Header */}
         <div className="calendar-header">
           <h1 className="calendar-title">RFW CALENDAR</h1>
-          <p className="calendar-date-range">OCTOBER 17 - OCTOBER 21, 2025</p>
+          <p className="calendar-date-range">OCTOBER 17 - OCTOBER 21</p>
         </div>
 
         {/* Day Accordions */}
         <div className="calendar-accordions">
           {designers.map((day, dayIndex) => (
             <div key={dayIndex} className="day-accordion-item">
-              <div className="day-accordion-header" onClick={() => toggleDay(dayIndex)}>
+              <div className={`day-accordion-header ${expandedDay === dayIndex ? "bgblack" : "transparent" }`} onClick={() => toggleDay(dayIndex)}>
                 <h2 className="day-accordion-title">{day.date}</h2>
                 <div className="day-expand-icon">
-                  {expandedDay === dayIndex ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />}
+                  {expandedDay === dayIndex ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown /> }
                 </div>
               </div>
 

@@ -59,12 +59,6 @@
   padding: 60px 140px 60px 140px;
 }
 
-.section-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0;
-}
-
 .video-frame-wrapper {
     background: #ffffff;
     padding: 0;
@@ -92,6 +86,7 @@
   .livestream-hero-subtitle { font-size: 12px; }
   .livestream-hero-content{
     margin: 10px ;
+    padding: 160px 20px 100px 20px;
   }
 }
 

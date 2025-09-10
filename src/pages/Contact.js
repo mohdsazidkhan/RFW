@@ -26,7 +26,7 @@ const Contact = () => {
     <div className="contact-page">
       {/* Main Contact Section */}
       <section className="contact-main-section">
-        <div className="section-container">
+        <div className="section-container contactUS">
           <div className="contact-content">
             {/* Left Column - Contact Information */}
             <div className="contact-info-column">

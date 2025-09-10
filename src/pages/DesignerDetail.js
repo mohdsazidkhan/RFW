@@ -64,9 +64,9 @@ The atelier aspires to create high-quality couture and ready-to-wear garments th
           
             <button 
               className="btn btn-back-to-designers"
-              onClick={() => navigate('/designers')}
+              onClick={() => navigate(-1)}
             >
-              ← BACK TO DESIGNERS
+              ← BACK
             </button>
           </div>
           {/* Right Column: Image */}
