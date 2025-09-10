@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { designers } from "../utils/data/Designers";
+import { Helmet } from 'react-helmet';
 const DesignerDetail = () => {
   const { designerSlug } = useParams();
   console.log(designerSlug,"designerSlug")
@@ -38,17 +39,29 @@ The atelier aspires to create high-quality couture and ready-to-wear garments th
   };
 
   return (
+    <>
+    <Helmet>
+        {designerDetails?.name && <title>{designerDetails?.name?.toUpperCase()} - Riyadh Fashion Week 2025</title>}
+    </Helmet>
+   
     <div className="designer-detail-page">
   <section className="designer-detail-main-section">
     <div className="section-container-detail">
       <div className="designer-detail-content">
+          <h1 className="designer-detail-name showMobile">{designerDetails?.name}</h1>
         <div className="designer-detail-grid">
           {/* Left Column: Text */}
           <div className="designer-detail-text">
-            <h1 className="designer-detail-name">{designerDetails?.name}</h1>
+            <h1 className="designer-detail-name hideMobile">{designerDetails?.name}</h1>
             <div className="designer-detail-bio">
-              {designerDetails?.content}
+                {designerDetails?.content.split('\n').map((line, index) => (
+  <React.Fragment key={index}>
+    {line}
+    <br /><br />
+  </React.Fragment>
+))}
             </div>
+          
             <button 
               className="btn btn-back-to-designers"
               onClick={() => navigate('/designers')}
@@ -69,7 +82,7 @@ The atelier aspires to create high-quality couture and ready-to-wear garments th
     </div>
   </section>
 </div>
-
+ </>
   );
 };
 

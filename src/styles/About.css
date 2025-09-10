@@ -118,7 +118,7 @@
 @media (max-width: 900px) {
   .about-hero-content {
     display: block;
-    padding: 2rem 1.2rem;
+    padding: 2.8rem 1.2rem 0 1.2rem;
     min-height: unset;
   }
   .about-hero-section {
@@ -133,6 +133,7 @@
       text-align: right;
 
   }
+ 
   .about-main-content {
     flex-direction: column;
         gap: 0.7em;
@@ -168,7 +169,7 @@
 .quote-content {
   margin: 0 auto;
   text-align: center;
-  padding: 85px 102px 51px 102px;
+  padding: 100px 102px 90px 102px;
 }
 
 .quote-text {
@@ -186,13 +187,13 @@
   font-family: sans-serif;
   font-size: 17px;
   color: #717171;
-  font-weight: 200;
   letter-spacing: normal;
   line-height: 20.4px;
   text-transform: uppercase;
   display: flex;
   justify-content: end;
   opacity: 0.9;
+  font-style: normal;
 }
 .gallery-reel {
   width: 99vw;
@@ -269,7 +270,7 @@
 }
 
 .gallery-reel-control-btn {
-  background: #fff;
+  background: hsl(0deg 0% 100% / 75%);
   border: none;
   border-radius: 0;
   color: #111;
@@ -300,10 +301,17 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+   .quote-text{
+    text-align: left;
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .quote-author {
+    font-size: 16px;
+  }
   .gallery-reel {
     padding: 20px 10px;
   }
-  
   .gallery-reel-wrapper {
     padding: 0 10px;
   }

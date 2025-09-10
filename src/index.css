@@ -247,6 +247,9 @@ b, strong {
 .mobile-menu a:hover {
   color: var(--rfw-gold);
 }
+.header-menu-toggle .hamburger-line:nth-child(2){
+  display: none;
+}
 
 /* Mobile header */
 @media (max-width: 799px) {
@@ -1611,7 +1614,7 @@ b, strong {
   display: inline-block;
 }
 .designer-detail-page .designer-detail-content {
-  padding: 15rem 0 0 0;
+  padding: 15rem 0 10rem 0;
 }
 .designer-detail-grid {
   display: flex;
@@ -1620,7 +1623,7 @@ b, strong {
   gap: 0;
 }
 .designer-detail-text {
-  flex: 1 1 50%;
+  flex: 1 1 33%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1637,7 +1640,7 @@ b, strong {
 .designer-detail-name {
   font-size: 3rem;
   font-family: 'SOLAR-VESTA-SERIF', serif;
-  font-weight: 700;
+  font-weight: normal;
   margin-bottom: 2.2rem;
   letter-spacing: 0.02em;
   color: #fff;
@@ -1791,6 +1794,11 @@ b, strong {
 }
 
 @media (max-width: 768px) {
+  .designers-description {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+}
   .section-container {
     padding: 0 2rem !important;
   }
@@ -1944,6 +1952,7 @@ b, strong {
   .designer-detail-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
+    flex-direction: column-reverse;
   }
   
   .designer-portrait-placeholder {
@@ -2222,16 +2231,17 @@ b, strong {
 
 .hamburger-line {
   display: block;
-  width: 25px;
-  height: 3px;
-  background: var(--rfw-white);
-  margin: 5px 0;
-  transition: all 0.3s ease;
-  border-radius: 2px;
+  width: 30px;
+    height: 1.5px;
+    background: var(--rfw-white);
+    margin: 8px 0;
+    transition: all 0.5s 
+ease;
+    border-radius: 2px;
 }
 
 .hamburger-line.open:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(0, 0);
 }
 
 .hamburger-line.open:nth-child(2) {
@@ -2482,8 +2492,20 @@ b, strong {
     font-size: 6rem;
   }
 }
-
+.hideMobile{
+    display: flex;
+  }
+.showMobile{
+    display: none;
+  }
 @media (max-width: 768px) {
+  .showMobile{
+    display: flex;
+    margin: 5rem 1.2rem 0 1.2rem;
+  }
+  .hideMobile{
+    display: none;
+  }
   .header-nav-mobile .nav-link {
     font-size: 1.25rem;
     padding: .4rem 5rem;

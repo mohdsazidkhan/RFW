@@ -27,11 +27,6 @@
   border-radius: 6px;
 }
 
-.designer-profile:hover {
-  border-color: var(--rfw-gold);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
 
 .designer-image {
   margin-bottom: 1.5rem;
