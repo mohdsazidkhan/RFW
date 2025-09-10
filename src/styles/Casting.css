@@ -204,7 +204,9 @@
   .casting-main-section {
     padding: 4rem 0;
   }
-  
+  .casting-hero-title {
+    font-size: 2.5em;
+  }
   .casting-text-content {
     gap: 3rem;
   }
