@@ -69,7 +69,7 @@ export const pressArray = [
     url: "https://destinationksa.com/en/riyadh-fashion-week/",
   },
   {
-    title: `.أسبوع الموضة في الرياض يعود بنسخته الثاني.`,
+    title: `.أسبوع الموضة في الرياض يعود بنسخته الثاني`,
     description: `تستضيف هيئة الأزياء السعودية النسخة الثانية من أسبوع الموضة في الرياض، وتستمر لمدة خمسة أيام، من 17 إلى 21 أكتوبر/تشرين الأول، بحسب الصفحة الرسمية للحدث على موقع إنستغرام.`,
     button: "Read Full Article",
     image: require("../../images/pressimages/ARABNEWS.webp"),
