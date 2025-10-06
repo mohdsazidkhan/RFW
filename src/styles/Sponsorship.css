@@ -224,28 +224,59 @@
 .previous-partners-content {
   text-align: center;
 }
-
-.previous-partners-title {
-  font-size: 38.504px;
+.partners-title {
+  font-size: 38px;
   font-weight: 700;
-  font-family: 'SOLAR-VESTA-SERIF', serif;
   color: var(--rfw-black);
   line-height: 50.8869px;
   text-transform: uppercase;
   letter-spacing: normal;
-  text-align: left;
+  text-align: center;
+  font-family: 'SOLAR-VESTA-SERIF', serif;
+  margin-bottom: 50px;
 }
-
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr); /* 7 per row, as required */
-  gap: 2rem;
-  max-width: 1400px;
+.previous-partners-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--rfw-black);
+  line-height: 50.8869px;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.previous-partners-title.two,
+.previous-partners-title.three{
+  margin-top: 20px;
+}
+.partners-logos {
+  max-width: 50%;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 
+.partners-logos.one{
+  max-width: 60%;
+}
+.partners-logos.two{
+  max-width: 40%;
+}
+.partners-logos.three{
+  max-width: 50%;
+}
+.partners-logos.four{
+  max-width: 40%;
+}
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 /* Trick: Center items in the incomplete last row */
 .partners-grid .partner-logo:nth-child(9) {
  margin-left: 160px;
@@ -294,6 +325,9 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 0.5rem;
     }
+    .partners-logos {
+      max-width: 80% !important;
+    }
   .why-sponsor-title{
            font-size: 2rem;
         line-height: 2.2rem;
@@ -312,16 +346,15 @@
     height: 80px;
   }
 
-  .partner-logo-image {
-    min-height: 100px;
-    height: 100px;
-  }
 }
 @media (max-width: 420px) {
   .previous-partners-title {
-        font-size: 28px;
+        font-size: 16px;
         text-align: center;
 }
+.partners-title {
+    font-size: 24px;
+  margin-bottom: 10px}
   
 
   .partner-logo {
