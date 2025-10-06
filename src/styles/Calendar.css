@@ -281,6 +281,14 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .designerText div {
+    font-size: .85rem;
+    letter-spacing: 0.02em;
+}
+.designer-item {
+    padding: .5em;
+    margin-bottom: .5rem;
+}
 .calendar-date-range {
     font-size: 1.2rem;
 }
@@ -310,7 +318,7 @@
   }
 
   .designer-name {
-    font-size: 1.35rem !important;
+    font-size: 1.2rem !important;
   }
 
   .designer-header {

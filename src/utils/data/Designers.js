@@ -260,4 +260,137 @@ export  const designers = [
       logo: require("../../images/designers/yehya-al-bishri.webp"),
       content: "Yahya Al Bishri is a fashion designer renowned for his contributions and unique touch in the world of haute couture. Passionate about fashion, he studied it in Milan and graduated from the Paris American Academy. His career includes designing for prominent figures such as Princess Diana, the French actress Isabelle Adjani, and many Arab celebrities. Yahya’s influence extends globally, as he presented his first show at Paris Fashion Week in 1990, followed by an international journey of over fifty shows.\nHis designs sparked a revolution by uniquely blending Arab heritage with contemporary lines. His work expanded to include menswear, bringing changes to the traditional Saudi attire. Some of his most notable clients include the late King Abdullah bin Abdulaziz, Prince Sultan, King Abdullah of Jordan, King Charles, and most Saudi artists.\nThe press has dubbed him the designer of kings and princesses. His joy comes from creating beauty through his fashion and to see smiles on those who wear his creations. His dream is for fashion to gain significant recognition in his home country"
     },
+     {
+      id: "re-birth",
+      name: "REBIRTH",
+      desc: "COUTURE",
+      logo: require("../../images/designers/re-birth.jpg"),
+      content: 'Tala Abukhaled is a fashion and art designer known for her innovative approach to design, often working with unusual materials to create unique, boundary-pushing pieces. Based in Saudi Arabia, she blends artistry with craftsmanship, redefining contemporary- bohemian fashion and art.\nTala Abukhaled graduated from Esmod French Fashion University with a Bachelor of Arts, where she refined her expertise in precision tailoring and creative construction. With a keen eye for detail and a passion for pushing creative boundaries, she continues to challenge conventional aesthetics through her work.'
+    },
+    {
+      id: "ama-n",
+      name: "AMEN",
+      desc: "COUTURE",
+      logo: require("../../images/designers/amen.jpg"),
+      content: "Valentina Nervi is an Italian fashion designer and creative director with extensive international experience in the fashion industry. \nShe graduated with honors in Fashion Design from IED Rome and pursued further studies at Central Saint Martins in London and the Accademia di Costume e Moda. \nThroughout her career, she has collaborated with prestigious brands such as Ermanno Scervino, Roberto Cavalli, Redemption, and Custo Barcelona.\nValentina has progressively taken on greater responsibilities, designing prêt-à-porter, haute couture, and beachwear collections. She oversees the entire creative process – from fabric research and sketching to prototype development and the artistic direction of campaigns and lookbooks. \nHer signature style combines contemporary femininity, artisanal craftsmanship, and a distinctive personal aesthetic.\nShe is the founder and creative director of her eponymous brand, NERVI. There, she explores a unique stylistic language that balances tradition with innovation, emphasizing quality, visual identity, and digital communication. After six years of development, the brand has evolved into an exclusive couture and made-to-measure line.\nValentina has just been appointed as creative director of Amen brand."
+    },
+    {
+      id: "derza",
+      name: "DERZA",
+      desc: "COUTURE",
+      logo: require("../../images/designers/derza.PNG"),
+      content: "DERZA was born in 2018 from Madhawi Almansour’s deep passion for fashion. Inspired by her mother, who used to design her own clothes, Madhawi always dreamed of creating her own brand. Even though she studied Computer Science, her love for fashion never stopped.\nShe started by designing her first pieces in a small home studio, learning everything by hand ,from sketching to sewing. In 2018, she launched DERZA, a women’s fashion brand that blends elegance, modernity, and Saudi culture in a unique way.\nIn 2021, she co-founded Saudi Arabia’s first full fashion production house run by local talent. She also opened two boutiques to showcase DERZA and support other rising Saudi brands. Today, DERZA represents creativity, culture, and a designer’s heartfelt journey"
+    },
+    {
+      id: "arwa-albanawi",
+      name: "ARWA ALBANAWI",
+      desc: "COUTURE",
+      logo: require("../../images/designers/arwa-albanawi.JPG"),
+      content: "ARWÁ is a design house rooted in the perspective of its founder—born on the Red Sea coast of Saudi Arabia and shaped by childhood memories under the Mediterranean sun.\nFounded in 2015, ARWÁ began with tailoring and signature suits, and has since evolved into a fashion and lifestyle maison. A refined expression in natural elegance for the woman on the go.\nWith an appreciation of how women move through their day, we create garments defined by presence, ease, and thoughtful detail—through tactile fabrics, a feminine lens, and curated edits.\nMorning and Sahra define the rhythm of the brand: Essentials accompany her from city to coast, from day into evening, while Sahra is the night expression—a refined edit of silhouettes crafted for the hours between sunset and sunrise. Worn barefoot or with considered intent, these pieces shift effortlessly into the evening.\nThe ARWÁ Woman\nShe’s bold, she’s cool, and confident. Her clothes carry power—subverting expectations and expressing her independence. Her wardrobe is made to move with her effortlessly, embodying freedom and agency, shaping the rhythm of her everyday.\nThe Founder\nArwa Al Banawi is a Saudi creative director and the founder of ARWÁ. With a background that bridges editorial and design, her perspective is shaped by a life lived between cultures. Recognized by Hypebeast as one of the Next Designers to Know (2023) and awarded Best Regional Designer by Grazia Middle East (2019), she has also collaborated with global names including adidas Originals. Today, Arwa continues to explore design as a dialogue—shaping the codes of modernity and elegance."
+    },
+    {
+        id: "femi-9",
+        name: "FEMI9",
+        desc: "COUTURE",
+        logo: require("../../images/designers/femi-9.png"),
+        content: "Femi9 Fashion is a leading name in the Middle East's fashion scene, renowned for empowering women and celebrating their individuality. Founded in 1999 in Jeddah, Saudi Arabia, and managed by FAD international company, Femig blends elegance, femininity, and comfort in every design\nKnown for its innovative, high quality apparel, Femig has become a favorite among fashion-forward women seeking both trendy and timeless wardrobe for every occasion."
+    },   
+    {
+        id: "reem-alkanhal",
+        name: "REEM ALKANHAL",
+        desc: "READY-TO-WEAR",
+        logo: require("../../images/designers/reem-alkanhal.jpeg"),
+        content: 'From an early age, Reem Al Kanhal knew her life would be forever linked to fashion. Her instincts for fabric, form, and a deep sense of how to connect her culture with the modern world have driven many of her collections, which are defined not by season or trend, but by mood and relevance.\nBorn and raised in Saudi Arabia, she began experimenting with fashion as a student. Simple, stylish tops and skirts that could be worn in various ways became part of her design philosophy, which combines clean lines with draped curves, and structured forms with the freedom of individuality.\nReem later enrolled in a course at the "Art & Skills Institute" in Riyadh, where she honed her garment-making skills. In 2010, one year after graduating, Reem founded her eponymous label, Reem Al Kanhal, a modular ready-to-wear collection of clothing and accessories known for its distinctive approach to form, color, and aesthetics.'
+    },
+    {
+      id: "sv-logo-by-saudia",
+      name: "SV BY SAUDIA",
+      desc: "READY-TO-WEAR",
+      logo: require("../../images/designers/sv-logo-by-saudia.png"),
+      content: "Mona Alshebil is a Saudi fashion designer who graduated with a degree in Marketing and Innovation Management from the USA. Driven by her passion for fashion, she decided to pursue her dream and studied fashion, establishing her own brand, 'MonaAlshebil in 2020.\nAs part of the 100 Saudi Brands Initiative, her designs have graced the fashion weeksin Paris, Milan, and New York. Notably, her creations have been worn by celebrities, further solidifying her presence and influence in the industry. Mona Alshebil is very passionate about her work."
+    },
+    {
+      id: "nabila-nazer",
+      name: "NABILA NAZER",
+      desc: "COUTURE",
+      logo: require("../../images/designers/nabila-nazer.jpeg"),
+      content: "Nabila Nazer is a Saudi fashion designer, entrepreneur, and MBA graduate with over 17 years of experience in the fashion industry. She is a certified trainer, expert speaker, and instructor at King Abdulaziz University in the Department of Fashion and Textile. As the founder, Nabila owns and operates both a boutique and a full scale production atelier, where a dedicated team of sewers, cutters, and embroiderers work under her daily supervision.\n She personally sources premium fabrics from leading textile factories in Europe and Japan, ensuring each piece is crafted from the finest materials and finished with precision, quality, and artistic integrity.\n Her collections are proudly displayed in leading concept stores across Jeddah and Riyadh and most recently at Galeries Lafayette in Dubai Mall.\nNabila’s vision is to create a global platform that celebrates Saudi culture and inspires women to embrace their heritage with pride. At Nabila Nazer, the mission is to reflect the richness and diversity of Saudi identity while pushing the boundaries of contemporary modest fashion. The brand believes fashion is a powerful language one that tells stories, connects cultures, and empowers women around the world."
+    },
+    {
+      id: "dananeer",
+      name: "DANANEER",
+      desc: "COUTURE",
+      logo: require("../../images/designers/dananeer.png"),
+      content: ""
+    },
+    {
+      id: "manel",
+      name: "MANEL",
+      desc: "COUTURE",
+      logo: require("../../images/designers/manel.jpg"),
+      content:"Manel Aboudaoud is the founder and creative director of Manel, a luxury brand she created in 2019 in Dubai. Her path into fashion was not conventional, but it was deeply intentional.\nBorn in Algeria and raised in France, Manel grew up surrounded by art, strong cultural identity, and the quiet presence of beauty in everyday life. From an early age, she developed a sensitivity to aesthetics and detail, which later became the foundation of her creative language.\nDespite her early passion for design, Manel chose to begin her professional life in a very different world: finance. She earned a Master’s degree in the field and went on to work at two of the world’s most respected firms, Ernst & Young (EY) and PricewaterhouseCoopers (PwC). These years gave her a sharp sense of strategy, structure, and discipline tools that would prove essential when launching her own brand.\nHer move to Dubai marked a turning point. It was here that she decided to merge her analytical mindset with her creative instinct, and to build something that reflected her personal vision of femininity and refinement. That vision became MANEL, a brand shaped by precision, emotion, and timeless elegance.\nAs a designer, Manel draws inspiration from the contrasts that define her own journey: tradition and modernity, strength and softness, modesty and confidence. Her collections reflect a deep understanding of form, material, and presence, always designed with women in mind.\nHer creative direction is guided by one principle: that clothing should empower without overwhelming. Through each piece, she seeks to highlight individuality, quiet strength, and effortless beauty.\nFashion, for her, is not just an industry. It is a way of speaking without words, of honoring where we come from, and of expressing who we choose to be."
+    },
+     {
+      id: "mihyar",
+      name: "MIHYAR",
+      desc: "COUTURE",
+      time: "17:00",
+      endTime: "17:15",
+      logo: require("../../images/designers/mihyar.png"),
+      content:""
+  }, 
+  {
+      id: "ih-nom-uh-nit",
+      name: "IH NOM UH NIT",
+      desc: "READY-TO-WEAR",
+      logo: require("../../images/designers/ih-nom-uh-nit.png"),
+      content: "Ih Nom Uh Nit is a luxury lifestyle brand born between Paris and Los Angeles, merging the refinement of European design with the energy of American culture. Deeply influenced by contemporary art, cinema, and street culture, the brand moves fluidly between the worlds of high fashion and modern subcultures, offering a new vision of elevated individuality.\nFounded in 2015, Ih Nom Uh Nit made its debut during Paris Fashion Week with a tightly curated 20-piece collection. The launch marked the arrival of a new voice in luxury fashion—one that fused precise tailoring and thoughtful details with the expressive codes of streetwear. In just a few seasons, the brand carved out a distinct niche, becoming synonymous with fluid sophistication, cultural relevance, and artistic experimentation."
+  },
+  {
+  id: "mirai",
+  name: "MIRAI",
+  desc: "READY-TO-WEAR",
+  logo: require("../../images/designers/mirai.jpg"),
+  content: "My name is Abdulrahman Tarabeh, and I am from Saudi Arabia, born and raised in Jeddah. My journey began after completing high school when I decided to explore a new culture and moved to Japan in 2014 to pursue my studies, inspired by Japan’s reputation for innovation and technology.\n I started by learning the Japanese language and, in 2016, began my Bachelor’s degree in Mechanical Engineering. Living in Japan deeply influenced me, especially their minimalist approach to fashion and appreciation for intricate details.\n In 2021, driven by this inspiration, my partner Omar Shabra and I founded MIRAI, a brand built on the values of clean, timeless, and detail-oriented design. I returned to Saudi Arabia in 2022 to focus on growing MIRAI and, at the same time, expanded my career by working in technology startups. I also founded Eighty Studios, a production and creative agency, driven by my belief that creativity has the power to be transformed into meaningful businesses and shared with the world."
+},
+{
+    id: "sulitude",
+    name: "SULITUDE",
+    desc: "COUTURE",
+    logo: require("../../images/designers/sulitude.jpeg"),
+    content: "Mohammed Sultan is an expert marketeer with a bachelor’s degree in advertising and master’s in management. Having been interested in design from a very young age, he dabbled into various forms including interior design and fashion as well before launching SULITUDE in 2023. Inspired by his creative achievements in his day job, with various entities and in cities like London and Dubai, SULITUDE is a byproduct of his  passion, dedication and an ode to creativity."
+},
+{
+      id: "sadf",
+      name: "SADF",
+      desc: "COUTURE",
+      
+      logo: require("../../images/designers/sadf.jpg"),
+      content: ""
+  },
+   {
+        id: "realself",
+        name: "REALSELF",
+        desc: "COUTURE",
+        time: "13:00",
+        endTime: "13:50",
+        logo: require("../../images/designers/realself.jpeg"),
+        content:"Nouf Alhazmi is the visionary founder of REALSELF, a clothing brand that celebrates individuality and self-expression. A graduate of Woodbury University, Nouf is passionate about innovative design and possesses a keen eye for trends. She has successfully collaborated on several collections, including notable projects with Qatar Creat and F1. Additionally, she designed the uniforms for the Saudi Arabia pavilion at Expo 2025 in Japan, showcasing her versatility and creativity in the fashion industry.\nThrough REALSELF, Nouf empowers individuals to express their true selves through style, blending comfort with cutting-edge aesthetics."
+    },
+    {
+        id: "eleven",
+        name: "ELEVEN",
+        desc: "COUTURE",
+        logo: require("../../images/designers/eleven.jpeg"),
+        content: "11 IS A BRAND ROOTED IN SAUDI PRODUCTION, COMMITTED TO INDIVIDUALITY WITHIN A COLLECTIVE — A SPACE WHERE YOU BELONG WITHOUT BECOMING SOMEONE ELSE."
+    }, 
+    {
+                id: "cargo",
+                name: "CARGO",
+                desc: "CARGO",
+                time: "21:00",
+                endTime: "21:15",
+                logo: require("../../images/designers/cargo.jpeg"),
+                content: "CARGO’s design philosophy is rooted in the geometric lines envisioned by engineer Meshari Al-Quraishi. The visible lines reflect his tangible reality, while the hidden lines symbolize his concealed talent and creative vision. In ٢٠٢٢, these hidden lines came to life, weaving intricate designs that proudly carry the name and spirit of their creator, MESHARI AL-QURAISHI."
+             },
   ];
