@@ -36,7 +36,7 @@ export const designers = [
         ]
     }, 
     {
-          day:"2",
+        day:"2",
         date: "OCTOBER 17",
         year:"2025",
         text:"RUNWAY SHOWS",
