@@ -89,7 +89,7 @@ export const designers = [
         ]
     },
     {
-         day:"3",
+        day:"3",
         date: "OCTOBER 18",
         year:"2025",
         text:"COLLECTION PRESENTATION",
@@ -131,7 +131,13 @@ export const designers = [
                 logo: require("../../images/designers/ashwaq-almarshad.webp"),
                 content: "Ashwaq Al Marshad is a Haute Couture designer that began her career in the field in 2006 when she was designing her own gowns while still studying, and afterwards, her client base grew. \nThe designer continued in this vein, until the name Ashwaq Al Marshad has become associated with timeless elegance and lasting craftsmanship. In 2020, the Maison became the first Saudi Haute Couture brand to be sold at Harvey Nichols.\nFemininity, uniqueness, and excess beauty are the most important keys upon which Ashwaq's designs rely, to give every client the fulfillment of elegance with just one unique specific piece. \nDesigns that take hundreds of continuous hours, in addition to meticulous attention to craftsmanship details, which are done in the Maison's own atelier to produce a distinctive piece. Fabrics are imported from the same sources used by big fashion houses such as: Dior and Valentito.\nThis year, Ashwaq Al Marshad Maison is witnessing many changes, as it has been expanding to contain a RTW line, as well as accessories such as shoes, belts, and evening bags made from the finest types of Italian leather and fabrics following the leadership and guidance of the Saudi 100 Brands program. The name Ashwaq Al Marshad also shined on the red carpet at the Cannes Film Festival when influencer Nusra Al-Harbi wore one of our designs as a client to attend the festival."
             },
-            {
+            
+        ],
+        extraDay:{
+            text:"RUNWAY SHOWS",
+            subText:"THE ROOF - AL MAMLAKA",
+            designers:[
+           {
                 id: "atelier-hikayat",
                 name: "FEMI9",
                 desc: "COUTURE",
@@ -182,12 +188,6 @@ export const designers = [
                 // logo: require("../../images/designers/mona-alshebil.webp"),
                 // content: "Mona Alshebil is a Saudi fashion designer who graduated with a degree in Marketing and Innovation Management from the USA. Driven by her passion for fashion, she decided to pursue her dream and studied fashion, establishing her own brand, 'MonaAlshebil in 2020.\nAs part of the 100 Saudi Brands Initiative, her designs have graced the fashion weeksin Paris, Milan, and New York. Notably, her creations have been worn by celebrities, further solidifying her presence and influence in the industry. Mona Alshebil is very passionate about her work."
             },
-        ],
-        extraDay:{
-            text:"RUNWAY SHOWS",
-            subText:"THE ROOF - AL MAMLAKA",
-            designers:[
-           
 ]
         }
     },
@@ -228,7 +228,13 @@ export const designers = [
                 logo: require("../../images/designers/fatima-alabdul-qader.webp"),
                 content: "Fatima Alabdulqader has always been very productive and loved observing since her childhood years. The designer was inspired by every aesthetic detail surrounded her, nature, architectural sites, historical elements, impressionist art especially Modern Art. Designer's early designs initiated by her sister's and her mother's couture dresses that she designed for the family wedding ceremony. Since 2017, she is working on bridal wear and each day she continues to charm the brides by her artsy design.\nThe designer participated The Saudi 100 Brands Programme organised under the Fashion Commission under the Ministry of Culture and created special designs for their occasions. She recently took a special course from the best professors coming from Institut Français de la Mode in Paris in order to develop her business and upgrade herself to the next level. She completed the course both in Riyadh and Paris before the end of 2022."
              },
-                 {
+                 
+        ],
+        extraDay:{
+            text:"RUNWAY SHOWS",
+            subText:"JAX B5",
+            designers:[
+        {
                 id: "mihyar",
                 name: "MIHYAR",
                 desc: "COUTURE",
@@ -278,12 +284,6 @@ export const designers = [
                 logo: require("../../images/designers/hindamme.webp"),
                 content: "Born in Saudi Arabia, Mohammed Khoja is a multi-disciplinary designer that has always had a desire to create, with some of his earliest memories consisting of drawing shapes and forms. While studying Business in Paris, Mohammed decided to pursue fashion design and worked on the concept for HINDAMME, launching the brand formally in 2016. Mohammed is inspired by storytelling through his designs, resulting in a contemporary and identity driven approach to ready-to-wear that is inspired by the concept of East meets West and his own experiences as a third culture creative.\nHis designs often blend elements of his native Saudi culture, with his debut collection integrating contemporary interpretations of the 'Al Qatt Al Aseeri' patterns for the first time. Mohammed is often fueled by mixing a dichotomy of genres that he loves, mostly combining his love of contemporary art, film & music into high fashion influenced ready to wear. Some of his ready to wear pieces have been collected by prestigious institutions such as the Victoria & Albert museum and the National Museum for World Cultures (The Netherlands) for their cultural and historical significance.\nAs part of the collection, SEASON VI includes five hero pieces, buttoned silk twill shirts that feature various eyecatching commissioned contemporary prints that depict the five main regions of Saudi Arabia: Riyadh, Jeddah, Eastern Province, Aseer and Al Ula. More recently, Mohammed has expanded into creating furniture and collectible objects working with various hotels."
             },
-        ],
-        extraDay:{
-            text:"RUNWAY SHOWS",
-            subText:"JAX B5",
-            designers:[
-        
             //   {
             //     id: "razan-alazzouni",
             //     name: "RAZAN ALAZZOUNI",
@@ -360,7 +360,13 @@ export const designers = [
                 instgram: "https://www.instagram.com/md.29.style/",
                 elfsight: "https://elfsight.com/social-media-icons-widget/?utm_source=websites&utm_medium=clients&utm_content=social-media-icons&utm_term=riyadhfashionweek.squarespace.com&utm_campaign=free-widget"
             },
-              {
+              
+        ],
+        extraDay:{
+            text:"RUNWAY SHOWS",
+            subText:"JAX B5",
+            designers:[
+          {
                 id: "ELEVEN",
                 name: "ELEVEN",
                 desc: "COUTURE",
@@ -408,12 +414,6 @@ export const designers = [
                 logo: require("../../images/designers/1886.webp"),
                 content: "In 1886, we pride ourselves on being at the forefront of the fashion industry, continuously pushing boundaries and redefining the art of design. Our dedication to creativity, innovation, and quality craftsmanship sets us apart. We strive to offer our customers a unique and captivating fashion experience that reflects their individuality."
             },
-        ],
-        extraDay:{
-            text:"RUNWAY SHOWS",
-            subText:"JAX B5",
-            designers:[
-          
             ]
         }
     },

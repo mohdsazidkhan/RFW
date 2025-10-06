@@ -32,7 +32,7 @@ const Calendar = () => {
         {/* Calendar Header */}
         <div className="calendar-header">
           <h1 className="calendar-title">RFW CALENDAR</h1>
-          <p className="calendar-date-range">OCTOBER 16 - OCTOBER 20</p>
+          {/* <p className="calendar-date-range">OCTOBER 16 - OCTOBER 20</p> */}
         </div>
 
         {/* Day Accordions */}
@@ -45,11 +45,16 @@ const Calendar = () => {
                   {expandedDay === dayIndex ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown /> }
                 </div>
               </div>
-
+              
               {expandedDay === dayIndex && (
+                
                 <div className="day-accordion-content">
+                  <div className='designerText'>
+                      <div>{day?.text}</div>
+                      <div>{day?.subText}</div>
+                  </div>
                   <div className="designers-list">
-                    {day.designers.map((designer) => (
+                    {day?.designers?.map((designer) => (
                       <div key={designer.id} className="designer-item">
                         <div
                           className="designer-header"
@@ -72,7 +77,49 @@ const Calendar = () => {
 
                         {expandedDesigner === designer.id && (
                           <div className="designer-action">
-                            <div className="designer-category">{designer.desc}</div>
+                            {/* <div className="designer-category">{designer.desc}</div> */}
+                            <button
+                              className="btn-learn-more"
+                              onClick={() => navigate(`/designer/${designer.id}`)}
+                            >
+                              LEARN MORE
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                  {day?.extraDay &&
+                  <div className='designerText'>
+                      <div>{day?.extraDay.text}</div>
+                      <div>{day?.extraDay.subText}</div>
+                  </div>
+                  }
+                  <div className="designers-list">
+                    {day?.extraDay?.designers.map((designer) => (
+                      <div key={designer.id} className="designer-item">
+                        <div
+                          className="designer-header"
+                          style={{
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center',
+                            cursor: 'pointer'
+                          }}
+                          onClick={() => toggleDesigner(designer.id)}
+                        >
+                          <div className="designer-info">
+                            <h3 className="designer-name">{designer.name}</h3>
+                            <div className="designer-time">TIME: {designer.time} - {designer.endTime}</div>
+                          </div>
+                          <div className="expand-icon">
+                            {expandedDesigner === designer.id ? <MdRemove /> : <MdAdd />}
+                          </div>
+                        </div>
+
+                        {expandedDesigner === designer.id && (
+                          <div className="designer-action">
+                            {/* <div className="designer-category">{designer.desc}</div> */}
                             <button
                               className="btn-learn-more"
                               onClick={() => navigate(`/designer/${designer.id}`)}

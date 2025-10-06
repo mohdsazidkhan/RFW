@@ -127,7 +127,19 @@
   color: var(--rfw-black);
   opacity: 0.9;
 }
-
+.designerText{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 95%;
+  margin: 10px auto 0 auto;
+}
+.designerText div{
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
 .day-expand-icon {
   color: var(--rfw-black);
   opacity: 0.9;
@@ -214,6 +226,7 @@
   font-size: 1.6rem;
   font-weight: 500;
   cursor: pointer;
+      min-width: 270px;
   border-radius: 3px;
   letter-spacing: 0.04em;
   margin-top: 0.3em;

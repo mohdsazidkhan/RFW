@@ -16,11 +16,25 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  // try {
+  //   const response = await fetch('https://riyadhfashionweek.com/sendmail.php', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/x-www-form-urlencoded',
+  //     },
+  //     body: new URLSearchParams(formData).toString(),
+  //   });
+
+  //   const result = await response.text();
+  //   alert(result); // Success/failure message from PHP
+  // } catch (error) {
+  //   alert('Something went wrong. Please try again.');
+  //   console.error('Email send error:', error);
+  // }
+};
+
 
   return (
     <div className="contact-page">
