@@ -32,7 +32,7 @@ const Calendar = () => {
         {/* Calendar Header */}
         <div className="calendar-header">
           <h1 className="calendar-title">RFW CALENDAR</h1>
-          <p className="calendar-date-range">OCTOBER 17 - OCTOBER 21</p>
+          <p className="calendar-date-range">OCTOBER 16 - OCTOBER 20</p>
         </div>
 
         {/* Day Accordions */}
@@ -63,7 +63,7 @@ const Calendar = () => {
                         >
                           <div className="designer-info">
                             <h3 className="designer-name">{designer.name}</h3>
-                            <div className="designer-time">TIME: {designer.time}</div>
+                            <div className="designer-time">TIME: {designer.time} - {designer.endTime}</div>
                           </div>
                           <div className="expand-icon">
                             {expandedDesigner === designer.id ? <MdRemove /> : <MdAdd />}
