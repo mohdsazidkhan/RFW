@@ -237,7 +237,7 @@ export  const designers = [
       name: "Tima Abid",
       desc: "COUTURE",
       logo: require("../../images/designers/tima-abid.webp"),
-      content: "Fatima Althaqafi, the visionary founder and creative force behind the Tima Abid brand. Born in Jeddah, Saudi Arabia. Fatima was the only daughter among seven sons. Her unique position in the family fuelled her drive to stand out and make a name for herself in the world of fashion.\nOver the years, Fatima's design aesthetic has evolved, blending her rich Arabian heritage with a modern, refined sensibility. Aiming to empower the women who wear her creations. Fatima's resilience and determination have been key factors in her success, as she refused to let setbacks deter her from achieving her dreams.\nFatima Abid is an inspiring example of how passion, determination, and hard work can lead to success in the competitive world of fashion."
+      content: "Tima Abid, the visionary founder and creative force behind the Tima Abid brand. Tima was the only daughter among seven sons. Her unique position in the family fueled her drive to stand out and make a name for herself in the world of fashion.\nOver the years, Tima’s design aesthetic has evolved, blending her rich Arabian heritage with a modern, refined sensibility. Aiming to empower the women who wear her creations, Tima’s resilience and determination have been key factors in her success, as she refused to let setbacks deter her from achieving her dreams.\nTima Abid is an inspiring example of how passion, determination, and hard work can lead to success in the competitive world of fashion."
     },
     {
       id: "uscita",
