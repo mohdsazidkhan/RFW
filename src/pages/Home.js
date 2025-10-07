@@ -66,7 +66,7 @@ const Home = () => {
               <p className="section-description">
                 Delve into the meticulously crafted Riyadh Fashion Week Calendar, a portal into a world of refined creativity and sophisticated style.<br/><br/> With each day unfolding a thoughtfully curated array of captivating runway shows.
               </p>
-              <button className="btn btn-outline-white" onClick={() => navigate('/calendar')}>coming soon</button>
+              <button className="btn btn-outline-white" onClick={() => navigate('/calendar')}>Learn More</button>
             </div>
           </div>
         </div>
