@@ -18,6 +18,7 @@ const supportingPartners2 = [
   { name: "Mandarin Oriental", logo: require('../images/partners/mandarin.png'), url:"https://www.mandarinoriental.com/en" },
   { name: "AK AL KHOZAMA INVESTMENT", logo: require('../images/partners/al-khozama.png'), url:"https://alkhozama.com/en/" },
 ];
+
 const isMobile = window.innerWidth < 768;
   return (
     <div className="sponsorship-page">
