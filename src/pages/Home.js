@@ -1,7 +1,9 @@
 import React from 'react';
 import VideoBackground from '../components/VideoBackground';
 import homeAbout from '../images/home_about.jpg'
+import { useNavigate } from 'react-router-dom';
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="home-page">
       {/* Hero Section with Video Background */}
@@ -64,7 +66,7 @@ const Home = () => {
               <p className="section-description">
                 Delve into the meticulously crafted Riyadh Fashion Week Calendar, a portal into a world of refined creativity and sophisticated style.<br/><br/> With each day unfolding a thoughtfully curated array of captivating runway shows.
               </p>
-              <button className="btn btn-outline-white">COMING SOON</button>
+              <button className="btn btn-outline-white" onClick={() => navigate('/calendar')}>Learn More</button>
             </div>
           </div>
         </div>
@@ -79,7 +81,7 @@ const Home = () => {
               <p className="section-description">
                 Riyadh Fashion Week spotlights a diverse lineup of visionary designers leaving an indelible mark. Hailing from varied backgrounds, they harmoniously merge tradition and innovation, promising designs that captivate and inspire. Avant-garde to timeless elegance, they redefine Saudi Arabian fashion's future with boundless creativity.
               </p>
-              <button className="btn btn-outline">COMING SOON</button>
+              <button className="btn btn-outline" onClick={() => navigate('/designers')}>Learn More</button>
             </div>
           </div>
         </div>

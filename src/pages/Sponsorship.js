@@ -29,7 +29,7 @@ const isMobile = window.innerWidth < 768;
   </div>
   <div className="sponsorship-hero-content">
     <h1 className="sponsorship-hero-title">SPONSORSHIP<br/> & PARTNERSHIP</h1>
-    <p className="sponsorship-hero-subtitle">PARTNER WITH RIYADH FASHION WEEK 2025</p>
+    {/* <p className="sponsorship-hero-subtitle">PARTNER WITH RIYADH FASHION WEEK 2025</p> */}
   </div>
 </section>
 
