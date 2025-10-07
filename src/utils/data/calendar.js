@@ -82,7 +82,8 @@ export const designers = [
                 id: "abadia",
                 name: "ABADIA",
                 desc: "READY-TO-WEAR",
-                time: "18:00",
+                time: "22:00",
+                endTime: "22:13",
                 logo: require("../../images/designers/abadia.webp"),
                 content: "Shahd is the mastermind behind ethical luxury label Abadia. The brand is at the forefront of reimagining fashion for the contemporary woman by marrying craftsmanship with timeless design. A strong advocate of ethical fashion, she was also the co-founder of Project JUST, a social enterprise that leverages technology to create transparency and accountability in fashion supply chains.\nShahd holds an MBA from Johns Hopkins University, is an Acumen global fellow, and has worked on economic development projects globally in Rwanda, Armenia, and India. She has been a guest speaker at major global events such as Harvard Social Enterprise Conference and the Youth Philanthropy Summit."
             },
