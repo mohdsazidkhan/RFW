@@ -80,7 +80,6 @@ const isMobile = window.innerWidth < 768;
             className="partner-logo-image"
             href={partner.url}
             target="_blank"
-            style={{display: isMobile && "none"  }}
             rel="noopener noreferrer"
           >
             {partner.logo && (
