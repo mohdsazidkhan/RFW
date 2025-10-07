@@ -66,7 +66,7 @@ const Home = () => {
               <p className="section-description">
                 Delve into the meticulously crafted Riyadh Fashion Week Calendar, a portal into a world of refined creativity and sophisticated style.<br/><br/> With each day unfolding a thoughtfully curated array of captivating runway shows.
               </p>
-              <button className="btn btn-outline-white" onClick={() => navigate('/calendar')}>Learn More</button>
+              <button className="btn btn-outline-white" onClick={() => navigate('/calendar')}>coming soon</button>
             </div>
           </div>
         </div>
@@ -81,7 +81,9 @@ const Home = () => {
               <p className="section-description">
                 Riyadh Fashion Week spotlights a diverse lineup of visionary designers leaving an indelible mark. Hailing from varied backgrounds, they harmoniously merge tradition and innovation, promising designs that captivate and inspire. Avant-garde to timeless elegance, they redefine Saudi Arabian fashion's future with boundless creativity.
               </p>
-              <button className="btn btn-outline" onClick={() => navigate('/designers')}>Learn More</button>
+              <button className="btn btn-outline" 
+              //onClick={() => navigate('/designers')}
+              >Coming Soon</button>
             </div>
           </div>
         </div>
