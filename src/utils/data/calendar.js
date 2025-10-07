@@ -4,7 +4,7 @@ export const designers = [
         date: "OCTOBER 16",
         year:"2025",
         text:"RUNWAY SHOWS",
-        subText:"BEDROCK",
+        // subText:"BEDROCK",
         designers: [
              {
                 id: "tima-abid",
@@ -40,7 +40,7 @@ export const designers = [
         date: "OCTOBER 17",
         year:"2025",
         text:"RUNWAY SHOWS",
-        subText:"BEDROCK",
+        // subText:"BEDROCK",
         designers: [
             {
                 id: "re-birth",
@@ -93,7 +93,7 @@ export const designers = [
         date: "OCTOBER 18",
         year:"2025",
         text:"COLLECTION PRESENTATION",
-        subText:"MANDARIN ORIENTAL",
+        // subText:"MANDARIN ORIENTAL",
         designers: [
             {
                 id: "derza",
@@ -135,7 +135,7 @@ export const designers = [
         ],
         extraDay:{
             text:"RUNWAY SHOWS",
-            subText:"THE ROOF - AL MAMLAKA",
+            // subText:"THE ROOF - AL MAMLAKA",
             designers:[
            {
                 id: "femi-9",
@@ -197,7 +197,7 @@ export const designers = [
         date: "OCTOBER 19",
         year:"2025",
         text:"COLLECTION PRESENTATION",
-        subText:"MANDARIN ORIENTAL",
+        // subText:"MANDARIN ORIENTAL",
         designers: [
             {
                 id: "nabila-nazer",
@@ -239,7 +239,7 @@ export const designers = [
         ],
         extraDay:{
             text:"RUNWAY SHOWS",
-            subText:"JAX B5",
+            // subText:"JAX B5",
             designers:[
             {
                 id: "mihyar",
@@ -337,7 +337,7 @@ export const designers = [
         date: "OCTOBER 20",
         year:"2025",
         text:"COLLECTION PRESENTATION",
-        subText:"MANDARIN ORIENTAL",
+        // subText:"MANDARIN ORIENTAL",
         designers: [
             {
                 id: "sulitude",
@@ -381,7 +381,7 @@ export const designers = [
         ],
         extraDay:{
             text:"RUNWAY SHOWS",
-            subText:"JAX B5",
+            // subText:"JAX B5",
             designers:[
           {
                 id: "eleven",
