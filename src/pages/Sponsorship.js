@@ -74,8 +74,7 @@ const isMobile = window.innerWidth < 768;
         return (
         <div
           key={index}
-          style={{display: isMobile && "none" }}
-          className={`partner-logo`} // hide on mobile if blank
+          className={`partner-logo`}
         >
           <a
             className="partner-logo-image"
@@ -104,14 +103,12 @@ const isMobile = window.innerWidth < 768;
         return (
         <div
           key={index}
-          style={{display: isMobile && "none" }}
           className={`partner-logo`} // hide on mobile if blank
         >
           <a
             className="partner-logo-image"
             href={partner.url}
             target="_blank"
-            style={{display: isMobile && "none"  }}
             rel="noopener noreferrer"
           >
             {partner.logo && (
@@ -135,14 +132,12 @@ const isMobile = window.innerWidth < 768;
         return (
         <div
           key={index}
-          style={{display: isMobile && "none" }}
           className={`partner-logo`} // hide on mobile if blank
         >
           <a
             className="partner-logo-image"
             href={partner.url}
             target="_blank"
-            style={{display: isMobile && "none"  }}
             rel="noopener noreferrer"
           >
             {partner.logo && (
@@ -162,14 +157,12 @@ const isMobile = window.innerWidth < 768;
         return (
         <div
           key={index}
-          style={{display: isMobile && "none" }}
           className={`partner-logo`} // hide on mobile if blank
         >
           <a
             className="partner-logo-image"
             href={partner.url}
             target="_blank"
-            style={{display: isMobile && "none"  }}
             rel="noopener noreferrer"
           >
             {partner.logo && (
