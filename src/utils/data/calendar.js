@@ -188,9 +188,9 @@ export const designers = [
                 time: "22:00",
                 endTime: "22:15",
                 logo: require("../../images/designers/sv-logo-by-saudia.png"),
-                content: "Mona Alshebil is a Saudi fashion designer who graduated with a degree in Marketing and Innovation Management from the USA. Driven by her passion for fashion, she decided to pursue her dream and studied fashion, establishing her own brand, 'MonaAlshebil in 2020.\nAs part of the 100 Saudi Brands Initiative, her designs have graced the fashion weeksin Paris, Milan, and New York. Notably, her creations have been worn by celebrities, further solidifying her presence and influence in the industry. Mona Alshebil is very passionate about her work."
+                content: "SV by Saudia, reimagines the timeless allure of aviation into a lifestyle, creating elegant pieces that inspire self-expression and elevate everyday journeys.\nFrom the skies above to the streets below, SV reflects the freedom, elegance, and innovation of aviation into a lifestyle brand that speaks to modern lifestyle enthusiasts.\nInspired by the boundless spirit of flying, our designs celebrate the journey—whether it’s crossing continents or navigating daily life.\nEach piece embodies timeless sophistication and empowers selfexpression, reminding us that, wherever we are, we are all...\nLive To Fly."
             },
-]
+            ]
         }
     },
     {
