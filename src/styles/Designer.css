@@ -47,7 +47,9 @@
   border-radius: 6px;
   margin-bottom: 1.5rem;
 }
-
+.designer-detail-bio.arabic{
+  direction: rtl;
+}
 .designer-info {
   display: flex;
   flex-direction: column;
@@ -79,19 +81,22 @@
 }
 
 .btn-learn-more {
-  background: transparent;
-  color: var(--rfw-black);
-  border: 1px solid var(--rfw-black);
-  padding: 0.75rem ;
-  font-size: 0.875rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-top: 5px;
-  font-family: sans-serif;
-  max-width: 150px;
+background: transparent;
+    color: var(--rfw-black);
+    border: 1px solid var(--rfw-black);
+    /* padding: 0.75rem; */
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 5px;
+    font-family: sans-serif;
+    max-width: 150px;
+    min-width: 100px;
+    width: 100%;
+    text-align: center;
 }
 
 .btn-learn-more:hover {

@@ -82,8 +82,8 @@ const Home = () => {
                 Riyadh Fashion Week spotlights a diverse lineup of visionary designers leaving an indelible mark. Hailing from varied backgrounds, they harmoniously merge tradition and innovation, promising designs that captivate and inspire. Avant-garde to timeless elegance, they redefine Saudi Arabian fashion's future with boundless creativity.
               </p>
               <button className="btn btn-outline" 
-              //onClick={() => navigate('/designers')}
-              >Coming Soon</button>
+              onClick={() => navigate('/designers')}
+              >Learn More</button>
             </div>
           </div>
         </div>

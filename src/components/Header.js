@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
@@ -41,7 +41,8 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="header-nav header-nav-desktop">
           {['/', '/about', 
-          // '/casting', 
+          '/designers', 
+          '/calendar', 
           '/sponsorship', '/press', '/contact'].map((path) => (
             <Link
               key={path}
@@ -52,7 +53,8 @@ const Header = () => {
             >
               {path === '/' ? 'HOME' :
                path === '/about' ? 'ABOUT' :
-              //  path === '/casting' ? 'CASTING' :
+               path === '/designers' ? 'DESIGNERS' :
+               path === '/calendar' ? 'CALENDAR' :
                path === '/sponsorship' ? 'SPONSORSHIP & PARTNERSHIP' :
                path === '/press' ? 'PRESS' : 'CONTACT US'}
             </Link>
@@ -74,7 +76,8 @@ const Header = () => {
         <div className={`mobile-nav-overlay ${isMenuOpen ? 'open' : ''}`}>
           <nav className="header-nav header-nav-mobile">
             {['/', '/about', 
-            // '/casting', 
+            '/designers', 
+            '/calendar', 
             '/sponsorship', '/press', '/contact'].map((path) => (
               <Link
                 key={path}
@@ -84,7 +87,8 @@ const Header = () => {
               >
                 {path === '/' ? 'HOME' :
                  path === '/about' ? 'ABOUT' :
-                //  path === '/casting' ? 'CASTING' :
+                 path === '/designers' ? 'DESIGNERS' :
+                 path === '/calendar' ? 'CALENDAR' :
                  path === '/sponsorship' ? 'SPONSORSHIP & PARTNERSHIP' :
                  path === '/press' ? 'PRESS' : 'CONTACT US'}
               </Link>

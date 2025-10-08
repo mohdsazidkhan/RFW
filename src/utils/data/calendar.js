@@ -85,7 +85,7 @@ export const designers = [
                 time: "22:00",
                 endTime: "22:13",
                 logo: require("../../images/designers/abadia.webp"),
-                content: "Shahd is the mastermind behind ethical luxury label Abadia. The brand is at the forefront of reimagining fashion for the contemporary woman by marrying craftsmanship with timeless design. A strong advocate of ethical fashion, she was also the co-founder of Project JUST, a social enterprise that leverages technology to create transparency and accountability in fashion supply chains.\nShahd holds an MBA from Johns Hopkins University, is an Acumen global fellow, and has worked on economic development projects globally in Rwanda, Armenia, and India. She has been a guest speaker at major global events such as Harvard Social Enterprise Conference and the Youth Philanthropy Summit."
+                content: "ABADIA is an ethical luxury brand that champions cultural storytelling through timeless design. Founded in 2019 by Shahd AlShehail, the brand is defined by a philosophy that blends feminine ease with masculine structure, expressed through signature codes that evolve each season.\nRooted in craftsmanship and a deep respect for artisanal techniques, the brand supports and amplifies artisanal communities across Saudi Arabia and the UAE through reimagining traditional craft into a modern global language of luxury.\nSince its inception, Abadia has become a pioneer for Saudi fashion on the international stage. From being the first Saudi brand to launch on Net-a-Porter, to presenting at Galeries Lafayette Haussmann, the brand is now carried by over 13 leading global retailers including Luisa Via Roma, Harvey Nichols, and Selfridges.",
             },
         ]
     },
@@ -111,17 +111,18 @@ export const designers = [
                 desc: "COUTURE",
                  time: "12:00",
                 endTime: "12:15",
-                // logo: require("../../images/designers/fatima-alabdul-qader.webp"),
-                // content: "Fatima Alabdulqader has always been very productive and loved observing since her childhood years. The designer was inspired by every aesthetic detail surrounded her, nature, architectural sites, historical elements, impressionist art especially Modern Art. Designer's early designs initiated by her sister's and her mother's couture dresses that she designed for the family wedding ceremony. Since 2017, she is working on bridal wear and each day she continues to charm the brides by her artsy design.\nThe designer participated The Saudi 100 Brands Programme organised under the Fashion Commission under the Ministry of Culture and created special designs for their occasions. She recently took a special course from the best professors coming from Institut Français de la Mode in Paris in order to develop her business and upgrade herself to the next level. She completed the course both in Riyadh and Paris before the end of 2022."
+                logo: require("../../images/designers/aleena.jpg"),
+                content: "Aleena is a Saudi-born contemporary women’s wear brand crafting versatile, modern pieces for everyday life and special moments. Rooted in cultural awareness and quality, Aleena offers styles from elegant evenings to effortless days — delivering everyday luxury with precision and cultural relevance."
             },
             {
                 id: "leem",
                 name: "LEEM",
                 desc: "COUTURE",
-               time: "13:00",
+                time: "13:00",
                 endTime: "13:15",
-                // logo: require("../../images/designers/khawla-alaiban.webp"),
-                // content: "KHAWLA ALAIBAN is a Saudi Fashion Label named after its Owner and Creative Director. It was launched in the Saudi Fashion Market in 2018, but its story and designs began long time before that. In KHAWLA ALAIBAN we are committed to become the label of choice for women seeking luxurious clothings that stimulate their feminine senses. We innovate elegant and timeless pieces that satisfy the taste of elegant women and complement their exclusive wardrobes."
+                logo: require("../../images/designers/leem.jpg"),
+                content: "Leem is the ultimate destination for contemporary fashion that seamlessly blends elegance and sophistication with the latest trends. Our mission is to curate stylish pieces designed exclusively for today's fashion-conscious woman. Each seasonal collection is culturally inclusive catering to our diverse global audience. Explore our collections featuring versatile maxi dresses, chic separates, and cozy knits. Leem is where modern style meets timeless elegance.",
+                content_ar: "إن ليم هي الوجهة المثالية للأزياء العصرية حيث يجمع بسهولة بين الأناقة والرقي مع أحدث صيحات الموضة. تأتي مهمتنا في تنسيق القطع الأنيقة المصممة خصيصًا للمرأة العصرية المهتمة بالموضة. وتناسب كل مجموعة موسمية الجميع من الناحية الثقافية وتلبي احتياجات جمهورنا العالمي المتنوع. اكتشفي مجموعاتنا التي تتميز بفساتين طويلة متعددة الاستخدامات، وملابس منفصلة أنيقة،"
             },
             {
                 id: "arwa-albanawi",
