@@ -106,7 +106,7 @@ background: transparent;
 /* Ensure uniform image box for all designer cards */
 .designer-image {
   width: 100%;
-  aspect-ratio: 1/1; /* square, adjust to 4/5 etc. if you want a portrait rectangle */
+  aspect-ratio: 1 / 1.5; /* square, adjust to 4/5 etc. if you want a portrait rectangle */
   background: #ddd;
   margin-bottom: 1.5rem;
   border-radius: 4px;

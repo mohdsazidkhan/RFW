@@ -59,7 +59,7 @@ export  const designers = [
       id: "fatima-alabdul-qader",
       name: "Fatima AlAbdulQader",
       desc: "COUTURE",
-      logo: require("../../images/designers/fatima-alabdul-qader.webp"),
+      logo: require("../../images/designers/fatima-alabdul-qader.jpg"),
       content:"Fatima Alabdulqader has always been very productive and loved observing since her childhood years. The designer was inspired by every aesthetic detail surrounded her, nature, architectural sites, historical elements, impressionist art especially Modern Art. Designer’s early designs initiated by her sister’s and her mother’s couture dresses that she designed for the family wedding ceremony. Since 2017, she is working on bridal wear and each day she continues to charm the brides by her artsy design.\nThe designer participated The Saudi 100 Brands Programme organised under the Fashion Commission under the Ministry of Culture and created special designs for their occasions. She recently took a special course from the best professors coming from Institut Français de la Mode in Paris in order to develop her business and upgrade herself to the next level. She completed the course both in Riyadh and Paris before the end of 2022."
     },
     {
@@ -250,7 +250,7 @@ export  const designers = [
       id: "waad-aloqaili",
       name: "Waad AloqAili",
       desc: "COUTURE",
-      logo: require("../../images/designers/waad-aloqaili.webp"),
+      logo: require("../../images/designers/waad-aloqaili.png"),
       content:"Waad Aloqaili a leading Saudi fashion designer, co-founded Waad Aloqaili Couture with her sister Ahlam in 2019. Renowned for her vibrant, luxury designs that tell profound stories, Waad blends bold creativity with exquisite craftsmanship. Each collection presents a unique narrative of resilience, transformation, and empowerment, celebrating the individuality and personal growth of women.\nWith her studies in Paris and a global perspective on fashion, Waad brings a fresh, modern, yet timeless approach to couture while remaining deeply committed to sustainability and exceptional quality."
     },
     {
@@ -292,7 +292,7 @@ export  const designers = [
         id: "femi-9",
         name: "FEMI9",
         desc: "COUTURE",
-        logo: require("../../images/designers/femi-9.png"),
+        logo: require("../../images/designers/femi-9.jpg"),
         content: "Femi9 Fashion is a leading name in the Middle East's fashion scene, renowned for empowering women and celebrating their individuality. Founded in 1999 in Jeddah, Saudi Arabia, and managed by FAD international company, Femig blends elegance, femininity, and comfort in every design\nKnown for its innovative, high quality apparel, Femig has become a favorite among fashion-forward women seeking both trendy and timeless wardrobe for every occasion."
     },   
     {
@@ -327,7 +327,7 @@ export  const designers = [
       id: "manel",
       name: "MANEL",
       desc: "COUTURE",
-      logo: require("../../images/designers/manel.jpg"),
+      logo: require("../../images/designers/manel.png"),
       content:"Manel Aboudaoud is the founder and creative director of Manel, a luxury brand she created in 2019 in Dubai. Her path into fashion was not conventional, but it was deeply intentional.\nBorn in Algeria and raised in France, Manel grew up surrounded by art, strong cultural identity, and the quiet presence of beauty in everyday life. From an early age, she developed a sensitivity to aesthetics and detail, which later became the foundation of her creative language.\nDespite her early passion for design, Manel chose to begin her professional life in a very different world: finance. She earned a Master’s degree in the field and went on to work at two of the world’s most respected firms, Ernst & Young (EY) and PricewaterhouseCoopers (PwC). These years gave her a sharp sense of strategy, structure, and discipline tools that would prove essential when launching her own brand.\nHer move to Dubai marked a turning point. It was here that she decided to merge her analytical mindset with her creative instinct, and to build something that reflected her personal vision of femininity and refinement. That vision became MANEL, a brand shaped by precision, emotion, and timeless elegance.\nAs a designer, Manel draws inspiration from the contrasts that define her own journey: tradition and modernity, strength and softness, modesty and confidence. Her collections reflect a deep understanding of form, material, and presence, always designed with women in mind.\nHer creative direction is guided by one principle: that clothing should empower without overwhelming. Through each piece, she seeks to highlight individuality, quiet strength, and effortless beauty.\nFashion, for her, is not just an industry. It is a way of speaking without words, of honoring where we come from, and of expressing who we choose to be."
     },
      {
@@ -406,6 +406,5 @@ export  const designers = [
       desc: "COUTURE",
       logo: require("../../images/designers/leem.jpg"),
       content: "Leem is the ultimate destination for contemporary fashion that seamlessly blends elegance and sophistication with the latest trends. Our mission is to curate stylish pieces designed exclusively for today's fashion-conscious woman. Each seasonal collection is culturally inclusive catering to our diverse global audience. Explore our collections featuring versatile maxi dresses, chic separates, and cozy knits. Leem is where modern style meets timeless elegance.",
-      content_ar: "إن ليم هي الوجهة المثالية للأزياء العصرية حيث يجمع بسهولة بين الأناقة والرقي مع أحدث صيحات الموضة. تأتي مهمتنا في تنسيق القطع الأنيقة المصممة خصيصًا للمرأة العصرية المهتمة بالموضة. وتناسب كل مجموعة موسمية الجميع من الناحية الثقافية وتلبي احتياجات جمهورنا العالمي المتنوع. اكتشفي مجموعاتنا التي تتميز بفساتين طويلة متعددة الاستخدامات، وملابس منفصلة أنيقة،"
     },
   ];

@@ -61,15 +61,6 @@ The atelier aspires to create high-quality couture and ready-to-wear garments th
                   </React.Fragment>
                 ))}
             </div>
-            {designerDetails?.content_ar &&
-            <div className="designer-detail-bio arabic">
-                {designerDetails?.content_ar?.split('\n').map((line, index) => (
-                  <React.Fragment key={index}>
-                    {line}
-                    <br /><br />
-                  </React.Fragment>
-                ))}
-            </div>}
             <button 
               className="btn btn-back-to-designers"
               onClick={() => navigate(-1)}
