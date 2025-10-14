@@ -12,7 +12,9 @@ const strategicPartners = [
 const supportingPartners1 = [
   { name: "Eyewa", logo: require('../images/partners/eyewa.png'), url:"https://eyewa.com/sa-ar" },
   { name: "Rotana Signs", logo: require('../images/partners/rotana-signs.png'), url:"https://www.linkedin.com/company/rotanasigns/" },
-  { name: "Ounass", logo: require('../images/partners/ounass.png'), url:"https://en-saudi.ounass.com/women?gclsrc=aw.ds&gad_source=1&gad_campaignid=22595114047&gbraid=0AAAAADSMPX6nAHHbpMqeNbaFxZ-AV7TzP&gclid=EAIaIQobChMIjJWVz6yQkAMVHwwGAB0elitaEAAYASAAEgJKAPD_BwE" },
+  // { name: "Ounass", logo: require('../images/partners/ounass.png'), url:"https://en-saudi.ounass.com/women?gclsrc=aw.ds&gad_source=1&gad_campaignid=22595114047&gbraid=0AAAAADSMPX6nAHHbpMqeNbaFxZ-AV7TzP&gclid=EAIaIQobChMIjJWVz6yQkAMVHwwGAB0elitaEAAYASAAEgJKAPD_BwE" },
+  { name: "Loreal Paris", logo: require('../images/partners/lorealparis.png'), url:"https://www.lorealparis.co.in/" },
+  { name: "Loreal Professional Paris", logo: require('../images/partners/loreal_professional_paris.png'), url:"https://www.loreal.com/en/professional-products-division/loreal-professionnel/" },
 ];
 const supportingPartners2 = [
   { name: "Mandarin Oriental", logo: require('../images/partners/mandarin.png'), url:"https://www.mandarinoriental.com/en" },

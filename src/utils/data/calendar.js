@@ -43,6 +43,15 @@ export const designers = [
         // subText:"BEDROCK",
         designers: [
             {
+                id: "leem",
+                name: "LEEM",
+                desc: "COUTURE",
+                time: "17:00",
+                endTime: "18:00",
+                logo: require("../../images/designers/leem.jpg"),
+                content: "Leem is the ultimate destination for contemporary fashion that seamlessly blends elegance and sophistication with the latest trends. Our mission is to curate stylish pieces designed exclusively for today's fashion-conscious woman. Each seasonal collection is culturally inclusive catering to our diverse global audience. Explore our collections featuring versatile maxi dresses, chic separates, and cozy knits. Leem is where modern style meets timeless elegance.",
+            },
+            {
                 id: "re-birth",
                 name: "REBIRTH",
                 desc: "COUTURE",
@@ -113,15 +122,6 @@ export const designers = [
                 endTime: "12:15",
                 logo: require("../../images/designers/aleena.jpg"),
                 content: "Aleena is a Saudi-born contemporary women’s wear brand crafting versatile, modern pieces for everyday life and special moments. Rooted in cultural awareness and quality, Aleena offers styles from elegant evenings to effortless days — delivering everyday luxury with precision and cultural relevance."
-            },
-            {
-                id: "leem",
-                name: "LEEM",
-                desc: "COUTURE",
-                time: "13:00",
-                endTime: "13:15",
-                logo: require("../../images/designers/leem.jpg"),
-                content: "Leem is the ultimate destination for contemporary fashion that seamlessly blends elegance and sophistication with the latest trends. Our mission is to curate stylish pieces designed exclusively for today's fashion-conscious woman. Each seasonal collection is culturally inclusive catering to our diverse global audience. Explore our collections featuring versatile maxi dresses, chic separates, and cozy knits. Leem is where modern style meets timeless elegance.",
             },
             {
                 id: "arwa-albanawi",
