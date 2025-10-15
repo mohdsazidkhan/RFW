@@ -33,7 +33,22 @@ export const designers = [
                 logo: require("../../images/designers/atelier-hikayat.webp"),
                 content: "In Atelier Hekayat we believe in art. An art which comes from the combination of identities, moods and cultural settings. In Atelier Hekayat, we believe in stories. We believe that without a story, there is no creativity. Story makes the brand stronger. Launched in 2012 by fashion designers Alia and Abeer Oraif, the brand aims to introduce a new meaning to the outerwear that matches the current rhythm of its creators. Since then, Atelier Hekayat adds an exclusive glamour to the traditional outerwear. In 2019, the brand has been chosen between hundreds of fashion designers as one of the most famous designers in Saudi Arabia by the Ministry of Culture and honoured to receive the Certificate of Excellence. Following this, the designers were invited to participate in the Fashion Futures Event to showcase their collection. In 2020, they have been selected to Saudi 100 Brands Exhibition organised under the Fashion Commission by the Ministry of Culture. In the recent exhibition that is organised, their special piece inspired by the bougainvillea flower and Jeddah landscape gained a huge success by appearing on many mediums."
             },
-        ]
+        ],
+        extraDay:{
+            //text:"RUNWAY SHOWS",
+            subText:"THE PALM GROVE",
+            designers:[
+           {
+                id: "vivienne-westwood",
+                name: "VIVIENNE WESTWOOD",
+                //desc: "COUTURE",
+                time: "21:00",
+                endTime: "21:15",
+               // logo: require("../../images/designers/femi-9.jpg"),
+                //content: "Femi9 Fashion is a leading name in the Middle East's fashion scene, renowned for empowering women and celebrating their individuality. Founded in 1999 in Jeddah, Saudi Arabia, and managed by FAD international company, Femig blends elegance, femininity, and comfort in every design\nKnown for its innovative, high quality apparel, Femig has become a favorite among fashion-forward women seeking both trendy and timeless wardrobe for every occasion."
+            }
+            ]
+        }
     }, 
     {
         day:"2",
@@ -47,7 +62,7 @@ export const designers = [
                 name: "LEEM",
                 desc: "COUTURE",
                 time: "17:00",
-                endTime: "18:00",
+                endTime: "17:15",
                 logo: require("../../images/designers/leem.jpg"),
                 content: "Leem is the ultimate destination for contemporary fashion that seamlessly blends elegance and sophistication with the latest trends. Our mission is to curate stylish pieces designed exclusively for today's fashion-conscious woman. Each seasonal collection is culturally inclusive catering to our diverse global audience. Explore our collections featuring versatile maxi dresses, chic separates, and cozy knits. Leem is where modern style meets timeless elegance.",
             },
@@ -92,7 +107,7 @@ export const designers = [
                 name: "ABADIA",
                 desc: "READY-TO-WEAR",
                 time: "22:00",
-                endTime: "22:13",
+                endTime: "22:15",
                 logo: require("../../images/designers/abadia.webp"),
                 content: "ABADIA is an ethical luxury brand that champions cultural storytelling through timeless design. Founded in 2019 by Shahd AlShehail, the brand is defined by a philosophy that blends feminine ease with masculine structure, expressed through signature codes that evolve each season.\nRooted in craftsmanship and a deep respect for artisanal techniques, the brand supports and amplifies artisanal communities across Saudi Arabia and the UAE through reimagining traditional craft into a modern global language of luxury.\nSince its inception, Abadia has become a pioneer for Saudi fashion on the international stage. From being the first Saudi brand to launch on Net-a-Porter, to presenting at Galeries Lafayette Haussmann, the brand is now carried by over 13 leading global retailers including Luisa Via Roma, Harvey Nichols, and Selfridges.",
             },
@@ -110,7 +125,7 @@ export const designers = [
                 name: "DERZA",
                 desc: "COUTURE",
                 time: "11:00",
-                endTime: "11:15",
+                endTime: "11:50",
                 logo: require("../../images/designers/derza.PNG"),
                 content: "DERZA was born in 2018 from Madhawi Almansour’s deep passion for fashion. Inspired by her mother, who used to design her own clothes, Madhawi always dreamed of creating her own brand. Even though she studied Computer Science, her love for fashion never stopped.\nShe started by designing her first pieces in a small home studio, learning everything by hand ,from sketching to sewing. In 2018, she launched DERZA, a women’s fashion brand that blends elegance, modernity, and Saudi culture in a unique way.\nIn 2021, she co-founded Saudi Arabia’s first full fashion production house run by local talent. She also opened two boutiques to showcase DERZA and support other rising Saudi brands. Today, DERZA represents creativity, culture, and a designer’s heartfelt journey"
             },
@@ -119,7 +134,7 @@ export const designers = [
                 name: "ALEENA",
                 desc: "COUTURE",
                  time: "12:00",
-                endTime: "12:15",
+                endTime: "12:50",
                 logo: require("../../images/designers/aleena.jpg"),
                 content: "Aleena is a Saudi-born contemporary women’s wear brand crafting versatile, modern pieces for everyday life and special moments. Rooted in cultural awareness and quality, Aleena offers styles from elegant evenings to effortless days — delivering everyday luxury with precision and cultural relevance."
             },
@@ -128,7 +143,7 @@ export const designers = [
                 name: "ARWA ALBANAWI",
                 desc: "COUTURE",
                 time: "14:00",
-                endTime: "14:15",
+                endTime: "14:50",
                 logo: require("../../images/designers/arwa-albanawi.JPG"),
                 content: "ARWÁ is a design house rooted in the perspective of its founder—born on the Red Sea coast of Saudi Arabia and shaped by childhood memories under the Mediterranean sun.\nFounded in 2015, ARWÁ began with tailoring and signature suits, and has since evolved into a fashion and lifestyle maison. A refined expression in natural elegance for the woman on the go.\nWith an appreciation of how women move through their day, we create garments defined by presence, ease, and thoughtful detail—through tactile fabrics, a feminine lens, and curated edits.\nMorning and Sahra define the rhythm of the brand: Essentials accompany her from city to coast, from day into evening, while Sahra is the night expression—a refined edit of silhouettes crafted for the hours between sunset and sunrise. Worn barefoot or with considered intent, these pieces shift effortlessly into the evening.\nThe ARWÁ Woman\nShe’s bold, she’s cool, and confident. Her clothes carry power—subverting expectations and expressing her independence. Her wardrobe is made to move with her effortlessly, embodying freedom and agency, shaping the rhythm of her everyday.\nThe Founder\nArwa Al Banawi is a Saudi creative director and the founder of ARWÁ. With a background that bridges editorial and design, her perspective is shaped by a life lived between cultures. Recognized by Hypebeast as one of the Next Designers to Know (2023) and awarded Best Regional Designer by Grazia Middle East (2019), she has also collaborated with global names including adidas Originals. Today, Arwa continues to explore design as a dialogue—shaping the codes of modernity and elegance."
             },
@@ -439,237 +454,22 @@ export const designers = [
             ]
         }
     },
-    // {
-    //     date: "OCTOBER 19",
-    //     designers: [
-    //         {
-    //             id: "mona-alshebil",
-    //             name: "MONA ALSHEBIL",
-    //             desc: "READY-TO-WEAR",
-    //             time: "17:00",
-    //             logo: require("../../images/designers/mona-alshebil.webp"),
-    //             content: "Mona Alshebil is a Saudi fashion designer who graduated with a degree in Marketing and Innovation Management from the USA. Driven by her passion for fashion, she decided to pursue her dream and studied fashion, establishing her own brand, 'MonaAlshebil in 2020.\nAs part of the 100 Saudi Brands Initiative, her designs have graced the fashion weeksin Paris, Milan, and New York. Notably, her creations have been worn by celebrities, further solidifying her presence and influence in the industry. Mona Alshebil is very passionate about her work."
-    //         },
-    //         {
-    //             id: "abadia",
-    //             name: "ABADIA",
-    //             desc: "READY-TO-WEAR",
-    //             time: "18:00",
-    //             logo: require("../../images/designers/abadia.webp"),
-    //             content: "Shahd is the mastermind behind ethical luxury label Abadia. The brand is at the forefront of reimagining fashion for the contemporary woman by marrying craftsmanship with timeless design. A strong advocate of ethical fashion, she was also the co-founder of Project JUST, a social enterprise that leverages technology to create transparency and accountability in fashion supply chains.\nShahd holds an MBA from Johns Hopkins University, is an Acumen global fellow, and has worked on economic development projects globally in Rwanda, Armenia, and India. She has been a guest speaker at major global events such as Harvard Social Enterprise Conference and the Youth Philanthropy Summit."
-    //         },
-    //         {
-    //             id: "razan-alazzouni",
-    //             name: "RAZAN ALAZZOUNI",
-    //             desc: "READY-TO-WEAR",
-    //             time: "19:00",
-    //             logo: require("../../images/designers/razan-alazzouni.webp"),
-    //             content: "Razan Alazzouni clothing is all about exuding the femininity, delicacy and grace of the female form. Razan derives most of her inspiration from women themselves and their natural poise. Each piece in her collection is intended to show off its wearer in an elegant light, while maintaining a sense of playfulness as well. Every season a new chapter evolves, and Razan tells a different story in her embroidery.\nThe designer enjoys collaborating with inspirational muses, stylists & international brands including Coca Cola, Rene Caovilla, Disney, Piaget & Judith Leiber.\nRazan Alazzouni has been featured in magazines such as Vogue Italia, Harper's Bazaar, Elle, Marie Claire, Vogue Arabia, HIA, InStyle, Tatler, etc. The brand has also been elected to be the face of the Young Generation Saudi Vision 2030 which was promoted by CNN globally & featured in Times Square, New York City."
-    //         },
-    //         {
-    //             id: "aram",
-    //             name: "ARAM",
-    //             desc: "READY-TO-WEAR",
-    //             time: "20:00",
-    //             logo: require("../../images/designers/aram.webp"),
-    //             content: "Arwa Alammari is a Fashion Consultant, the Ambassador of Arab Fashion Council, a Public Speaker and the Creative Director and Founder of the Saudi award-winning brand ArAm, a prêt-à porte high-end women brand.\nShe is the Vice Chairperson of the fashion association (Azyaona).\nShe also represented Saudi and become the winner of Fashion Star Arabia Award against 11 other Arab designers (2016) and also the winner of Italian Grazia Magazine Style Award (2014).\nIn Jan 2020 Arwa was named by BBC to be one of the most creative minds on the planet who is putting Saudi elegance on the fashion map.\nArwa is also the winner of the Saudi National Cultural Awards (Fashion Category) in 2021 and for two consecutive years she was in the list of Forbes top 30 women.\nbehind Middle Eastern brands FOR 2022 AND 2023 and Forbes top 50 women."
-    //         },
-    //         {
-    //             id: "kaf-by-kaf",
-    //             name: "KAF BY KAF",
-    //             desc: "READY-TO-WEAR",
-    //             time: "21:00",
-    //             logo: require("../../images/designers/kaf-by-kaf.webp"),
-    //             content: "The brand KAF BY KAF was founded by Kawthar Alhoraish in 2019, a Saudi fashion designer. Kawthar Alhoraish always had a different perspective in fashion. Her style was always bold & unique that what influence the brand KAF BY KAF the most.\nThe brand aims to revolutionizing the cultural aspect of the outwear by creating bold & creative designs from an artistic perspective"
-    //         },
-    //     ]
-    // },
-    // {
-    //     date: "OCTOBER 20",
-    //     designers: [
-    //         {
-    //             id: "makram-marzuki",
-    //             name: "MAKRAM MARZUKI",
-    //             desc: "READY-TO-WEAR",
-    //             time: "17:00",
-    //             logo: require("../../images/designers/makram-marzuki.webp"),
-    //             content: "Makram Marzuki is a new concept, creating luxury offerings with an emphasis on Arabic culture that is intensified and refined.\nBy creating a unique visual language using Arabic geometric patterns Makram Marzuki aims to create a brand that is recognizable.\nThe brand aims to generate value by curating Arabic culture in the form of luxury ready to wear products for the global consumer."
-    //         },
-    //         {
-    //             id: "pavone",
-    //             name: "PAVONE",
-    //             desc: "COUTURE",
-    //             time: "18:00",
-    //             logo: require("../../images/designers/pavone.webp"),
-    //             content: "PAVONE is a Saudi brand established in 2016 in Saudi Arabia's Eastern Province. Our design team aspires to create innovative designs that satisfy the most beautiful soul of the contemporary woman and motivate her goals, strengths, and interests. Our designs reflect the unique spirit of the peacock, powerful and passionate. Nature and works of art come to life from the designer's point of view, starting with designs and then combining with high-quality fabrics.\nAt Pavone, our designs embody a deep spiritual connection to the emotional essence of life, drawing inspiration from the beauty of nature and the intricacies of art. Each creation is a testament to the harmony between the natural world and artistic expression, bringing forth garments that resonate with the soul. We pay meticulous attention to details and embroidery, drawing inspiration for these elements from nature and emotions."
-    //         },
-    //         {
-    //             id: "nour-aldahri",
-    //             name: "NOUR ALDHAHRI",
-    //             desc: "COUTURE",
-    //             time: "19:00",
-    //             logo: require("../../images/designers/nour-aldahri.webp"),
-    //             content: "NOUR AL DHAHRI was founded by Nour AL Dhahri. a Saudi fashion designer. Nour AL Dhahri grew up in a very encouraging environment where hobbies got full support. Designing has always been her area of interest but it came to reality in 2013 when she took a step forward tailoring and launched the very first collection of NOUR AL DHAHRI."
-    //         },
-    //         {
-    //             id: "hala-algharbawi",
-    //             name: "HALA ALGHARBAWI",
-    //             desc: "COUTURE",
-    //             time: "20:00",
-    //             logo: require("../../images/designers/hala-algharbawi.webp"),
-    //             content: "HALA ALGHARBAWI is a womenswear brand that combines Eastern and Western cultures with an adventurous blend of asymmetrical cuts, innovative textures, and opulent embellishments.\nHALA ALGHARBAWI's mission is to redefine beauty standards and pare down traditionalism; it values freedom of expressing and finding oneself.\nHALA ALGHARBAWI promotes looking past cultural differences, and believes in a world where diversity is inspiring and beautiful. The brand aims to make its female customers stand out, feel empowered, and become unforgettable with its couture.\nHALA ALGHARBAWI prides itself on being fast to translate its customers' fantasies into wearable reality. Each collection conveys a new inspiration and meaning. and pays tribute to handmade work as well as its precision.\nThe high-end collections are produced in limited quantities (or are custom-made) and are, therefore, regarded as collectors' items."
-    //         },
-    //         {
-    //             id: "mashael-al-faris",
-    //             name: "MASHAEL AL FARIS",
-    //             desc: "COUTURE",
-    //             time: "21:00",
-    //             logo: require("../../images/designers/mashael-al-faris.webp"),
-    //             content: "Mashael Al Faris is a Saudi fashion designer born and raised in Riyadh. Growing up in a city rich in culture, art, and history, she thrived in an environment that nurtured her creative spirit. As one of five sisters with a deep interest in fashion, Mashael developed a keen understanding of body shapes and styling from an early age.\nHer fascination with various artists and illustrators further influenced her vision of fashion as an integrated art form. For Mashael, fashion is not just about aesthetics; it's living art with a spirit of its own. This philosophy shines through in her designs, which blend traditional Saudi glamour with modern silhouettes and bold creativity.\nAfter graduating from fashion school in collaboration with Boxhill Institute in Melbourne, Australia, Mashael launched her first collection in 2010. Her unique and captivating designs quickly gained regional recognition. Mashael was featured in Forbs as one of the successful brands in the Middle East for the year 2025. Today, Mashael's collections adorn glamorous women throughout the Middle East, solidifying her position as a rising star in the global fashion scene.\nThe Brand:\nThe atelier aspires to create high-quality couture and ready-to-wear garments, characterized by the finest Italian fabrics and excellent craftsmanship worthy of special occasions. Each garment is meticulously designed and tailored by highly skilled artisans to produce exceptional, long-lasting pieces. The collections showcase refined style and silhouette, with a keen attention to detail and flat-felled reinforced seams."
-    //         },
-    //         {
-    //             id: "md29",
-    //             name: "MD29",
-    //             desc: "READY-TO-WEAR",
-    //             time: "22:00",
-    //             logo: require("../../images/designers/md29.webp"),
-    //             content: "MS. Manal AlDawood AND MS. NUHA ALMUTAIRi AND THEIR CONTRIBUTION TO THIS ACTIVITY BEFORE THE CREATION OF THIS BRAND IS MORE THAN 13YEARS OF EXPERIENCE IN THE FIELD OF FASHION DESIGN. THE MANY EXPERIENCES AND CONTRIBUTIONS THEY GAINED MADE THEM AMONG THE BEST SAUDIDESIGNERS ACCORDING TO THAT PARTICIPATION, BUSINESS MODELS AND DISTINGUISHED CLIENTS BASED ON THE EXPERIENCE OF MISS NOHA AND MANAL IN A VARIETY OF TASKS THAT THEY CARRIED OUT DURING THEIR WORK INTHIS FIELD OF DESIGNS. FROM RTW WOMEN AND MAN WEAR, EVENING DRESSES, EVENTS, WEDDING DRESSES, AND MORE. THE DEVELOPMENT OF THE FASHION INDUSTRY AND UPGRADING IT TO OTHER LEVELS ACCORDING TOTHE TECHNIQUES USED IN IT WERE INVENTED IN MANY DESIGNS THAT ARE VERY POPULAR IN THEKINGDOM OF SAUDI ARABIA AND THE EXTENSION OF THE KINGDOM IN MANY GULF COUNTRIES AND THEREST OF THE WORLD, SO GRAB SOME OF THEIR DESIGNS IN THE BIGGEST STORES . THESE EFFORTS CULMINATED IN HER JOINING THE UNIQUE PROGRAM (SAUDI ARABIA 100 MARK), WHICHWAS ESTABLISHED AND SUPERVISED BY THE MINISTRY OF CULTURE. REPRESENTED BY THE FASHIONAUTHORITY ."
-    //         },
-    //         {
-    //             id: "rba",
-    //             name: "RBA",
-    //             desc: "READY-TO-WEAR",
-    //             time: "23:00",
-    //             logo: require("../../images/designers/rba.webp"),
-    //             content: "RBA is an innovative cross-cultural Saudi ready-to-wear unisex brand that began its journey in NYC, in 2017. We envision bringing artistic, modern inclusivity into the fashion world. We believe fashion is a universal language that connects us, and our mission is to create a close-knit community that celebrates diversity through sustainable fashion. \nOur designs are not just clothes; they are stories waiting to be told. Versatile in form and rich in symbolism, they resonate deeply with art lovers who seek meaning in their fashion choices. \nAt the heart of RBA is a dedication to blending art, culture, and tradition. Each meticulously crafted piece reflects our commitment to bridging the gap between modernity and heritage."
-    //         },
-    //         {
-    //             id: "hajruss",
-    //             name: "HAJRUSS",
-    //             desc: "READY-TO-WEAR",
-    //             time: "00:00",
-    //             logo: require("../../images/designers/hajruss.webp"),
-    //             content: "Three young Saudi designers known for her innovative approach to fashion, exemplify the creativity, talent, and cultural richness present in the Saudi design scene.\nTheir creations have gained international recognition for their unique fusion of heritage and contemporary style, showcasing their unique perspectives and contributions to the world of design."
-    //         },
-    //         {
-    //             id: "noura-sulaiman",
-    //             name: "NOURA SULAIMAN",
-    //             desc: "READY-TO-WEAR",
-    //             time: "01:00",
-    //             logo: require("../../images/designers/noura-sulaiman.webp"),
-    //             content: "A member of Saudi Arabia's Fashion Commission, Noura Sulaiman is widely recognized for her signature style which represents her reverence for Saudi culture, heritage, and traditions, all translated into artistic designs for men and women. Presenting timeless and elegant prêt-à-porter and bespoke pieces, each limited-edition collection is universal in its appeal, recontextualizing classic Saudi attire with sartorial excellence.\nIn 2023, she became the first female Saudi designer to present a luxury menswear collection at the Paris Fashion Week, which was well-received by buyers and international fashion houses. She is all set to participate in the first Saudi Fashion Week in October2023 where she will present her latest collection for men."
-    //         },
-    //         {
-    //             id: "kml",
-    //             name: "KML",
-    //             desc: "READY-TO-WEAR",
-    //             time: "02:00",
-    //             logo: require("../../images/designers/kml.webp"),
-    //             content: "kml is an exploration of the present. It follows a research-based design approach which looks into the history of how humans dressed and how it evolved and continues to evolve to come up with meaningful designs that are relevant to our collective human identity.\nkml aims to offer a perspective on what relevant contemporary wear could be. kml was established in 2022 by cofounders Ahmed and Razan Hassan."
-    //         },
-    //         {
-    //             id: "mazrood",
-    //             name: "MAZROOD",
-    //             desc: "READY-TO-WEAR",
-    //             time: "03:00",
-    //             logo: require("../../images/designers/mazrood.webp"),
-    //             content: "Founded in Riyadh, Saudi Arabia, Mazrood is a fashion brand that blends the essence of streetwear with the sophistication of ready-to-wear garments. Our brand is rooted in the rich cultural heritage of our homeland, yet it speaks a global language of creativity and innovation. We believe that fashion is not just about clothing — it's about storytelling. Each of our collections is carefully crafted to tell a story — whether it's inspired by a season, a cause, or the vibrant communities that support us.\nAt Mazrood, we are more than a brand — we are a community. Our slogan, 'It's not just a brand, it's a community,' reflects our commitment to creating a space where individuals can come together, express themselves, and share their stories through fashion. We are passionate about what we do, and we are dedicated to pushing the limits of design to create pieces that resonate with our audience on a deeper level.\nJoin us on this journey as we expand our reach and continue to innovate — creating fashion that not only looks good but also makes a statement. With Mazrood, you're not just wearing a garment; you're wearing a piece of a story, a piece of a community, a piece of a movement."
-    //         },
-    //     ]
-    // },
-    // {
-    //     date: "OCTOBER 21",
-    //     designers: [
-    //         {
-    //             id: "qormuz",
-    //             name: "QORMUZ",
-    //             desc: "READY-TO-WEAR",
-    //             time: "17:00",
-    //             logo: require("../../images/designers/qormuz.webp"),
-    //             content: "Founder of Qormuz, dedicated to promoting and exporting culture through innovative products that reflect the present while bridging heritage with the future. \nWith degrees in both Law and Business Administration, I have contributed to shaping the vision and strategies for the Ministry of Culture, as well as for the Museums and Heritage Commissions.\nI have also worked as a business development consultant for the King Charles Foundation, Turquoise Mountain.\nIn 2024, I was honored with two awards from the DNA Paris Design Awards."
-    //         },
-    //         {
-    //             id: "uscita",
-    //             name: "USCITA",
-    //             desc: "READY-TO-WEAR",
-    //             time: "18:00",
-    //             logo: require("../../images/designers/uscita.webp"),
-    //             content: "Established in 2021, USCITA emerges with a profound love for a visionary community, united by the common goal of transcending limitations and embracing diversity through fashion.\nRedefining Masculinity with Femininity\nAt the heart of our brand lies courage, invisibility. USCITA stands as a testament to bold experimentation, daring to challenge traditional boundaries and pave the way for new era of fashion expression. As the first gender-fluid fashion Kingdom, we stand in solidarity with the transformative aspirations of Vision 2030. Our mission is clear: to challenge societal norms, dismantle gender stereotypes, and foster a culture of inclusivity and acceptance through the universal language of fashion."
-    //         },
-    //         {
-    //             id: "nora-al-shaikh",
-    //             name: "NORA ALSHAIKH",
-    //             desc: "READY-TO-WEAR",
-    //             time: "19:00",
-    //             logo: require("../../images/designers/nora-al-shaikh.webp"),
-    //             content: "Nora Al Shaikh is a Jeddah-based brand launched by Saudi designer Nora Al Alshaikh in 2012. Encompassing fragrance, accessories and clothing for both women and men, it has grown into a lifestyle brand. Nora received her degree in Business Administration from King Saud University before enrolling at Riyadh's Arts & Skills Institute. In December 2014, the designer received the Leaders Inspiring A Kingdom in the Business World Award, given by Forbes Middle East in recognition of individuals and visionary self-starters who have the power to initiate change and contribute to the Saudi Arabia of tomorrow.\nThe Nora Al Shaikh brand focuses on using fashion as a tool to bridge cultures. This approach informs each of her collections, which reference the Kingdom's diverse regions, craft traditions and art forms. Filtered through a contemporary lens for a global audience, these influences can be seen in the unique proportions, cuts and embellishments of her garments. Nora is committed to growing her brand sustainably. She produces mid-season collections for the Pre-Fall and Resort market, in addition to designing seasonal Ramadan and Abaya collections. This strategy has allowed her to grow within a competitive market, where proceeds from sales are reinvested back into the brand to improve production, source quality fabrics, and produce high quality look books. In addition to dedicated showrooms in Jeddah and Riyadh, the brand's direct-to-consumer retail strategy includes a dedicated online store.\nNora's designs have been featured in publications such as WWD, Vogue Arabia, Harper's Bazaar Arabia, Elle Arabia, Marie Claire Arabia, L'Officiel, CNN and the Los Angeles Times. The Saudi designer has won awards and recognition throughout her career, including being nominated as one of Forbes Middle East's Top 10 Saudi Women in the design field. She was one of three Saudi fashion designers selected by the Ministry of Culture to participate in shaping the Kingdom's 2030 Vision, by envisioning the role fashion can play in shaping perceptions of the country and its rich heritage."
-    //         },
-    //         {
-    //             id: "freeminds",
-    //             name: "FREEMINDS",
-    //             desc: "STREETWEAR",
-    //             time: "20:00",
-    //             logo: require("../../images/designers/freeminds.webp"),
-    //             content: "Mohammed Almuaither is the founder and creative director of FREEMINDS, a luxury streetwear brand based in Riyadh since 2019. Combining street culture with luxury, Mohammed creates unique designs that celebrate individuality and self-expression. His work aims to inspire positive change through fashion, redefining streetwear in Saudi Arabia."
-    //         },
-    //         {
-    //             id: "samar-nasraldin",
-    //             name: "SAMAR NASRALDIN",
-    //             desc: "READY-TO-WEAR",
-    //             time: "21:00",
-    //             logo: require("../../images/designers/samar-nasraldin.webp"),
-    //             content: "Samar Nasraldin, a Paris-trained intellect and visionary designer trom Jeddah, fuses Saudi cultural heritage with avant-garde sophistication to create bold, confident fashion for the modern woman.\nWith a foundation in savoir-faire, her luxury ready-to-wear collections transcend traditional attire, offering well-tailored statement pieces that celebrate individuality and seamlessly transition from day to night. Each design, meticulously crafted in Saudi Arabia, becomes a canvas for intellectual self-expression, inviting women to explore a sartorial language that embodies both playful elegance and timeless sophistication."
-    //         },
-    //         {
-    //             id: "hindamme",
-    //             name: "HINDAMME",
-    //             desc: "READY-TO-WEAR",
-    //             time: "22:00",
-    //             logo: require("../../images/designers/hindamme.webp"),
-    //             content: "Born in Saudi Arabia, Mohammed Khoja is a multi-disciplinary designer that has always had a desire to create, with some of his earliest memories consisting of drawing shapes and forms. While studying Business in Paris, Mohammed decided to pursue fashion design and worked on the concept for HINDAMME, launching the brand formally in 2016. Mohammed is inspired by storytelling through his designs, resulting in a contemporary and identity driven approach to ready-to-wear that is inspired by the concept of East meets West and his own experiences as a third culture creative.\nHis designs often blend elements of his native Saudi culture, with his debut collection integrating contemporary interpretations of the 'Al Qatt Al Aseeri' patterns for the first time. Mohammed is often fueled by mixing a dichotomy of genres that he loves, mostly combining his love of contemporary art, film & music into high fashion influenced ready to wear. Some of his ready to wear pieces have been collected by prestigious institutions such as the Victoria & Albert museum and the National Museum for World Cultures (The Netherlands) for their cultural and historical significance.\nAs part of the collection, SEASON VI includes five hero pieces, buttoned silk twill shirts that feature various eyecatching commissioned contemporary prints that depict the five main regions of Saudi Arabia: Riyadh, Jeddah, Eastern Province, Aseer and Al Ula. More recently, Mohammed has expanded into creating furniture and collectible objects working with various hotels."
-    //         },
-    //         {
-    //             id: "house-of-cenmar",
-    //             name: "HOUSE OF CENMAR",
-    //             desc: "STREETWEAR",
-    //             time: "23:00",
-    //             logo: require("../../images/designers/house-of-cenmar.webp"),
-    //             content: "House of Cenmar blends flawless craftsmanship, profound heritage, and avant-garde style into an extravagant fusion of East and West. Renowned for redefining luxury streetwear, Cenmar shines internationally and in top fashion publications. Guided by designer Hamed Aldabbour, each creation exudes timeless charm. Established in 2016 and launched in 2017 in London, Cenmar, meaning moon in Arabic, evokes celestial beauty.\nThe brand draws inspiration from the hues of sand dunes, the leadership and loyalty of wolves, and the freedom of falcons, embracing high spiritual concepts and faith. Cenmar's designs have gained worldwide popularity, uniting people through shared values and principles."
-    //         },
-    //         {
-    //             id: "awaken",
-    //             name: "AWAKEN",
-    //             desc: "STREETWEAR",
-    //             time: "00:00",
-    //             logo: require("../../images/designers/awaken.webp"),
-    //             content: "Committed and motivated business owner with almost six years' experience in retail and fashion designing. Proven track of analyzing the fashion plans and proposals and identifying affordable durable and high-quality sources of materials and manufactures. Highly knowledgeable about fashion industry, designing, development, project management, creative directing and leadership"
-    //         },
-    //         {
-    //             id: "jubb",
-    //             name: "JUBB",
-    //             desc: "READY-TO-WEAR",
-    //             time: "01:00",
-    //             logo: require("../../images/designers/jubb.webp"),
-    //             content: "Since I was 10 years old, I had this unusual habit of changing my clothes more than 5 times a day and sat at the house's living room feeling unsatisfied with every look I wore. That's how my passion for fashion and design evolved.\nMy grandmother used to do couture for some members of the Saudi Royal Family, where my grandfather was gifted in suit-tailoring; these two craftsmanship inspired me to establish my label JUBB, a neoclassical resort wear for men characterised through a fusion between Neapolitan tailoring techniques, womenswear-inspired fabrics, pastel colours and everything is minimalist.\nA true perspective of elegance and comfort through young at age, old at soul frame.\nBeside designing, I enjoy a solid background in brand building, storytelling and analyzing the fashion industry trends. Discovering how far this interesting industry can evolve and grow; while being infused and impacted by different industries and lifestyle to meet changing consumer behavior across different traditions and cultures."
-    //         },
-    //         {
-    //             id: "noble-fresh",
-    //             name: "NOBLE & FRESH",
-    //             desc: "READY-TO-WEAR",
-    //             time: "02:00",
-    //             logo: require("../../images/designers/noble-fresh.webp"),
-    //             content: "NOBLE & FRESH is a Saudi luxuries ready-to-wear fashion brand. It was founded in 2014 by the creative director Naif Al-Haif. The name fuses two concepts; NOBLE which is the core moral value and behavior Arab generations have been raised to, till it became a hereditary trait among them, and FRESH which resembles ones' latest fashionable look. The brand uses triangles, zig-zag lines, geometrical flowers and other symbols that represent architectural heritage that used to decorate the old mud houses of Diriyah and Najd region where the designer is originally from. All garments are exclusively crafted using high quality fabrics, materials, graphics and sewing techniques. NOBLE & FRESH aims to become a prominent fashion brand in the region that participates in the Saudi cultural evolution towards its vision through spreading creative fashion influence.",
-    //             instgram: "https://www.instagram.com/md.29.style/",
-    //             elfsight: "https://elfsight.com/social-media-icons-widget/?utm_source=websites&utm_medium=clients&utm_content=social-media-icons&utm_term=riyadhfashionweek.squarespace.com&utm_campaign=free-widget"
-    //         },
-    //         {
-    //             id: "1886",
-    //             name: "1886",
-    //             desc: "STREETWEAR",
-    //             time: "03:00",
-    //             logo: require("../../images/designers/1886.webp"),
-    //             content: "In 1886, we pride ourselves on being at the forefront of the fashion industry, continuously pushing boundaries and redefining the art of design. Our dedication to creativity, innovation, and quality craftsmanship sets us apart. We strive to offer our customers a unique and captivating fashion experience that reflects their individuality."
-    //         },
-    //     ]
-    // }
+    {
+        day:"5",
+        date: "OCTOBER 21",
+        year:"2025",
+        text:"RUNWAY SHOWS",
+        // subText:"KAFD",
+        designers: [
+            {
+                id: "stella-mccartney",
+                name: "STELLA MCCARTNEY",
+                //desc: "READY-TO-WEAR",
+                time: "18:00",
+                endTime: "18:15",
+                //logo: require("../../images/designers/noble-fresh.webp"),
+                //content: "NOBLE & FRESH is a Saudi luxuries ready-to-wear fashion brand. It was founded in 2014 by the creative director Naif Al-Haif. The name fuses two concepts; NOBLE which is the core moral value and behavior Arab generations have been raised to, till it became a hereditary trait among them, and FRESH which resembles ones' latest fashionable look. The brand uses triangles, zig-zag lines, geometrical flowers and other symbols that represent architectural heritage that used to decorate the old mud houses of Diriyah and Najd region where the designer is originally from. All garments are exclusively crafted using high quality fabrics, materials, graphics and sewing techniques. NOBLE & FRESH aims to become a prominent fashion brand in the region that participates in the Saudi cultural evolution towards its vision through spreading creative fashion influence.",
+            },
+        ]
+    }
 ];

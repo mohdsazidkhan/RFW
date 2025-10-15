@@ -12,7 +12,7 @@ const Livestream = () => {
         </div>
         <div className="livestream-hero-content">
           <h1 className="livestream-hero-title">STREAM THE LATEST<br/> FROM RFW</h1>
-          <p className="livestream-hero-subtitle">OCTOBER 16 — OCTOBER 20</p>
+          <p className="livestream-hero-subtitle">OCTOBER 16 — OCTOBER 21</p>
         </div>
       </section>
 
