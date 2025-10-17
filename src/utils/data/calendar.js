@@ -33,12 +33,7 @@ export const designers = [
                 logo: require("../../images/designers/atelier-hikayat.webp"),
                 content: "In Atelier Hekayat we believe in art. An art which comes from the combination of identities, moods and cultural settings. In Atelier Hekayat, we believe in stories. We believe that without a story, there is no creativity. Story makes the brand stronger. Launched in 2012 by fashion designers Alia and Abeer Oraif, the brand aims to introduce a new meaning to the outerwear that matches the current rhythm of its creators. Since then, Atelier Hekayat adds an exclusive glamour to the traditional outerwear. In 2019, the brand has been chosen between hundreds of fashion designers as one of the most famous designers in Saudi Arabia by the Ministry of Culture and honoured to receive the Certificate of Excellence. Following this, the designers were invited to participate in the Fashion Futures Event to showcase their collection. In 2020, they have been selected to Saudi 100 Brands Exhibition organised under the Fashion Commission by the Ministry of Culture. In the recent exhibition that is organised, their special piece inspired by the bougainvillea flower and Jeddah landscape gained a huge success by appearing on many mediums."
             },
-        ],
-        extraDay:{
-            //text:"RUNWAY SHOWS",
-            subText:"THE PALM GROVE",
-            designers:[
-           {
+            {
                 id: "vivienne-westwood",
                 name: "VIVIENNE WESTWOOD",
                 //desc: "COUTURE",
@@ -47,8 +42,7 @@ export const designers = [
                // logo: require("../../images/designers/femi-9.jpg"),
                 //content: "Femi9 Fashion is a leading name in the Middle East's fashion scene, renowned for empowering women and celebrating their individuality. Founded in 1999 in Jeddah, Saudi Arabia, and managed by FAD international company, Femig blends elegance, femininity, and comfort in every design\nKnown for its innovative, high quality apparel, Femig has become a favorite among fashion-forward women seeking both trendy and timeless wardrobe for every occasion."
             }
-            ]
-        }
+        ],
     }, 
     {
         day:"2",
