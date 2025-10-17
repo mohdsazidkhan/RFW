@@ -43,6 +43,7 @@ const Header = () => {
           {['/', '/about', 
           '/designers', 
           '/calendar', 
+          '/livestream', 
           '/sponsorship', '/press', '/contact'].map((path) => (
             <Link
               key={path}
@@ -55,6 +56,7 @@ const Header = () => {
                path === '/about' ? 'ABOUT' :
                path === '/designers' ? 'DESIGNERS' :
                path === '/calendar' ? 'CALENDAR' :
+               path === '/livestream' ? 'STREAM' :
                path === '/sponsorship' ? 'SPONSORSHIP & PARTNERSHIP' :
                path === '/press' ? 'PRESS' : 'CONTACT US'}
             </Link>
@@ -78,6 +80,7 @@ const Header = () => {
             {['/', '/about', 
             '/designers', 
             '/calendar', 
+            '/livestream', 
             '/sponsorship', '/press', '/contact'].map((path) => (
               <Link
                 key={path}
@@ -89,6 +92,7 @@ const Header = () => {
                  path === '/about' ? 'ABOUT' :
                  path === '/designers' ? 'DESIGNERS' :
                  path === '/calendar' ? 'CALENDAR' :
+                 path === '/livestream' ? 'STREAM' :
                  path === '/sponsorship' ? 'SPONSORSHIP & PARTNERSHIP' :
                  path === '/press' ? 'PRESS' : 'CONTACT US'}
               </Link>
