@@ -50,7 +50,7 @@ const DesignerDetail = () => {
           {/* Right Column: Image */}
           <div className="designer-detail-image">
             <img
-              src={designerDetails?.logo}
+              src={designerDetails?.logo || designerDetails?.logo_white}
               alt={designerDetails?.name}
               className="designer-detail-photo"
             />

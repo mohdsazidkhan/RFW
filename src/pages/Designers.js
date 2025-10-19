@@ -36,7 +36,7 @@ const Designers = () => {
                         height: "100%",
                         objectFit: "cover",
                       }}
-                      src={designer.logo}
+                      src={(designer?.logo || designer?.logo_dark)}
                       alt={designer.name}
                     />
                     {/* <div className="designer-image-placeholder">

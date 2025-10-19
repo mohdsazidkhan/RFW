@@ -336,7 +336,8 @@ export  const designers = [
       desc: "COUTURE",
       time: "17:00",
       endTime: "17:15",
-      logo: require("../../images/designers/mihyar.png"),
+      logo_dark: require("../../images/designers/mihyar_dark.png"),
+      logo_white: require("../../images/designers/mihyar_white.png"),
       content:""
   }, 
   {
