@@ -39,8 +39,8 @@ export const designers = [
                 //desc: "COUTURE",
                 time: "21:00",
                 endTime: "21:15",
-               // logo: require("../../images/designers/femi-9.jpg"),
-                //content: "Femi9 Fashion is a leading name in the Middle East's fashion scene, renowned for empowering women and celebrating their individuality. Founded in 1999 in Jeddah, Saudi Arabia, and managed by FAD international company, Femig blends elegance, femininity, and comfort in every design\nKnown for its innovative, high quality apparel, Femig has become a favorite among fashion-forward women seeking both trendy and timeless wardrobe for every occasion."
+                logo: require("../../images/designers/vivienne.png"),
+                content: "Vivienne Westwood is one of the most iconic and influential British fashion brands. Founded in the 1970s by Dame Vivienne Westwood, the label became known for its bold, creative, and rebellious approach to fashion.\nFusing classic British tailoring with modern, avant-garde design, Vivienne Westwood created a distinctive style that has shaped fashion trends around the world. The brand is celebrated for its iconic corsets, tartan patterns, and signature structured silhouettes.\nToday, Vivienne Westwood stands as a symbol of individuality, craftsmanship, and timeless style, with a strong presence on the global fashion stage."
             }
         ],
     }, 
@@ -461,8 +461,8 @@ export const designers = [
                 //desc: "READY-TO-WEAR",
                 time: "18:00",
                 endTime: "18:15",
-                //logo: require("../../images/designers/noble-fresh.webp"),
-                //content: "NOBLE & FRESH is a Saudi luxuries ready-to-wear fashion brand. It was founded in 2014 by the creative director Naif Al-Haif. The name fuses two concepts; NOBLE which is the core moral value and behavior Arab generations have been raised to, till it became a hereditary trait among them, and FRESH which resembles ones' latest fashionable look. The brand uses triangles, zig-zag lines, geometrical flowers and other symbols that represent architectural heritage that used to decorate the old mud houses of Diriyah and Najd region where the designer is originally from. All garments are exclusively crafted using high quality fabrics, materials, graphics and sewing techniques. NOBLE & FRESH aims to become a prominent fashion brand in the region that participates in the Saudi cultural evolution towards its vision through spreading creative fashion influence.",
+                logo: require("../../images/designers/stella.png"),
+                content: "Stella McCartney is a British luxury fashion house founded in 2001 by the designer Stella McCartney. Renowned for its modern, feminine, and effortlessly chic aesthetic, the brand is a pioneer in sustainable and ethical fashion. From the beginning, Stella McCartney committed to a no leather, no fur policy — setting a new standard for responsibility in the luxury industry.\nThe brand offers a full range of ready-to-wear, accessories, lingerie, eyewear, fragrances, and children’s clothing, all designed with a focus on craftsmanship, innovation, and conscious sourcing.\nToday, Stella McCartney is celebrated worldwide for combining high fashion with sustainability, proving that style and ethics can coexist. With flagship stores in major cities such as London, Paris, Milan, New York, and Tokyo, the brand continues to inspire a new generation of mindful luxury consumers.",
             },
         ]
     }

@@ -338,7 +338,7 @@ export  const designers = [
       endTime: "17:15",
       logo_dark: require("../../images/designers/mihyar_dark.png"),
       logo_white: require("../../images/designers/mihyar_white.png"),
-      content:""
+      content:"Mihyar is a contemporary Saudi menswear brand redefining elegance through high-quality ready-to-wear fashion. Since 2012, we’ve focused on delivering expertly crafted thobes, shemaghs, ghutras, footwear, and accessories—designed for comfort, versatility, and modern living.\nOur collections feature premium fabrics like pure cotton, zibda, and soft-touch modal, offering a polished look for everyday wear and special occasions alike. Each piece is developed with attention to detail, ensuring our customers experience both refined style and effortless functionality.\nWith 55+ stores across the Kingdom and a dynamic online presence, Mihyar is built as a digital-first, omnichannel brand. We’re committed to providing a seamless shopping journey—from product discovery to checkout—online and in-store.\nStep into the world of Mihyar: where smart design meets everyday confidence."
   }, 
   {
       id: "ih-nom-uh-nit",
@@ -408,4 +408,18 @@ export  const designers = [
       logo: require("../../images/designers/leem.jpg"),
       content: "Leem is the ultimate destination for contemporary fashion that seamlessly blends elegance and sophistication with the latest trends. Our mission is to curate stylish pieces designed exclusively for today's fashion-conscious woman. Each seasonal collection is culturally inclusive catering to our diverse global audience. Explore our collections featuring versatile maxi dresses, chic separates, and cozy knits. Leem is where modern style meets timeless elegance.",
     },
+  {
+      id: "vivienne-westwood",
+      name: "VIVIENNE WESTWOOD",
+      //desc: "COUTURE",
+      logo: require("../../images/designers/vivienne.png"),
+      content: "Vivienne Westwood is one of the most iconic and influential British fashion brands. Founded in the 1970s by Dame Vivienne Westwood, the label became known for its bold, creative, and rebellious approach to fashion.\nFusing classic British tailoring with modern, avant-garde design, Vivienne Westwood created a distinctive style that has shaped fashion trends around the world. The brand is celebrated for its iconic corsets, tartan patterns, and signature structured silhouettes.\nToday, Vivienne Westwood stands as a symbol of individuality, craftsmanship, and timeless style, with a strong presence on the global fashion stage."
+  },
+  {
+      id: "stella-mccartney",
+      name: "STELLA MCCARTNEY",
+      //desc: "READY-TO-WEAR",
+      logo: require("../../images/designers/stella.png"),
+      content: "Stella McCartney is a British luxury fashion house founded in 2001 by the designer Stella McCartney. Renowned for its modern, feminine, and effortlessly chic aesthetic, the brand is a pioneer in sustainable and ethical fashion. From the beginning, Stella McCartney committed to a no leather, no fur policy — setting a new standard for responsibility in the luxury industry.\nThe brand offers a full range of ready-to-wear, accessories, lingerie, eyewear, fragrances, and children’s clothing, all designed with a focus on craftsmanship, innovation, and conscious sourcing.\nToday, Stella McCartney is celebrated worldwide for combining high fashion with sustainability, proving that style and ethics can coexist. With flagship stores in major cities such as London, Paris, Milan, New York, and Tokyo, the brand continues to inspire a new generation of mindful luxury consumers.",
+  },
   ];
