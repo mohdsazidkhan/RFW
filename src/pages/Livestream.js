@@ -25,6 +25,21 @@ const Livestream = () => {
           <div className="video-frame-wrapper">
             <div className="video-frame">
               <iframe
+        className="rounded-2xl shadow-lg"
+        style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+        src="https://www.youtube.com/embed/videoseries?list=PLPbqerAi2uAv_lu9S135ofDWrBeNelCMW"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+              {/* <iframe
                 src="https://vimeo.com/event/5455689/embed/a7f5233623/interaction"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; encrypted-media; web-share"
@@ -38,7 +53,7 @@ const Livestream = () => {
                   height: "100%",
                 }}
                 title="Vimeo video"
-              ></iframe>
+              ></iframe> */}
             </div>
           </div>
         </div>

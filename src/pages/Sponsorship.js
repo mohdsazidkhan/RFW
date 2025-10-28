@@ -19,6 +19,7 @@ const supportingPartners2 = [
   { name: "Mandarin Oriental", logo: require('../images/partners/mandarin.png'), url:"https://www.mandarinoriental.com/en" },
   { name: "AK AL KHOZAMA INVESTMENT", logo: require('../images/partners/al-khozama.png'), url:"https://alkhozama.com/en/" },
   { name: "Rotana Signs", logo: require('../images/partners/rotana-signs.png'), url:"https://www.linkedin.com/company/rotanasigns/" },
+  { name: "KAFD", logo: require('../images/partners/kafd.png'), url: "https://www.kafd.sa/ar/" },
 ];
 
 const isMobile = window.innerWidth < 768;
