@@ -128,59 +128,71 @@ const isMobile = window.innerWidth < 768;
 
       </div>
       <div className="previous-partners-content">
-      <h4 className="previous-partners-title three">SUPPORTING PARTNERS</h4>
-      <div className="partners-logos three">
-      {supportingPartners1.map((partner, index) => {
-        return (
-        <div
-          key={index}
-          className={`partner-logo`} // hide on mobile if blank
-        >
-          <a
-            className="partner-logo-image"
-            href={partner.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {partner.logo && (
-              <img
-                src={partner.logo}
-                alt={partner.name || 'Partner'}
-                className="partner-img"
-              />
-            )}
-          </a>
-        </div>
-        );
-        })}
-      </div>
-      <div className="partners-logos four">
-      {supportingPartners2.map((partner, index) => {
-        return (
-        <div
-          key={index}
-          className={`partner-logo`} // hide on mobile if blank
-        >
-          <a
-            className="partner-logo-image"
-            href={partner.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {partner.logo && (
-              <img
-                src={partner.logo}
-                alt={partner.name || 'Partner'}
-                className="partner-img"
-              />
-            )}
-          </a>
-        </div>
-        );
-        })}
-      </div>
+  <h4 className="previous-partners-title three">SUPPORTING PARTNERS</h4>
 
+  {/* Two normal rows */}
+  <div className="partners-logos three">
+    {supportingPartners1.map((partner, index) => (
+      <div key={index} className="partner-logo">
+        <a
+          className="partner-logo-image"
+          href={partner.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={partner.logo}
+            alt={partner.name || "Partner"}
+            className="partner-img"
+          />
+        </a>
       </div>
+    ))}
+  </div>
+
+  <div className="partners-logos four">
+    {supportingPartners2
+      .filter((partner) => partner.name !== "KAFD")
+      .map((partner, index) => (
+        <div key={index} className="partner-logo">
+          <a
+            className="partner-logo-image"
+            href={partner.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={partner.logo}
+              alt={partner.name || "Partner"}
+              className="partner-img"
+            />
+          </a>
+        </div>
+      ))}
+  </div>
+
+  {/* Absolute positioned KAFD logo */}
+  <div className="kafd-wrapper">
+    {supportingPartners2
+      .filter((partner) => partner.name === "KAFD")
+      .map((partner, index) => (
+        <a
+          key={index}
+          className="partner-logo-image-kafd"
+          href={partner.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={partner.logo}
+            alt={partner.name || "Partner"}
+            className="partner-img kafd-img"
+          />
+        </a>
+      ))}
+  </div>
+</div>
+
   </div>
 </section>
 
