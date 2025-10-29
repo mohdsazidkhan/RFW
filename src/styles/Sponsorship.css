@@ -333,7 +333,11 @@
   align-items: center;
   justify-content: center;
 }
-
+@media (max-width: 844px) and (max-height: 390px) {
+  .kafd-wrapper {
+    right: 82px;
+  }
+}
 .kafd-wrapper .partner-img.kafd-img {
   width: 200px;
   height: auto;
