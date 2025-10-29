@@ -358,7 +358,9 @@
   .previous-partners-content {
     position: static; /* disable absolute layout */
   }
-
+.partner-logo {
+  min-width: 128px;
+}
   .kafd-wrapper {
     position: relative;
     top: 0;
