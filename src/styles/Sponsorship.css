@@ -327,8 +327,8 @@
 /* KAFD absolute position on right side */
 .kafd-wrapper {
   position: absolute;
-  right: 183px;
-  top: 43%;
+    right: 160px;
+    top: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -339,7 +339,7 @@
   }
 }
 .kafd-wrapper .partner-img.kafd-img {
-  width: 200px;
+  width: 220px;
   height: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -357,7 +357,11 @@
     width: 160px;
   }
 }
-
+@media screen and (max-width: 1365px) and (min-width: 767px) {
+  .kafd-wrapper {
+    right: 110px;
+  }
+}
 @media (max-width: 768px) {
   .previous-partners-content {
     position: static; /* disable absolute layout */
@@ -370,7 +374,7 @@
     top: 0;
     right: 0;
     transform: none;
-    margin-top: 2rem;
+    margin-top: 0;
     justify-content: center;
   }
 
