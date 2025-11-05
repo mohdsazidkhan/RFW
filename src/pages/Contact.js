@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css'
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations/en';
+import { translations as arTranslations } from '../translations/ar';
 
 const Contact = () => {
+  const { language } = useLanguage();
+  const t = language === 'ar' ? arTranslations : translations;
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -44,15 +49,15 @@ const Contact = () => {
           <div className="contact-content">
             {/* Left Column - Contact Information */}
             <div className="contact-info-column">
-              <h1 className="contact-title">CONTACT US.</h1>
+              <h1 className="contact-title">{t.contact.title}</h1>
               <div className="contact-details">
                 <div className="contact-item">
                   <a href="mailto:info@riyadhfashionweek.com" className="contact-email">
-                    INFO@RIYADHFASHIONWEEK.COM
+                    {t.contact.email}
                   </a>
                 </div>
                 <div className="contact-item">
-                  <span className="contact-address">RIYADH, SAUDI ARABIA</span>
+                  <span className="contact-address">{t.contact.address}</span>
                 </div>
               </div>
               
@@ -97,10 +102,10 @@ const Contact = () => {
 <div className="contact-form-column">
   <form className="contact-form" onSubmit={handleSubmit}>
     <div className="form-group">
-      <label className="form-label">NAME <span className='form-label-required'>(REQUIRED)</span></label>
+      <label className="form-label">{t.contact.formName} <span className='form-label-required'>{t.contact.required}</span></label>
       <div className="name-fields">
         <div className="name-field">
-          <label className="name-sub-label">FIRST NAME</label>
+          <label className="name-sub-label">{t.contact.firstName}</label>
           <input
             type="text"
             name="firstName"
@@ -111,7 +116,7 @@ const Contact = () => {
           />
         </div>
         <div className="name-field">
-          <label className="name-sub-label">LAST NAME</label>
+          <label className="name-sub-label">{t.contact.lastName}</label>
           <input
             type="text"
             name="lastName"
@@ -125,7 +130,7 @@ const Contact = () => {
     </div>
     
     <div className="form-group">
-      <label className="form-label">EMAIL <span className='form-label-required'>(REQUIRED)</span></label>
+      <label className="form-label">{t.contact.emailLabel} <span className='form-label-required'>{t.contact.required}</span></label>
       <input
         type="email"
         name="email"
@@ -137,7 +142,7 @@ const Contact = () => {
     </div>
     
     <div className="form-group">
-      <label className="form-label">MESSAGE <span className='form-label-required'>(REQUIRED)</span></label>
+      <label className="form-label">{t.contact.message} <span className='form-label-required'>{t.contact.required}</span></label>
       <textarea
         name="message"
         className="form-textarea"
@@ -149,7 +154,7 @@ const Contact = () => {
     </div>
     
     <button type="submit" className="btn btn-contact">
-      SEND
+      {t.contact.send}
     </button>
   </form>
 </div>

@@ -1,9 +1,25 @@
 import { useNavigate } from "react-router-dom";
 import { designers } from "../utils/data/Designers";
 import '../styles/Designer.css'
-const Designers = () => {
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations/en';
+import { translations as arTranslations } from '../translations/ar';
+import { translateCategory } from '../utils/translations';
 
+const Designers = () => {
+  const { language } = useLanguage();
+  const t = language === 'ar' ? arTranslations : translations;
   const navigate = useNavigate();
+  
+  // Get category/desc based on language
+  const getCategory = (designer) => {
+    if (!designer.desc) return '';
+    if (language === 'ar' && designer.desc_ar) {
+      return designer.desc_ar;
+    }
+    return translateCategory(language, designer.desc);
+  };
+
   return (
     <div className="designers-page">
       {/* Main Content Section */}
@@ -13,16 +29,16 @@ const Designers = () => {
             {/* Title and Description */}
             <div className="designers-header">
               <div className="designers-title-section">
-                <h1 className="designers-title">MEET THE RFW DESIGNERS</h1>
+                <h1 className="designers-title">{t.designers.title}</h1>
               </div>
               <div className="designers-description-section">
                 <p className="designers-description">
-                The Riyadh Fashion Week is set to showcase a diverse array of exceptionally talented designers who are poised to leave their mark on the fashion landscape. These visionary creators come from various backgrounds, each contributing a unique perspective. With a harmonious blend of innovation and tradition, their designs promise to captivate and inspire. From avant-garde concepts to timeless elegance, the designers participating in the Riyadh Fashion Week embody the richness and creativity of Saudi Arabian fashion, transcending boundaries and redefining the future of style.
+                {t.designers.description}
                 </p>
               </div>
             </div>
           </div>
-         
+
         </div>
           {/* Designers Grid */}
           <div className="section-container-white">
@@ -39,18 +55,15 @@ const Designers = () => {
                       src={(designer?.logo || designer?.logo_dark)}
                       alt={designer.name}
                     />
-                    {/* <div className="designer-image-placeholder">
-                      {designer.name.split(' ').map(word => word[0]).join('')}
-                    </div> */}
                   </div>
                   <div className="designer-info">
                     <h3 className="designer-name">{designer.name}</h3>
-                    <p className="designer-category">{designer.desc}</p>
+                    <p className="designer-category">{getCategory(designer)}</p>
                     <button
                       className="btn btn-learn-more"
                       onClick={() => navigate(`/designer/${designer.id}`)}
                     >
-                      LEARN MORE
+                      {t.calendar.learnMore}
                     </button>
                   </div>
                 </div>

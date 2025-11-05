@@ -2,8 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { designers } from "../utils/data/Designers";
 import { Helmet } from 'react-helmet';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations/en';
+import { translations as arTranslations } from '../translations/ar';
+
 const DesignerDetail = () => {
   const { designerSlug } = useParams();
+  const { language } = useLanguage();
+  const t = language === 'ar' ? arTranslations : translations;
   console.log(designerSlug,"designerSlug")
 
 
@@ -17,12 +23,23 @@ const DesignerDetail = () => {
   console.log(designerDetails,"designerDetails")
   const navigate = useNavigate();
 
+  // Get the content based on language
+  const getContent = () => {
+    if (!designerDetails) return '';
+    if (language === 'ar' && designerDetails.content_ar) {
+      return designerDetails.content_ar;
+    }
+    return designerDetails.content || '';
+  };
+
+  const content = getContent();
+
   return (
     <>
     <Helmet>
         {designerDetails?.name && <title>{designerDetails?.name?.toUpperCase()} - Riyadh Fashion Week 2025</title>}
     </Helmet>
-   
+
     <div className="designer-detail-page">
   <section className="designer-detail-main-section">
     <div className="section-container-detail">
@@ -33,18 +50,18 @@ const DesignerDetail = () => {
           <div className="designer-detail-text">
             <h1 className="designer-detail-name hideMobile">{designerDetails?.name}</h1>
             <div className="designer-detail-bio">
-                {designerDetails?.content.split('\n').map((line, index) => (
+                {content.split('\n').map((line, index) => (
                   <React.Fragment key={index}>
                     {line}
                     <br /><br />
                   </React.Fragment>
                 ))}
             </div>
-            <button 
+            <button
               className="btn btn-back-to-designers"
               onClick={() => navigate(-1)}
             >
-              ← BACK
+              {t.calendarData.back}
             </button>
           </div>
           {/* Right Column: Image */}

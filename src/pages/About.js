@@ -1,7 +1,12 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/About.css'
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations/en';
+import { translations as arTranslations } from '../translations/ar';
 
 const About = () => {
+  const { language } = useLanguage();
+  const t = language === 'ar' ? arTranslations : translations;
   const [imageWidth, setImageWidth] = useState(419);
   const [imageHeight, setImageHeight] = useState(365);
   const [visibleCount, setVisibleCount] = useState(3);
@@ -118,11 +123,11 @@ const nextImage = () => {
     <div className="about-hero-shapes"></div>
   </div>
   <div className="about-hero-content">
-    <h4 className="about-vertical-text">ABOUT</h4>
+    <h4 className="about-vertical-text">{t.nav.about}</h4>
     <div className="about-main-content">
-      <h1 className="about-title">RIYADH<br/>FASHION<br/>WEEK</h1>
+      <h1 className="about-title">{t.about.title.split('\n').map((line, i) => <React.Fragment key={i}>{line}<br/></React.Fragment>)}</h1>
       <p className="about-description">
-        THE THIRD EDITION OF RIYADH FASHION WEEK WILL LIGHT UP THE CAPITAL ONCE AGAIN, BLENDING STYLE, INNOVATION, AND CREATIVITY. THIS EVENT SERVES AS A PLATFORM FOR BOTH RENOWNED AND EMERGING DESIGNERS TO SHOWCASE THEIR UNIQUE VISIONS. WITH EACH RUNWAY SHOW TELLING A STORY OF ARTISTIC EXPRESSION, RIYADH FASHION WEEK PROMISES TO DELIVER AN UNFORGETTABLE EXPERIENCE.
+        {t.about.description}
       </p>
     </div>
   </div>
@@ -134,10 +139,10 @@ const nextImage = () => {
         <div className="section-container-white">
           <div className="quote-content">
             <blockquote className="quote-text">
-              "RIYADH FASHION WEEK STANDS AS A LANDMARK EVENT IN SAUDI ARABIA'S CULTURAL AND ECONOMIC EVOLUTION. IT SERVES AS A PREMIER STAGE FOR THE EXCEPTIONAL TALENT AND CREATIVITY OF OUR DESIGNERS, BRIDGING LOCAL AND INTERNATIONAL FASHION COMMUNITIES. THIS EVENT CATALYZES ECONOMIC GROWTH, FOSTERS INNOVATION, AND CELEBRATES OUR RICH CULTURAL HERITAGE. BY UNITING INDUSTRY PROFESSIONALS FROM AROUND THE WORLD, RIYADH FASHION WEEK AIMS TO INSPIRE FUTURE GENERATIONS AND ESTABLISH SAUDI ARABIA AS A DYNAMIC FORCE IN THE GLOBAL FASHION LANDSCAPE."
+              "{t.about.quote}"
             </blockquote>
             <cite className="quote-author">
-              — BURAK CAKMAK, CEO OF THE SAUDI FASHION COMMISSION
+              {t.about.quoteAuthor}
             </cite>
           </div>
         </div>

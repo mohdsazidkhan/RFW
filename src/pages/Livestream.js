@@ -1,7 +1,12 @@
 import React from "react";
 import "../styles/Livestream.css";
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations/en';
+import { translations as arTranslations } from '../translations/ar';
 
 const Livestream = () => {
+  const { language } = useLanguage();
+  const t = language === 'ar' ? arTranslations : translations;
   return (
     <div className="livestream-page">
       {/* Hero Section */}
@@ -12,10 +17,9 @@ const Livestream = () => {
         </div>
         <div className="livestream-hero-content">
           <h1 className="livestream-hero-title">
-            STREAM THE LATEST
-            <br /> FROM RFW
+            {t.livestream.title.split('\n').map((line, i) => <React.Fragment key={i}>{line}<br /></React.Fragment>)}
           </h1>
-          <p className="livestream-hero-subtitle">OCTOBER 16 — OCTOBER 21</p>
+          <p className="livestream-hero-subtitle">{t.livestream.subtitle}</p>
         </div>
       </section>
 

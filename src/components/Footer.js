@@ -1,7 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations/en';
+import { translations as arTranslations } from '../translations/ar';
 
 const Footer = () => {
+  const { language } = useLanguage();
+  const t = language === 'ar' ? arTranslations : translations;
+  
   return (
     <footer className="common-footer">
       <div className="footer-container">
@@ -12,12 +18,12 @@ const Footer = () => {
           </div>
           <div>
           <div className="footer-links">
-            <Link to="/about" className="footer-link">ABOUT</Link>
-            <Link to="/press" className="footer-link">PRESS</Link>
-            <Link to="/contact" className="footer-link">CONTACT US</Link>
+            <Link to="/about" className="footer-link">{t.nav.about}</Link>
+            <Link to="/press" className="footer-link">{t.nav.press}</Link>
+            <Link to="/contact" className="footer-link">{t.nav.contact}</Link>
           </div>
           <div className="footer-copyright">
-            © RFW 2025
+            {t.footer.copyright}
           </div>
           </div>
         </div>

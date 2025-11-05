@@ -3,8 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import { designers } from '../utils/data/calendar';
 import { MdKeyboardArrowDown, MdKeyboardArrowUp, MdAdd, MdRemove } from 'react-icons/md';
 import '../styles/Calendar.css';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations/en';
+import { translations as arTranslations } from '../translations/ar';
+import { translateCalendarText, translateMonth } from '../utils/translations';
 
 const Calendar = () => {
+  const { language } = useLanguage();
+  const t = language === 'ar' ? arTranslations : translations;
   const [expandedDay, setExpandedDay] = useState(null);
   const [expandedDesigner, setExpandedDesigner] = useState(null);
   const navigate = useNavigate();
@@ -31,7 +37,7 @@ const Calendar = () => {
       <div className="calendar-container">
         {/* Calendar Header */}
         <div className="calendar-header">
-          <h1 className="calendar-title">RFW CALENDAR</h1>
+          <h1 className="calendar-title">{t.calendar.title}</h1>
           {/* <p className="calendar-date-range">OCTOBER 16 - OCTOBER 20</p> */}
         </div>
 
@@ -40,7 +46,7 @@ const Calendar = () => {
           {designers.map((day, dayIndex) => (
             <div key={dayIndex} className="day-accordion-item">
               <div className={`day-accordion-header ${expandedDay === dayIndex ? "bgblack" : "transparent" }`} onClick={() => toggleDay(dayIndex)}>
-                <h2 className="day-accordion-title">{day.date}</h2>
+                <h2 className="day-accordion-title">{translateMonth(language, day.date)}</h2>
                 <div className="day-expand-icon">
                   {expandedDay === dayIndex ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown /> }
                 </div>
@@ -50,7 +56,7 @@ const Calendar = () => {
                 
                 <div className="day-accordion-content">
                   <div className='designerText'>
-                      <div>{day?.text}</div>
+                      <div>{translateCalendarText(language, day?.text)}</div>
                       <div>{day?.subText}</div>
                   </div>
                   <div className="designers-list">
@@ -68,7 +74,7 @@ const Calendar = () => {
                         >
                           <div className="designer-info">
                             <h3 className="designer-name">{designer.name}</h3>
-                            <div className="designer-time">TIME: {designer.time} - {designer.endTime}</div>
+                            <div className="designer-time">{t.calendar.time} {designer.time} - {designer.endTime}</div>
                           </div>
                           <div className="expand-icon">
                             {expandedDesigner === designer.id ? <MdRemove /> : <MdAdd />}
@@ -82,7 +88,7 @@ const Calendar = () => {
                               className="btn-learn-more"
                               onClick={() => navigate(`/designer/${designer.id}`)}
                             >
-                              LEARN MORE
+                              {t.calendar.learnMore}
                             </button>
                           </div>
                         )}
@@ -91,7 +97,7 @@ const Calendar = () => {
                   </div>
                   {day?.extraDay &&
                   <div className='designerText'>
-                      <div>{day?.extraDay.text}</div>
+                      <div>{translateCalendarText(language, day?.extraDay.text)}</div>
                       <div>{day?.extraDay.subText}</div>
                   </div>
                   }
@@ -110,7 +116,7 @@ const Calendar = () => {
                         >
                           <div className="designer-info">
                             <h3 className="designer-name">{designer.name}</h3>
-                            <div className="designer-time">TIME: {designer.time} - {designer.endTime}</div>
+                            <div className="designer-time">{t.calendar.time} {designer.time} - {designer.endTime}</div>
                           </div>
                           <div className="expand-icon">
                             {expandedDesigner === designer.id ? <MdRemove /> : <MdAdd />}
@@ -124,7 +130,7 @@ const Calendar = () => {
                               className="btn-learn-more"
                               onClick={() => navigate(`/designer/${designer.id}`)}
                             >
-                              LEARN MORE
+                              {t.calendar.learnMore}
                             </button>
                           </div>
                         )}

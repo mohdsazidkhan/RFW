@@ -2141,6 +2141,172 @@ b, strong {
   }
 }
 
+/* Language Toggle Button */
+.language-toggle {
+  background: transparent;
+  border: 1px solid var(--rfw-white);
+  color: var(--rfw-white);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.language-toggle:hover {
+  background: var(--rfw-white);
+  color: var(--rfw-black);
+}
+
+.language-toggle-mobile {
+  background: transparent;
+  border: 1px solid var(--rfw-white);
+  color: var(--rfw-white);
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.language-toggle-mobile:hover {
+  background: var(--rfw-white);
+  color: var(--rfw-black);
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .header-container {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .header-nav {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .language-toggle {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+[dir="rtl"] .footer-container {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-left {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .latest-content {
+  direction: rtl;
+}
+
+[dir="rtl"] .latest-text {
+  text-align: right;
+}
+
+[dir="rtl"] .section-title {
+  text-align: right;
+}
+
+[dir="rtl"] .section-description {
+  text-align: right;
+}
+
+[dir="rtl"] .calendar-content {
+  direction: rtl;
+}
+
+[dir="rtl"] .calendar-text {
+  text-align: right;
+}
+
+[dir="rtl"] .designers-content {
+  direction: rtl;
+}
+
+[dir="rtl"] .designers-header {
+  direction: rtl;
+}
+
+[dir="rtl"] .designers-title {
+  text-align: right;
+}
+
+[dir="rtl"] .designers-description {
+  text-align: right;
+}
+
+[dir="rtl"] .contact-content {
+  direction: rtl;
+}
+
+[dir="rtl"] .contact-info-column {
+  text-align: right;
+}
+
+[dir="rtl"] .contact-form {
+  direction: rtl;
+}
+
+[dir="rtl"] .newsletter-form {
+  direction: rtl;
+}
+
+[dir="rtl"] .newsletter-content {
+  text-align: right;
+}
+
+[dir="rtl"] .about-hero-content {
+  direction: rtl;
+}
+
+[dir="rtl"] .about-main-content {
+  text-align: right;
+}
+
+[dir="rtl"] .quote-content {
+  text-align: right;
+}
+
+[dir="rtl"] .sponsorship-hero-content {
+  text-align: right;
+}
+
+[dir="rtl"] .why-sponsor-content {
+  direction: rtl;
+}
+
+[dir="rtl"] .why-sponsor-text {
+  text-align: right;
+}
+
+[dir="rtl"] .vertical-text {
+  right: auto;
+  left: -3rem;
+}
+
+[dir="rtl"] .vertical-text-left {
+  left: auto;
+  right: -6rem;
+}
+
+[dir="rtl"] .vertical-text-mobile {
+  text-align: right;
+}
+
 /* Common Header */
 .common-header {
   position: absolute;
