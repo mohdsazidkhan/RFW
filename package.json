@@ -2,6 +2,9 @@
   "name": "riyadh-fashion-week",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+  "node": "18.x"
+  },
   "dependencies": {
     "@babel/helper-define-polyfill-provider": "^0.6.5",
     "@heroicons/react": "^2.2.0",
