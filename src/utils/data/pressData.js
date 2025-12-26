@@ -2,31 +2,28 @@ export const pressArray = [
   {
     title:
       "La Riyadh Fashion Week 2024, alla sua seconda edizione, ha portato in passerella talenti locali.",
-    title_ar: "أسبوع الرياض للموضة 2024، في نسخته الثانية، أظهر المواهب المحلية على منصة العرض.",
+    title_ar: "أسبوع الأزياء في الرياض 2024 يسلّط الضوء على المواهب المحلية في نسخته الثانية",
     description:
       "Lo ha detto forte e chiaro una T-shirt: «Saudi Arabia is the future». A parlare è il brand Hindamme che, con un solo, semplice, slogan, ha saputo catturare lo stato d'animo di questa cinque giorni della Riyadh Fashion Week, in cui brand locali, tradizionali ed emergenti, hanno presentato le loro collezioni couture e ready to wear, per donna e per uomo. ",
-    description_ar: "قالته بشكل واضح قميص: \"السعودية هي المستقبل\". العلامة التجارية Hindamme، بشعار واحد بسيط، تمكنت من التقاط جوهر هذه الأيام الخمسة من أسبوع الرياض للموضة، حيث قدمت العلامات المحلية والتقليدية والناشئة مجموعاتها من الأزياء العالية والجاهزة للارتداء، للنساء والرجال.",
+    description_ar: "في نسخته الثانية، قدّم أسبوع الأزياء في الرياض 2024 منصة نابضة بالمواهب السعودية، حيث استعرضت العلامات المحلية التقليدية والناشئة مجموعات كوتور وأزياء جاهزة للنساء والرجال، مجسّدًا روح الحدث بشعار «Saudi Arabia is the Future» الذي عكس أجواء الأيام الخمسة ورسّخ مكانة المملكة كقوة صاعدة في مشهد الأزياء المعاصر.",
     button: "Read Full Article",
     image: require("../../images/pressimages/VOGUE.webp"),
     url: "https://www.vogue.it/article/riyadh-fashion-week-2024-brand-da-conoscere",
   },
   {
-    title:
-      "Riyadh Fashion Week Emerges as Key Force Shaping Saudi Arabia's Design Scene.",
-    title_ar: "أسبوع الرياض للموضة يبرز كقوة رئيسية تشكل مشهد التصميم في المملكة العربية السعودية.",
-    description:
-      "The Kingdom was abuzz last week with the second edition of Riyadh Fashion Week, which showcased 37 local brands across ready-to-wear and couture.",
-    description_ar: "كانت المملكة مليئة بالحيوية الأسبوع الماضي مع النسخة الثانية من أسبوع الرياض للموضة، والتي عرضت 37 علامة محلية عبر الجاهز للارتداء والأزياء العالية.",
+    title: "Riyadh Fashion Week Emerges as Key Force Shaping Saudi Arabia's Design Scene.",
+    title_ar: "أسبوع الأزياء في الرياض يرسّخ حضوره كقوة مؤثرة في تشكيل مشهد التصميم السعودي",
+    description: "The Kingdom was abuzz last week with the second edition of Riyadh Fashion Week, which showcased 37 local brands across ready-to-wear and couture.",
+    description_ar: "شهدت المملكة خلال الأسبوع الماضي انطلاق النسخة الثانية من أسبوع الأزياء في الرياض، حيث جمعت 37 علامة محلية قدّمت مجموعات متنوعة من الأزياء الجاهزة والكوتور، مؤكدةً الدور المتنامي للحدث كمنصة رئيسية لدعم وتطوير صناعة الأزياء السعودية.",
     button: "Read Full Article",
     image: require("../../images/pressimages/WWD.webp"),
     url: "https://wwd.com/fashion-news/designer-luxury/riyadh-fashion-week-abadia-mona-kaf-1236702420/",
   },
   {
     title: "Worldview | Riyadh Fashion Week's Grand Ambitions",
-    title_ar: "وجهة نظر عالمية | طموحات أسبوع الرياض للموضة الكبيرة",
-    description:
-      "Riyadh Fashion Week takes steps towards regional hub status. The second edition of Saudi Arabia's annual fashion week event took place from Oct. 17-21 across three venues in the capital including the Tuwaiq Palace. Twenty-seven designer brands including Mona Al Shebil, Abadia, Razan Alazzouni, Kaf by Kaf, Waad Aloqaili, Yahya Albishri, Adnan Akbar, Tima Abid, 1886 and Honayda presented their collections on the runway. ",
-    description_ar: "أسبوع الرياض للموضة يتخذ خطوات نحو مركز إقليمي. النسخة الثانية من فعالية أسبوع الموضة السنوية للمملكة العربية السعودية أقيمت من 17-21 أكتوبر عبر ثلاثة مواقع في العاصمة بما في ذلك قصر طويق. سبعة وعشرون علامة مصممة بما في ذلك منى الشيبيل، أباديا، رزان العزوني، كاف باي كاف، وعد العقيل، يحيى البشري، عدنان أكبر، تيما عابد، 1886 وهنايدة قدموا مجموعاتهم على منصة العرض.",
+    title_ar: "طموحات كبرى لأسبوع الأزياء في الرياض على الساحة الإقليمية",
+    description: "Riyadh Fashion Week takes steps towards regional hub status. The second edition of Saudi Arabia's annual fashion week event took place from Oct. 17-21 across three venues in the capital including the Tuwaiq Palace. Twenty-seven designer brands including Mona Al Shebil, Abadia, Razan Alazzouni, Kaf by Kaf, Waad Aloqaili, Yahya Albishri, Adnan Akbar, Tima Abid, 1886 and Honayda presented their collections on the runway. ",
+    description_ar: "يواصل أسبوع الأزياء في الرياض ترسيخ مكانته كمحور إقليمي لصناعة الأزياء، إذ أُقيمت نسخته الثانية بين 17 و21 أكتوبر في ثلاثة مواقع بالعاصمة من بينها قصر طويق، بمشاركة 27 مصممًا وعلامة قدّموا مجموعاتهم، مؤكّدين تنوّع واتساع المشهد الإبداعي السعودي.",
     button: "Read Full Article",
     image: require("../../images/pressimages/BOF.webp"),
     url: "https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F18iGQzSdPjKkou95kclp0JnM8sU5Z-ao9%2Fview%3Fusp%3Dsharing&followup=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F18iGQzSdPjKkou95kclp0JnM8sU5Z-ao9%2Fview%3Fusp%3Dsharing&ifkv=AdBytiObA6sqOPSfxqQQkL54BvSucywvmlE7XzC1zLLpY5hUAYIAQrv6M8jemfBu6etCM78JsuCbOQ&osid=1&passive=1209600&service=wise&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S152353124%3A1756901375320670",
@@ -34,10 +31,10 @@ export const pressArray = [
   {
     title:
       "RIYADH FASHION WEEK RETURNS THIS MONTH: GRAZIA BRINGS YOU THE FULL SCHEDULE.",
-    title_ar: "أسبوع الرياض للموضة يعود هذا الشهر: جرازيا تجلب لك الجدول الكامل.",
+    title_ar: "أسبوع الأزياء في الرياض يعود هذا الشهر: «غرازيا» تكشف الجدول الكامل",
     description:
       "The Kingdom of Saudi Arabia never shies away from a pivoting fashion moment. Returning for its second edition after a phenomenal first-of-firsts, Riyadh Fashion Week (RFW) comes back with a fresh turning point with the Kingdom's best..",
-    description_ar: "مملكة السعودية لا تتردد أبداً عن لحظة الموضة المحورية. العودة للنسخة الثانية بعد الأول المذهل، أسبوع الرياض للموضة (RFW) يعود مع نقطة تحول جديدة مع الأفضل في المملكة..",
+    description_ar: "يستعد أسبوع الأزياء في الرياض للعودة بنسخته الثانية هذا الشهر، مواصلًا ترسيخ مكانته كإحدى المحطات المحورية في مشهد الموضة بالمملكة، بزخم جديد ورؤية متجددة تجمع نخبة العلامات والمصممين السعوديين وتعكس التحوّل المتسارع لصناعة الأزياء محليًا.",
     button: "Read Full Article",
     image: require("../../images/pressimages/GRAZIA.webp"),
     url: "https://www.hiamag.com/%D9%85%D9%88%D8%B6%D8%A9/%D9%85%D8%B4%D8%A7%D9%87%D9%8A%D8%B1-%D9%88-%D9%85%D9%88%D8%B6%D8%A9/1773567-%D8%AD%D8%AF%D9%8A%D8%AB-%D9%87%D9%8A-%D9%85%D8%B9-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A-%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%A3%D8%B2%D9%8A%D8%A7%D8%A1-%D8%A8%D9%88%D8%B1%D8%A7%D9%83-%D8%B4%D8%A7%D9%83%D9%85%D8%A7%D9%83-%D8%AA%D8%AC%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%A8%D8%AF%D8%A7%D8%B9",
@@ -52,35 +49,31 @@ export const pressArray = [
   },
   {
     title: "Riyadh Fashion Week celebrates Saudi creativity and heritage.",
-    title_ar: "أسبوع الرياض للموضة يحتفل بالإبداع والتراث السعودي.",
+    title_ar: "أسبوع الأزياء في الرياض يحتفي بالإبداع السعودي والإرث الثقافي",
     description:
       "DUBAI: The second day of Riyadh Fashion Week unfolded with a vibrant celebration of Saudi fashion, featuring an impressive lineup of six runway shows. Notable designers included Waad Aloqaili, Fatima Abdulqader, Khawla Alaiban, Ashwaq Al-Marshad, Atelier Hekayat and a grand finale by Yahya Albishri.",
-    description_ar: "دبي: انطلق اليوم الثاني من أسبوع الرياض للموضة مع احتفال حيوي بالموضة السعودية، مع عرض مثير للإعجاب لستة عروض أزياء. المصممون البارزون شملوا وعد العقيل، فاطمة عبدالقادر، خولة العيبان، عشوق المشهد، أتيلية حكايات وختام كبير ليحيى البشري.",
+    description_ar: "شهد اليوم الثاني من أسبوع الأزياء في الرياض احتفاءً لافتًا بالأزياء السعودية عبر ستة عروض عكست تنوّع المشهد الإبداعي المحلي، بمشاركة نخبة من المصممين والعلامات، واختُتم بعرض مميّز ليحيى البشري جسّد توازنًا بين الحداثة والهوية.",
     button: "Read Full Article",
     image: require("../../images/pressimages/ARABNEWS.webp"),
     url: "https://www.arabnews.com/node/2575901/lifestyle",
   },
   {
     title: "Riyadh Fashion Week Set to Return for Second Edition.",
-    title_ar: "أسبوع الرياض للموضة يعود للنسخة الثانية.",
+    title_ar: "أسبوع الأزياء في الرياض يعود بنسخته الثانية في أكتوبر",
     description:
       "Following a successful debut last year, Riyadh Fashion Week is gearing up for its second INSTALMENT, scheduled for October 17 to 21. Organized by the Saudi Fashion Commission, the upcoming event promises to showcase the creative talents of over 30 Saudi designers, further solidifying Riyadh's reputation as a vibrant global fashion destination. ",
-    description_ar: "بعد نجاحه في العام الماضي، يستعد أسبوع الرياض للموضة لإطلاق نسخته الثانية المقررة من 17 إلى 21 أكتوبر. المنظم من قبل هيئة الأزياء السعودية، يعد الحدث القادم بعرض مواهب أكثر من 30 مصمماً سعودياً، مما يعزز سمعة الرياض كوجهة عالمية حيوية للموضة.",
+    description_ar: "بعد انطلاقة ناجحة في نسخته الأولى العام الماضي، يعود أسبوع الأزياء في الرياض بنسخته الثانية خلال الفترة من 17 إلى 21 أكتوبر بتنظيم هيئة الأزياء ومشاركة أكثر من 30 مصممًا ومصممة سعوديين، في خطوة تعزّز مكانة الرياض كوجهة عالمية نابضة في مشهد الأزياء المعاصر.",
     button: "Read Full Article",
     image: require("../../images/pressimages/MAGZOID.webp"),
     url: "https://magzoid.com/riad-fashion-week-2024/",
   },
   {
     title: "FRunway Alert: Riyadh Fashion Week Is Returning.",
-    title_ar: "تنبيه: أسبوع الرياض للموضة يعود.",
+    title_ar: "تنبيه منصّات العرض: أسبوع الأزياء في الرياض يعود من جديد",
     description: `AGlam it up.
     The Kingdom has always been at the forefront of fashion and will turn into a runway again with the Riyadh Fashion Week 2024.
-
     The glittering event is an ode to all things fashion and is set to bring some of the biggest names in the industry to our backyard for a second time..`,
-    description_ar: `أضف البريق.
-    كانت المملكة دائماً في طليعة الموضة وستتحول إلى منصة عرض مرة أخرى مع أسبوع الرياض للموضة 2024.
-
-    الحدث المتألق هو قصيدة لكل ما يتعلق بالموضة ومستعد لإحضار بعض أكبر الأسماء في الصناعة إلى ساحتنا للمرة الثانية.`,
+    description_ar: `تستعد المملكة لتحويل الرياض إلى منصّة عرض نابضة بالحياة مع عودة أسبوع الأزياء في الرياض 2024 في نسخته الثانية، احتفاءً بعالم الموضة وجامعًا نخبة الأسماء البارزة، ومؤكدًا مكانة المملكة كوجهة رائدة في مشهد الأزياء الإقليمي والدولي.`,
     button: "Read Full Article",
     image: require("../../images/pressimages/Destination.webp"),
     url: "https://destinationksa.com/en/riyadh-fashion-week/",
@@ -95,23 +88,20 @@ export const pressArray = [
   },
   {
     title: "Riyadh Fashion Week returns this October…here's the tea.",
-    title_ar: "أسبوع الرياض للموضة يعود هذا أكتوبر - إليك التفاصيل.",
+    title_ar: "عودة مرتقبة لأسبوع الأزياء في الرياض هذا أكتوبر",
     description:
       "Oh we're SO back. Riyadh Fashion Week is making its epic return this October, and it's about to be bigger and better than ever. Mark your calendars, because from October 17 to 21, 2024, Saudi Arabia's fashion capital is turning all the way up for its second edition — and trust, this one's gonna be next-level.",
-    description_ar: "نحن نعود بقوة. أسبوع الرياض للموضة يعود بشكل ملحمي هذا أكتوبر، وسيكون أكبر وأفضل من أي وقت مضى. ضع علامة في التقويم الخاص بك، لأنه من 17 إلى 21 أكتوبر 2024، عاصمة الموضة في المملكة العربية السعودية تستعد بالكامل لنسختها الثانية - وثقوا، هذه النسخة ستكون على مستوى مختلف.",
+    description_ar: "يستعد أسبوع الأزياء في الرياض للعودة هذا أكتوبر بنسخته الثانية، مقدّمًا محطة جديدة في مسار تطوّر صناعة الأزياء في المملكة. وخلال الفترة من 17 إلى 21 أكتوبر 2024، تحتضن الرياض عروضًا متنوّعة تعكس اتساع المشهد الإبداعي المحلي وتعزّز حضور العاصمة كوجهة مؤثرة في عالم الموضة.",
     button: "Read Full Article",
     image: require("../../images/pressimages/COSMOPOLITAN.webp"),
     url: "https://www.cosmopolitanme.com/fashion/riyadh-fashion-week-2024",
   },
   {
     title: "Riyadh Fashion Week returns for second edition.",
-    title_ar: "أسبوع الرياض للموضة يعود للنسخة الثانية.",
+    title_ar: "أسبوع الأزياء في الرياض يعود بنسخته الثانية",
     description: `DUBAi:After a historic inaugural edition last year, Riyadh Fashion Week is set to return for its sophomore season – and soon.
-
     Hosted by the Saudi Fashion Commission, the second edition of the Riyadh Fashion Week will run for five days, from Oct. 17 – 21, according to the event's official Instagram page. `,
-    description_ar: `دبي: بعد نسخة افتتاحية تاريخية العام الماضي، يستعد أسبوع الرياض للموضة للعودة في موسمه الثاني - قريباً.
-
-    تستضيفه هيئة الأزياء السعودية، سيمتد أسبوع الرياض للموضة في نسخته الثانية لخمسة أيام، من 17 إلى 21 أكتوبر، وفقاً لصفحة الحدث الرسمية على إنستغرام.`,
+    description_ar: `بعد نسخة افتتاحية تاريخية العام الماضي، يستعد أسبوع الأزياء في الرياض للعودة قريبًا بنسخته الثانية. ويُقام الحدث بتنظيم هيئة الأزياء على مدى خمسة أيام، خلال الفترة من 17 إلى 21 أكتوبر، وذلك بحسب ما أُعلن عبر الحساب الرسمي للحدث على إنستغرام.`,
     button: "Read Full Article",
     image: require("../../images/pressimages/ARABNEWS.webp"),
     url: "https://www.arabnews.com/node/2572822/lifestyle",
@@ -119,20 +109,20 @@ export const pressArray = [
   {
     title:
       "Riyadh Fashion Week Announces Dates For Bigger and Bolder Second Edition.",
-    title_ar: "أسبوع الرياض للموضة يعلن عن تواريخ نسخته الثانية الأكبر والأج bold.",
+    title_ar: "أسبوع الأزياء في الرياض يعلن مواعيد نسخته الثانية الأوسع والأكثر جرأة",
     description:
       "Mark your calendars: Riyadh Fashion Week (RFW) has just publicly announced the dates of its much-anticipated second edition. After a successful debut last year, the Arab world's first and only officially accredited fashion week is set to return next month, scheduled to run from Oct. 17 – 21.",
-    description_ar: "ضع علامة في التقويم: أعلن أسبوع الرياض للموضة (RFW) للتو علناً عن تواريخ نسخته الثانية المنتظرة بشدة. بعد نجاحه في العام الماضي، أول أسبوع موضة معتمد رسمياً في العالم العربي والمميز بذلك يستعد للعودة الشهر المقبل، المقرر إقامته من 17 إلى 21 أكتوبر.",
+    description_ar: "أعلن أسبوع الأزياء في الرياض رسميًا مواعيد نسخته الثانية المرتقبة، وذلك بعد نجاح لافت في انطلاقته الأولى العام الماضي. ويعود الحدث، بصفته أول أسبوع أزياء معتمد رسميًا في العالم العربي، خلال الفترة من 17 إلى 21 أكتوبر، في نسخة تُوصف بأنها أكثر اتساعًا وطموحًا.",
     button: "Read Full Article",
     image: require("../../images/pressimages/Mille.webp"),
     url: "https://www.milleworld.com/riyadh-fashion-week-announces-dates-for-bigger-and-bolder-second-edition/",
   },
   {
     title: "Riyadh Fashion Week Returns for its Second Edition next Month",
-    title_ar: "أسبوع الرياض للموضة يعود لنسخته الثانية الشهر القادم",
+    title_ar: "أسبوع الأزياء في الرياض يعود بنسخته الثانية الشهر المقبل",
     description:
       "Riyadh Fashion Week is finally returning for its second edition on October 17 to 21, 2024, in Saudi Arabia. After its first event proved a massive success, this year's fashion week aims to be even bigger and more extravagant, with a volley of a new features and a much more extensive program. Hosted by the Fashion Commission, the livestreamed event intends to put Riyadh on the map of the international fashion scene.. ",
-    description_ar: "أسبوع الرياض للموضة يعود أخيراً لنسخته الثانية من 17 إلى 21 أكتوبر 2024، في المملكة العربية السعودية. بعد أن أثبت حدثه الأول نجاحاً كبيراً، يهدف أسبوع الموضة هذا العام إلى أن يكون أكبر وأكثر بذخاً، مع مجموعة من الميزات الجديدة وبرنامج أكثر اتساعاً. تستضيفه هيئة الأزياء، يهدف الحدث المباشر إلى وضع الرياض على خريطة مشهد الموضة الدولي.",
+    description_ar: "يعود أسبوع الأزياء في الرياض بنسخته الثانية خلال الفترة من 17 إلى 21 أكتوبر 2024 برؤية أوسع وبرنامج أكثر شمولًا يتضمن عروضًا ومبادرات جديدة، بتنظيم هيئة الأزياء وبث مباشر، في خطوة لتعزيز حضور الرياض على خريطة الأزياء العالمية وترسيخ مكانتها كوجهة مؤثرة دوليًا.",
     button: "Read Full Article",
     image: require("../../images/pressimages/ESQUIRE.webp"),
     url: "https://www.esquireme.com/style/fashion/riyadh-fashion-week-returns-for-its-second-edition-next-month#:~:text=Riyadh%20Fashion%20Week%20is%20finally,a%20much%20more%20extensive%20program",
@@ -140,10 +130,10 @@ export const pressArray = [
   {
     title:
       "Second Edition of Riyadh Fashion Week: Celebrating Fashion Innovation.",
-    title_ar: "النسخة الثانية من أسبوع الرياض للموضة: الاحتفال بالابتكار في الموضة.",
+    title_ar: "النسخة الثانية من أسبوع الأزياء في الرياض: احتفاء بالابتكار في عالم الأزياء",
     description:
       "As Riyadh Fashion Week (RFW) gears up for its second edition from October 17 to 21, 2024, anticipation is high for an event that promises to empress. Hosted by the Fashion Commission, this year's expanded five-day program aims to elevate Saudi Arabia's position as a hub for global fashion innovation and creativity.",
-    description_ar: "بينما يستعد أسبوع الرياض للموضة (RFW) لنسخته الثانية من 17 إلى 21 أكتوبر 2024، التوقعات عالية لحدث يعد بالإبهار. تستضيفه هيئة الأزياء، يهدف البرنامج الموسع الممتد لخمسة أيام هذا العام إلى رفع مكانة المملكة العربية السعودية كمركز للابتكار والإبداع في الموضة العالمية.",
+    description_ar: "مع استعداد أسبوع الأزياء في الرياض لانطلاق نسخته الثانية خلال الفترة من 17 إلى 21 أكتوبر 2024، تتزايد التوقعات لحدث يعد بتجربة استثنائية. ويأتي الأسبوع هذا العام ببرنامج موسّع يمتد على خمسة أيام، بتنظيم هيئة الأزياء، في خطوة تهدف إلى تعزيز مكانة المملكة كمركز عالمي للابتكار والإبداع في صناعة الأزياء.",
     button: "Read Full Article",
     image: require("../../images/pressimages/whatwomanwant.webp"),
     url: "https://whatwomenwant-mag.com/second-edition-of-riyadh-fashion-week-celebrating-fashion-innovation/",
@@ -160,30 +150,30 @@ export const pressArray = [
   {
     title:
       "Everything we know about Riyadh Fashion Week 2024 happening next month.",
-    title_ar: "كل ما نعرفه عن أسبوع الرياض للموضة 2024 الذي سيحدث الشهر القادم.",
+    title_ar: "كل ما نعرفه عن أسبوع الأزياء في الرياض 2024 المرتقب الشهر المقبل",
     description:
       "You're in for a treat Exciting times are coming up ahead, with the second edition of Riyadh Fashion Week almost upon us. Happening in mid-October, Riyadh Fashion Week 2024 will be bringing design excellence to a runway near you.",
-    description_ar: "في انتظارك متعة. أوقات مثيرة قادمة، مع النسخة الثانية من أسبوع الرياض للموضة التي تكاد تكون علينا. المقرر إقامته في منتصف أكتوبر، سيجلب أسبوع الرياض للموضة 2024 التميز في التصميم إلى منصة عرض قريبة منك.",
+    description_ar: "يترقّب عشّاق الأزياء انطلاق النسخة الثانية من أسبوع الأزياء في الرياض 2024 منتصف أكتوبر، في حدث يجمع التميّز التصميمي على منصّة عرض محلية ذات حضور متنامٍ. وتَعِد هذه النسخة بتجربة تعكس تطوّر الحدث وترسّخ موقعه كإحدى أبرز المحطات في مشهد الأزياء بالمملكة.",
     button: "Read Full Article",
     image: require("../../images/pressimages/whatson.webp"),
     url: "https://whatsonsaudiarabia.com/2024/09/riyadh-fashion-week-2024/",
   },
   {
     title: "Riyadh Fashion Week 2024: A Celebration Of Style & Innovation",
-    title_ar: "أسبوع الرياض للموضة 2024: احتفال بالأناقة والابتكار",
+    title_ar: "أسبوع الأزياء في الرياض 2024: احتفاء بالأسلوب والابتكار",
     description:
       "The Saudi capital is set to dazzle once again as Riyadh Fashion Week returns for its second edition in mid-October 2024. Fashion lovers and industry leaders alike can look forward to five days of creativity, luxury, and groundbreaking design, all courtesy of the Kingdom's finest fashion minds. ",
-    description_ar: "عاصمة السعودية تستعد للانبهار مرة أخرى مع عودة أسبوع الرياض للموضة لنسخته الثانية في منتصف أكتوبر 2024. عشاق الموضة وقادة الصناعة على حد سواء يمكنهم التطلع إلى خمسة أيام من الإبداع والرفاهية والتصميم الرائد، كل ذلك بفضل أفضل عقول الموضة في المملكة.",
+    description_ar: "تستعد العاصمة السعودية للتألّق مجددًا مع عودة أسبوع الأزياء في الرياض بنسخته الثانية منتصف أكتوبر 2024. على مدى خمسة أيام، يجتمع عشّاق الأزياء وقادة الصناعة في حدث يحتفي بالإبداع والتصميم الراقي، مقدّمًا رؤية معاصرة تعبّر عن نخبة العقول الإبداعية في مشهد الأزياء السعودي.",
     button: "Read Full Article",
     image: require("../../images/pressimages/SAUDIARABIA.webp"),
     url: "https://saudiarabia.com/insights/riyadh-fashion-week-2024-a-celebration-of-style-and-innovation/",
   },
   {
     title: "RIYADH FASHION WEEK IS RETURNING AND IT IS SOONER THAN YOU THINK.",
-    title_ar: "أسبوع الرياض للموضة يعود وهو أقرب مما تعتقد.",
+    title_ar: "أسبوع الأزياء في الرياض يعود قريبًا بنسخة أكبر في 2024",
     description:
       "Riyadh Fashion Week is back, and it's ready to make an even bigger splash in 2024. Mark your calendars from October 17 to 21 as Saudi Arabia's capital transforms into a global fashion hotspot once again. With its second edition, Riyadh Fashion Week promises an expanded lineup that will showcase the best of Saudi fashion, while also drawing international attention.",
-    description_ar: "أسبوع الرياض للموضة عاد، وهو مستعد لصنع تأثير أكبر في 2024. ضع علامة في التقويم من 17 إلى 21 أكتوبر حيث تتحول عاصمة السعودية إلى نقطة ساخنة عالمية للموضة مرة أخرى. مع نسخته الثانية، يعد أسبوع الرياض للموضة بخطة موسعة تعرض أفضل ما في الموضة السعودية، بينما تجذب أيضاً الانتباه الدولي.",
+    description_ar: "يعود أسبوع الأزياء في الرياض خلال الفترة من 17 إلى 21 أكتوبر 2024، استعدادًا لنسخته الثانية التي تحمل زخمًا أوسع وبرنامجًا أكثر تنوّعًا. وتتحوّل العاصمة مجددًا إلى مركز عالمي للأزياء، مع عروض تسلّط الضوء على نخبة العلامات السعودية، في حدث يعزّز الحضور الدولي ويؤكد تنامي مكانة الرياض على خريطة الموضة العالمية.",
     button: "Read Full Article",
     image: require("../../images/pressimages/BURO.webp"),
     url: "https://buro247.me/fashion/riyadh-fashion-week-is-returning-and-it-is-sooner-than-you-think/",
@@ -199,23 +189,21 @@ export const pressArray = [
   },
   {
     title: "Mohammed Ashi opens Riyadh's first-ever fashion week",
-    title_ar: "محمد عاشي يفتتح أول أسبوع موضة في الرياض",
+    title_ar: "محمد آشي يفتتح أول أسبوع أزياء في تاريخ الرياض",
     description:
       "The poignant eveningwear of Saudi designer Mohammed Ashi served as the inaugural Riyadh Fashion Week's opening act last night. Dozens of elegantly clad Saudi men and women, celebrities and members of the press met inside a temporary rectangular structure in front of the King Fahd National Library last night to witness Ashi's latest collection, 8pm.",
-    description_ar: "ملابس المساء المعبرة للمصمم السعودي محمد عاشي كانت بمثابة العرض الافتتاحي لأول أسبوع موضة في الرياض الليلة الماضية. التقى العشرات من الرجال والنساء السعوديين أنيقي المظهر، والمشاهير وأعضاء الصحافة داخل هيكل مستطيل مؤقت أمام مكتبة الملك فهد الوطنية الليلة الماضية لمشاهدة مجموعة عاشي الأخيرة، الساعة 8 مساءً.",
+    description_ar: "افتتح المصمم السعودي محمد آشي أول نسخة من أسبوع الأزياء في الرياض بعرض مسائي لافت قدّم خلاله مجموعته الجديدة 8PM، بحضور نخبة من الشخصيات السعودية والمشاهير والإعلام داخل هيكل مؤقت أُقيم أمام مكتبة الملك فهد الوطنية، في افتتاح عكس البعد الرمزي والتاريخي للحدث.",
     button: "Read Full Article",
     image: require("../../images/pressimages/ArabNew2.webp"),
     url: "https://www.arabnews.com/node/2395236/lifestyle",
   },
   {
     title: "Riyadh Fashion Week Is Set To Return For Its Second Edition",
-    title_ar: "أسبوع الرياض للموضة يستعد للعودة لنسخته الثانية",
+    title_ar: "أسبوع الأزياء في الرياض يعود بنسخته الثانية في أكتوبر 2024",
     description: `Riyadh Fashion Week (RFW) is set to return for its second edition from the 17th to the 21st of October 2024, in Saudi Arabia's capital. 
 
 According to organisers, this year's event will be even bigger and more dynamic, with a range of new features and an extended programme. `,
-    description_ar: `أسبوع الرياض للموضة (RFW) يستعد للعودة لنسخته الثانية من 17 إلى 21 أكتوبر 2024، في عاصمة السعودية.
-
-وفقاً للمنظمين، سيكون حدث هذا العام أكبر وأكثر ديناميكية، مع مجموعة من الميزات الجديدة وبرنامج موسع.`,
+    description_ar: `يستعد أسبوع الأزياء في الرياض للعودة بنسخته الثانية خلال الفترة من 17 إلى 21 أكتوبر 2024 في العاصمة السعودية. وبحسب الجهة المنظمة، تأتي هذه النسخة ببرنامج أكثر اتساعًا وحيوية، يتضمن إضافات جديدة تعكس تطوّر الحدث وتعزّز حضوره في مشهد الأزياء المعاصر`,
     button: "Read Full Article",
     image: require("../../images/pressimages/AEWorld.webp"),
     url: "https://aeworld.com/fashion/riyadh-fashion-week-is-set-to-return-for-its-second-edition/#:~:text=Riyadh%20Fashion%20Week%20(RFW)%20is,2024%2C%20in%20Saudi%20Arabia's%20capital.&text=According%20to%20organisers%2C%20this%20year",
@@ -223,30 +211,30 @@ According to organisers, this year's event will be even bigger and more dynamic,
   {
     title:
       "Saudi fashion sector witnesses historic step as first-ever Riyadh Fashion Week kicks off",
-    title_ar: "قطاع الموضة السعودي يشهد خطوة تاريخية مع انطلاق أول أسبوع موضة في الرياض",
+    title_ar: "انطلاقة تاريخية لقطاع الأزياء السعودي مع افتتاح أول أسبوع أزياء في الرياض",
     description:
       "Saudi designer Mohammed Ashi opened the much-anticipated event in Saudi Arabia's fashion sector, which took place on the evening of Oct. 20 in the Kingdom's capital, marking the start of the first-ever Riyadh Fashion Week",
-    description_ar: "فتح المصمم السعودي محمد عاشي الحدث المنتظر بشدة في قطاع الموضة السعودي، الذي أقيم في مساء 20 أكتوبر في عاصمة المملكة، معلناً بداية أول أسبوع موضة في الرياض",
+    description_ar: "شهد قطاع الأزياء في المملكة خطوة مفصلية مع انطلاق أول أسبوع أزياء في الرياض، حيث افتتح المصمم السعودي محمد آشي الحدث بعرض خاص أُقيم مساء 20 أكتوبر في العاصمة. وجاءت هذه الافتتاحية لتؤذن ببدء فصل جديد في مسيرة الأزياء السعودية، وتعكس التحوّل المتسارع الذي يشهده القطاع على المستويين المحلي والدولي.",
     button: "Read Full Article",
     image: require("../../images/pressimages/SaudiGazette2.webp"),
     url: "https://www.saudigazette.com.sa/article/636914/SAUDI-ARABIA/Saudi-fashion-sector-witnesses-historic-step-as-first-ever-Riyadh-Fashion-Week-kicks-off",
   },
   {
     title: "How To Watch Riyadh Fashion Week: Ashi Studio To Show Tonight",
-    title_ar: "كيف تشاهد أسبوع الرياض للموضة: استوديو عاشي يعرض الليلة",
+    title_ar: "كيف يمكن متابعة أسبوع الأزياء في الرياض: عرض ASHI Studio الليلة",
     description:
       "The fashion industry is gearing up for a momentous occasion: the inaugural Riyadh Fashion Week. This much-anticipated four-day event, hosted by the Saudi Fashion Commission, is set to unfold in all its grandeur, starting tonight amidst the notable backdrop of King Abdullah Financial District.",
-    description_ar: "صناعة الموضة تستعد لمناسبة عظيمة: أسبوع الرياض للموضة الافتتاحي. هذا الحدث المنتظر بشدة والممتد لأربعة أيام، تستضيفه هيئة الأزياء السعودية، مستعد للانطلاق بكل عظمته، بدءاً من الليلة وسط الخلفية البارزة لمنطقة الملك عبد الله المالية.",
+    description_ar: "يترقّب قطاع الأزياء انطلاق أول أسبوع أزياء في الرياض، في حدث يُقام بتنظيم هيئة الأزياء ويستمر على مدى أربعة أيام. وتنطلق الفعاليات مساء اليوم بعرض ASHI Studio، وسط أجواء لافتة في مركز الملك عبدالله المالي، إيذانًا ببدء محطة مفصلية في مسيرة صناعة الأزياء السعودية.",
     button: "Read Full Article",
     image: require("../../images/pressimages/BAZAAR (1).webp"),
     url: "https://www.harpersbazaararabia.com/fashion/riyadh-fashion-week-ashi-studio",
   },
   {
     title: "Riyadh Fashion Week has started",
-    title_ar: "أسبوع الرياض للموضة قد بدأ",
+    title_ar: "انطلاق أسبوع الأزياء في الرياض رسميًا",
     description:
       "The first Riyadh Fashion Week is here. Do you have your outfit picked out?Not only is it the first official Riyadh Fashion Week, it is also the first Saudi Fashion Week",
-    description_ar: "أول أسبوع موضة في الرياض هنا. هل اخترت ملابسك؟ ليس فقط أول أسبوع موضة رسمي في الرياض، بل أيضاً أول أسبوع موضة سعودي",
+    description_ar: "انطلقت فعاليات أول أسبوع أزياء في الرياض، في محطة تاريخية تُعد أيضًا أول أسبوع أزياء سعودي رسمي. ويشكّل الحدث بداية فصل جديد في مسيرة صناعة الأزياء بالمملكة، معلنًا حضور الرياض كمنصة جديدة للاحتفاء بالإبداع والهوية المعاصرة",
     button: "Read Full Article",
     image: require("../../images/pressimages/ztimeOut.webp"),
     url: "https://www.timeoutriyadh.com/shopping/shopping-news/riyadh-fashion-week",
@@ -254,10 +242,10 @@ According to organisers, this year's event will be even bigger and more dynamic,
   {
     title:
       "Saudi fashion sector witnesses historic step as first-ever Riyadh Fashion Week kicks off",
-    title_ar: "قطاع الموضة السعودي يشهد خطوة تاريخية مع انطلاق أول أسبوع موضة في الرياض",
+    title_ar: "خطوة تاريخية لقطاع الأزياء السعودي مع انطلاق أول أسبوع أزياء في الرياض",
     description:
       "The Saudi Fashion Commission had announced earlier that the renowned Mohammed Ashi, founder of Ashi Studio, will return to Riyadh, staging his first fashion show in his hometown.",
-    description_ar: "أعلنت هيئة الأزياء السعودية سابقاً أن محمد عاشي الشهير، مؤسس استوديو عاشي، سيعود إلى الرياض، ليقدم عرضه الأول في مسقط رأسه.",
+    description_ar: "شهد قطاع الأزياء في المملكة انطلاقة مفصلية مع بدء أول أسبوع أزياء في الرياض، وذلك بعد إعلان هيئة الأزياء عودة المصمم العالمي محمد آشي، مؤسس ASHI Studio، إلى العاصمة لتقديم أول عرض أزياء له في مدينته الأم. ويجسّد هذا الحدث لحظة فارقة في مسار الأزياء السعودية، ويؤكد تنامي حضورها على الساحة الدولية.",
     button: "Read Full Article",
     image: require("../../images/pressimages/zaywa.webp"),
     url: "https://zaywa.com/saudi-fashion-sector-historic-step-riyadh-fashion-weekhttps://www.zawya.com/en/life/leisure-and-travel/saudi-fashion-sector-witnesses-historic-step-as-first-ever-riyadh-fashion-week-kicks-off-itxqzb2i",
@@ -265,33 +253,31 @@ According to organisers, this year's event will be even bigger and more dynamic,
   {
     title:
       "RIYADH FASHION WEEK IS MAKE A BIG RETURN IN 2024: EVERYTHING TO KNOW.",
-    title_ar: "أسبوع الرياض للموضة يعود بشكل كبير في 2024: كل ما تحتاج معرفته.",
+    title_ar: "أسبوع الأزياء في الرياض يواصل زخمه في 2024 بنسخة ثانية مرتقبة",
     description: `Back for its second edition, Riyadh Fashion Week is set to captivate the region again in 2024.
 
 Hosted by the Saudi Fashion Commission, yet another level of unrivalled creative expression in the fashion space is set to be unveiled next season.`,
-    description_ar: `عائد في نسخته الثانية، يستعد أسبوع الرياض للموضة لإبهار المنطقة مرة أخرى في 2024.
-
-تستضيفه هيئة الأزياء السعودية، مستوى آخر من التعبير الإبداعي الذي لا يُضاهى في عالم الموضة مستعد للظهور الموسم القادم.`,
+    description_ar: `يستعد أسبوع الأزياء في الرياض للعودة في عام 2024 بنسخته الثانية، ضمن حدث تنظمه هيئة الأزياء ويعكس تطوّر المشهد الإبداعي في المملكة. وتَعِد النسخة الجديدة بتقديم مقاربات تصميمية أكثر تنوّعًا، تعزّز مكانة الرياض كمنصة مؤثرة في صناعة الأزياء على مستوى المنطقة.`,
     button: "Read Full Article",
     image: require("../../images/pressimages/GRAZIA (1).webp"),
     url: "https://graziamagazine.com/me/articles/riyadh-fashion-week-2024-dates/",
   },
   {
     title: "Ashi Studio Opens Riyadh Fashion Week",
-    title_ar: "استوديو عاشي يفتتح أسبوع الرياض للموضة",
+    title_ar: "ASHI Studio يفتتح أسبوع الأزياء في الرياض بعرض تاريخي",
     description:
       "Paying tribute to the breath-taking beauty of Mother Nature at night, the KSA-born couturier makes history as the first designer to show at the inaugural fashion week",
-    description_ar: "تقديراً لجمال الطبيعة الخلاب في الليل، صانع الأزياء المولود في السعودية يصنع التاريخ كأول مصمم يعرض في أسبوع الموضة الافتتاحي",
+    description_ar: "افتتح ASHI Studio أول أسبوع أزياء في الرياض بعرض استلهم جمال الطبيعة في ساعات الليل، في لحظة مفصلية سجّل خلالها المصمم السعودي محمد آشي اسمه كأول مصمم يقدّم عرضًا على منصّة النسخة الافتتاحية من الحدث، مؤكّدًا حضور الكوتور السعودي على الساحة العالمية.",
     button: "Read Full Article",
     image: require("../../images/pressimages/Bazaar3.webp"),
     url: "https://riyadhfashionweek.squarespace.com/press",
   },
   {
     title: "Meet the Arab designers set to dazzle at Riyadh Fashion Week",
-    title_ar: "تعرف على المصممين العرب المستعدين للإبهار في أسبوع الرياض للموضة",
+    title_ar: "تعرّفوا على المصممين العرب المشاركين في أسبوع الأزياء الأول في الرياض",
     description:
       "After attending star-studded showcases in London, Milan, and Paris, the global fashion community is set to disembark in Riyadh for Saudi Arabia's first ever fashion week. Celebrities, VIPs, buyers, and industry stakeholders will gather to witness 30 of the kingdom's top designers take over the runway from October 20 to 23.",
-    description_ar: "بعد حضور عروض حافلة بالنجوم في لندن وميلانو وباريس، مجتمع الموضة العالمي يستعد للهبوط في الرياض لأول أسبوع موضة في السعودية. سيتجمع المشاهير وكبار الشخصيات والمشترون وأصحاب المصلحة في الصناعة لمشاهدة 30 من أفضل مصممي المملكة يستولون على منصة العرض من 20 إلى 23 أكتوبر.",
+    description_ar: "بعد محطات عالمية في لندن وميلانو وباريس، تتجه أنظار مجتمع الموضة العالمي إلى الرياض مع انطلاق أول أسبوع أزياء في المملكة العربية السعودية. ويجتمع نخبة من المشاهير وكبار الشخصيات والمشترين وصنّاع القطاع لمتابعة عروض 30 من أبرز المصممين السعوديين، الذين يتولّون منصّة العرض خلال الفترة من 20 إلى 23 أكتوبر، في حدث يؤكد دخول الرياض رسميًا إلى روزنامة الأزياء العالمية.",
     button: "Read Full Article",
     image: require("../../images/pressimages/JingDaily.webp"),
     url: "https://jingdaily.com/riyadh-fashion-week-arab-designers-spotlight",
