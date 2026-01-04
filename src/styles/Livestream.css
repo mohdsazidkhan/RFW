@@ -25,7 +25,7 @@
 .livestream-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .livestream-hero-content {
@@ -36,6 +36,10 @@
   max-width: 1200px;
   margin: 0 auto 0 70px;
   padding: 220px 0;
+}
+
+[dir="rtl"] .livestream-hero-content {
+  margin: 0 70px 0 auto;
 }
 
 .livestream-hero-title {
@@ -60,14 +64,15 @@
 }
 
 .video-frame-wrapper {
-    background: #ffffff;
-    padding: 0;
+  background: #ffffff;
+  padding: 0;
 }
 
 .video-frame {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 */
+  padding-top: 56.25%;
+  /* 16:9 */
   background: #000;
 }
 
@@ -81,13 +86,18 @@
 @media (max-width: 768px) {
   .livestream-video-section {
     padding: 25px 0;
-}
-  .livestream-hero-title { font-size: 32px; }
-  .livestream-hero-subtitle { font-size: 12px; }
-  .livestream-hero-content{
-    margin: 10px ;
+  }
+
+  .livestream-hero-title {
+    font-size: 32px;
+  }
+
+  .livestream-hero-subtitle {
+    font-size: 12px;
+  }
+
+  .livestream-hero-content {
+    margin: 10px;
     padding: 160px 20px 100px 20px;
   }
 }
-
-

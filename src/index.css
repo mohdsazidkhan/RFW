@@ -2259,10 +2259,6 @@ strong {
   text-align: right;
 }
 
-[dir="rtl"] .header-container {
-  flex-direction: row-reverse;
-}
-
 [dir="rtl"] .header-nav {
   flex-direction: row-reverse;
 }
@@ -2321,16 +2317,16 @@ strong {
 }
 
 [dir="rtl"] .contact-content {
-  direction: rtl;
+  direction: ltr;
 }
 
 [dir="rtl"] .contact-info-column {
-  text-align: right;
+  text-align: left;
 }
 
-[dir="rtl"] .contact-form {
+/* [dir="rtl"] .contact-form {
   direction: rtl;
-}
+} */
 
 [dir="rtl"] .newsletter-form {
   direction: rtl;
@@ -2340,12 +2336,12 @@ strong {
   text-align: right;
 }
 
-[dir="rtl"] .about-hero-content {
+/* [dir="rtl"] .about-hero-content {
   direction: rtl;
-}
+} */
 
 [dir="rtl"] .about-main-content {
-  text-align: right;
+  flex-direction: row-reverse;
 }
 
 [dir="rtl"] .quote-content {
