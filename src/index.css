@@ -2259,9 +2259,9 @@ strong {
   text-align: right;
 }
 
-[dir="rtl"] .header-nav {
+/* [dir="rtl"] .header-nav {
   flex-direction: row-reverse;
-}
+} */
 
 [dir="rtl"] .language-toggle {
   margin-left: 0;
