@@ -67,7 +67,22 @@
   font-display: swap;
 }
 
+/* Arabic Fonts */
+@font-face {
+  font-family: 'Lyon Arabic Display';
+  src: url('./fonts/lyon-arabic-display-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'Ping AR';
+  src: url('./fonts/ping-ar-lt-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* Reset and base styles */
 * {
@@ -95,6 +110,38 @@ h5,
 h6 {
   font-family: 'SOLAR-VESTA-SERIF', serif;
   font-weight: 600;
+}
+
+/* Arabic RTL headings */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+.arabic h1,
+.arabic h2,
+.arabic h3,
+.arabic h4,
+.arabic h5,
+.arabic h6 {
+  font-family: 'Lyon Arabic Display', serif;
+  font-weight: 700;
+}
+
+/* Arabic RTL paragraphs and body text */
+[dir="rtl"] p,
+[dir="rtl"] body,
+[dir="rtl"] span,
+[dir="rtl"] div,
+[dir="rtl"] a,
+.arabic p,
+.arabic body,
+.arabic span,
+.arabic div,
+.arabic a {
+  font-family: 'Ping AR', sans-serif;
+  font-weight: 400;
 }
 
 b,
