@@ -132,12 +132,10 @@ h6 {
 /* Arabic RTL paragraphs and body text */
 [dir="rtl"] p,
 [dir="rtl"] body,
-[dir="rtl"] span,
 [dir="rtl"] div,
 [dir="rtl"] a,
 .arabic p,
 .arabic body,
-.arabic span,
 .arabic div,
 .arabic a {
   font-family: 'Ping AR', sans-serif;
@@ -500,6 +498,10 @@ strong {
   font-weight: 700;
   font-family: 'SOLAR-VESTA-SERIF', serif;
   line-height: normal;
+}
+
+[dir="rtl"] .hero-dates-numbers {
+  direction: ltr;
 }
 
 .hero-dates-month {
@@ -1244,12 +1246,30 @@ strong {
 .contact-title {
   font-size: clamp(3rem, 5vw, 4.5rem);
   font-weight: 700;
-  font-family: 'SOLAR-VESTA-SERIF' !important;
-
+  font-family: 'SOLAR-VESTA-SERIF';
   color: var(--rfw-black);
   line-height: 1.1;
   margin: 0;
   margin-bottom: 2rem;
+}
+
+[dir="rtl"] .contact-title {
+  font-family: 'Lyon Arabic Display', serif;
+  font-weight: 700;
+}
+
+[dir="rtl"] .name-sub-label,
+[dir="rtl"] .contact-address,
+[dir="rtl"] .form-label {
+  font-family: 'Ping AR', serif;
+}
+
+[dir="rtl"] .form-label {
+  direction: rtl;
+}
+
+[dir="rtl"] .btn-contact {
+  margin-left: auto;
 }
 
 .contact-details {
