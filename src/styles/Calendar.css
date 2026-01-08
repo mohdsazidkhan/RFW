@@ -60,13 +60,17 @@
 }
 
 .calendar-title {
-  font-family: "SOLAR-VESTA-SERIF" !important;
+  font-family: "SOLAR-VESTA-SERIF";
   font-size: 44.648px;
   color: #000000;
   margin: 0 0 10px 0;
   line-height: 58.0067px;
   letter-spacing: -0.44648px;
   text-transform: uppercase;
+}
+
+[dir="rtl"] .calendar-accordions .day-accordion-title {
+  font-size: 14px;
 }
 
 .calendar-date-range {

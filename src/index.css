@@ -1027,9 +1027,14 @@ strong {
   color: var(--rfw-black);
 }
 
-.btn-outline:hover {
-  background: var(--rfw-black);
-  color: var(--rfw-white);
+[dir="rtl"] .btn,
+[dir="rtl"] .btn-outline,
+[dir="rtl"] .newsletter-input::placeholder {
+  font-family: 'Ping AR', serif;
+}
+
+[dir="rtl"] .newsletter-form .btn {
+  padding: 0.25rem 1.5rem;
 }
 
 .btn-outline-white {
@@ -1680,7 +1685,7 @@ strong {
   font-size: 50px;
   line-height: 50px;
   font-weight: 200;
-  font-family: 'SOLAR-VESTA-SERIF' !important;
+  font-family: 'SOLAR-VESTA-SERIF';
   color: var(--rfw-white);
   line-height: 1.1;
   text-transform: uppercase;
@@ -2377,6 +2382,10 @@ strong {
 
 [dir="rtl"] .designers-title {
   text-align: right;
+}
+
+[dir="rtl"] .designers-main-section .designers-title {
+  font-family: 'Lyon Arabic Display', serif;
 }
 
 [dir="rtl"] .designers-description {

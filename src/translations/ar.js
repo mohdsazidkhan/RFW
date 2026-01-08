@@ -6,7 +6,7 @@ export const translations = {
     designers: 'المصممون',
     calendar: 'جدول الفعاليات',
     stream: 'البث المباشر',
-    sponsorship: 'الرعايا والشراكات',
+    sponsorship: 'الرعاية والشراكات',
     press: 'الأخبار',
     contact: 'تواصل معنا',
   },
