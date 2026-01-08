@@ -512,6 +512,10 @@ strong {
   line-height: normal;
 }
 
+[dir="rtl"] .video-background-section .hero-dates-month {
+  font-family: 'Lyon Arabic Display', serif;
+}
+
 /* 
 .section-container {
   max-width: var(--max-page-width);
@@ -779,6 +783,10 @@ strong {
   padding: 6rem 0;
   color: var(--rfw-white);
   position: relative;
+}
+
+[dir="rtl"] .calendar-section .calendar-subtitle {
+  font-family: 'Ping AR', sans-serif;
 }
 
 .calendar-content {
