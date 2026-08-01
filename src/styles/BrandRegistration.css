@@ -1,0 +1,679 @@
+/* ═══════════════════════════════════════════
+   Brand Registration Page
+   ═══════════════════════════════════════════ */
+
+.brand-reg-page {
+  background: #ffffff;
+  color: #000000;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+
+  /* Space under every section title, and between fields within a block.
+     Both sections read from these so the rhythm stays identical. */
+  --brand-reg-title-gap: 10px;
+  --brand-reg-field-gap: 10px;
+}
+
+/* ── Hero ─────────────────────────────────── */
+.brand-reg-hero {
+  background: #000000;
+  padding: 120px 0 70px;
+  text-align: center;
+}
+
+.brand-reg-hero-inner {
+  max-width: 95vw;
+  margin: 0 auto;
+}
+
+.brand-reg-hero-title {
+  font-size: clamp(36px, 7vw, 72px);
+  font-weight: 200;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-7%, -25%);
+}
+
+/* ── Participation / Terms Section ───────── */
+.brand-reg-includes-section {
+  padding: 40px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.brand-reg-includes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* All section titles — "WHAT PARTICIPATION INCLUDES", "TERMS & CONDITIONS",
+   "ELIGIBILITY", etc. — share one rule so size and spacing can't drift apart. */
+.brand-reg-section-heading,
+.brand-reg-form-section-title {
+  font-size: 32px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 var(--brand-reg-title-gap);
+}
+
+.brand-reg-section-heading {
+  padding-top: 20px;
+}
+
+/* The block's flex gap already sits under the title; subtract it so the
+   title gap stays at --brand-reg-title-gap regardless of the field gap. */
+.brand-reg-form-section-block>.brand-reg-form-section-title {
+  margin-bottom: calc(var(--brand-reg-title-gap) - var(--brand-reg-field-gap));
+}
+
+.brand-reg-includes-list {
+  list-style: decimal;
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.brand-reg-includes-list li {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+.brand-reg-terms-list {
+  padding-left: 22px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.brand-reg-terms-list li {
+  font-size: 16px;
+  color: #444444;
+  line-height: 1.7;
+}
+
+.brand-reg-terms-list a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.brand-reg-terms-list a:hover {
+  color: #888888;
+}
+
+/* ── Form Section ─────────────────────────── */
+.brand-reg-form-section {
+  padding: 0 0 50px;
+}
+
+.brand-reg-container {
+  max-width: 850px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+/* Narrower centered column just for the form */
+.brand-reg-form-container {
+  max-width: 850px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.brand-reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Form Section Blocks ─────────────────── */
+.brand-reg-form-section-block {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  gap: var(--brand-reg-field-gap);
+}
+
+.brand-reg-form-section-block:last-child {
+  border-bottom: none;
+}
+
+.brand-reg-form-section-label {
+  font-size: 11px;
+  letter-spacing: 5px;
+  color: #888888;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* ── Term title / description ────────────── */
+.brand-reg-term-title {
+  display: block;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #16151d;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.brand-reg-term-desc {
+  margin: 0;
+  font-size: 16px;
+  color: #444444;
+  line-height: 1.7;
+}
+
+.brand-reg-term-desc a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.brand-reg-term-desc a:hover {
+  color: #888888;
+}
+
+/* ── Arabic-English inline annotation ───── */
+.brand-reg-label-ar-en {
+  font-size: 11px;
+  color: #888888;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+/* ── Fields ──────────────────────────────── */
+.brand-reg-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.brand-reg-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.brand-reg-two-col .brand-reg-field {
+  max-width: 100%;
+}
+
+/* ── Labels ──────────────────────────────── */
+.brand-reg-label {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #16151d;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  line-height: 1.6;
+}
+
+.brand-reg-label-ar {
+  font-size: 11px;
+  color: #666666;
+  font-weight: 400;
+  letter-spacing: normal;
+  font-family: sans-serif;
+}
+
+.brand-reg-required {
+  font-size: 15px;
+  color: #49484f;
+  letter-spacing: normal;
+}
+
+.brand-reg-hint {
+  font-size: 12px;
+  color: #888888;
+  margin: -4px 0 0;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* ── Inputs ──────────────────────────────── */
+.brand-reg-input,
+.brand-reg-textarea {
+  width: 100%;
+  padding: 11px 10px;
+  height: 42px;
+  border: 1px solid #a9a9a9;
+  background: #fafafa;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  font-family: sans-serif;
+  transition: border-color 0.3s ease, background 0.3s ease;
+  border-radius: 0;
+  letter-spacing: normal;
+  box-sizing: border-box;
+}
+
+.brand-reg-input--date {
+  cursor: pointer;
+}
+
+.brand-reg-textarea {
+  height: auto;
+  min-height: 120px;
+  resize: vertical;
+  padding: 12px 10px;
+}
+
+.brand-reg-input:focus,
+.brand-reg-textarea:focus {
+  outline: none;
+  border-color: #000000;
+  background: #ffffff;
+}
+
+.brand-reg-input::placeholder,
+.brand-reg-textarea::placeholder {
+  color: #aaaaaa;
+  font-size: 13px;
+}
+
+/* ── Radio / Checkbox ─────────────────────── */
+.brand-reg-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.brand-reg-radio-group--col {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.brand-reg-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #333333;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1.4;
+}
+
+.brand-reg-radio-label input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #000000;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* ── Social blocks ───────────────────────── */
+.brand-reg-social-block {
+  border-left: 2px solid #e5e5e5;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.brand-reg-social-link {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.3s ease;
+}
+
+.brand-reg-social-link.visible {
+  max-height: 140px;
+  opacity: 1;
+}
+
+/* ── Checkbox label ──────────────────────── */
+.brand-reg-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #16151d;
+  line-height: 1.6;
+}
+
+.brand-reg-checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  accent-color: #000000;
+  cursor: pointer;
+}
+
+.brand-reg-checkbox-desc {
+  display: block;
+  font-size: 16px;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #555555;
+  margin-top: 5px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* ── Submit button ───────────────────────── */
+.btn-brand-reg {
+  background: transparent;
+  color: #16151d;
+  border: 1px solid #000000;
+  padding: 14px 36px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  align-self: flex-start;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-brand-reg:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* ── Fallback note ───────────────────────── */
+.brand-reg-fallback {
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.75;
+  margin-top: 10px;
+}
+
+.brand-reg-fallback a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.brand-reg-fallback a:hover {
+  color: #888888;
+}
+
+/* ── Copyright line ──────────────────────── */
+.brand-reg-copyright {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: #a4a4a4;
+  line-height: 1.75;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.brand-reg-copyright-sep {
+  margin: 0 4px;
+  color: #bbbbbb;
+}
+
+.brand-reg-copyright a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.brand-reg-copyright a:hover {
+  color: #888888;
+}
+
+/* ── Success screen ──────────────────────── */
+.brand-reg-success {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 80px 0;
+}
+
+.brand-reg-success-title {
+  font-size: clamp(36px, 6vw, 72px);
+  font-weight: 200;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.brand-reg-success-text {
+  font-size: 16px;
+  color: #444444;
+  line-height: 1.75;
+  max-width: 560px;
+  margin: 0;
+}
+
+.brand-reg-success-text a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* ═══════════════════════════════════════════
+   Responsive — Tablet (≤ 968px)
+   ═══════════════════════════════════════════ */
+@media (max-width: 968px) {
+  .brand-reg-hero {
+    padding: 100px 0 60px;
+  }
+
+  .brand-reg-hero-eyebrow {
+    font-size: 12px;
+  }
+
+  .brand-reg-includes-section {
+    padding: 60px 0;
+  }
+
+  .brand-reg-includes-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .brand-reg-includes-list li {
+    font-size: 15px;
+  }
+
+  .brand-reg-terms-list li {
+    font-size: 15px;
+  }
+
+  .brand-reg-form-section {
+    padding: 60px 0 80px;
+  }
+
+  .brand-reg-form-container {
+    width: 92vw;
+    max-width: 100%;
+  }
+
+  .brand-reg-two-col {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .brand-reg-form-section-block {
+    padding: 44px 0;
+  }
+
+  .brand-reg-section-heading,
+  .brand-reg-form-section-title {
+    font-size: clamp(20px, 4vw, 28px);
+    letter-spacing: 2px;
+  }
+
+  .brand-reg-label {
+    font-size: 15px;
+  }
+
+  .brand-reg-input,
+  .brand-reg-textarea {
+    font-size: 14px;
+    height: 44px;
+    padding: 12px 10px;
+  }
+
+  .brand-reg-textarea {
+    height: auto;
+  }
+
+  .brand-reg-radio-label {
+    font-size: 15px;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   Responsive — Mobile (≤ 576px)
+   ═══════════════════════════════════════════ */
+@media (max-width: 576px) {
+  .brand-reg-hero-title {
+    left: 13%;
+  }
+
+  .brand-reg-term-desc a {
+    word-wrap: break-word;
+  }
+
+  .brand-reg-hero {
+    padding: 90px 0 50px;
+  }
+
+  .brand-reg-hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  .brand-reg-includes-section {
+    padding: 48px 0;
+  }
+
+  .brand-reg-includes-list li {
+    font-size: 14px;
+  }
+
+  .brand-reg-terms-list li {
+    font-size: 14px;
+  }
+
+  .brand-reg-form-section {
+    padding: 4px 0 24px;
+  }
+
+  .brand-reg-form-container {
+    width: 92vw;
+  }
+
+  .brand-reg-form-section-block {
+    padding: 36px 0;
+  }
+
+  .brand-reg-form-section-label {
+    font-size: 10px;
+  }
+
+  .brand-reg-section-heading,
+  .brand-reg-form-section-title {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .brand-reg-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .brand-reg-label-ar {
+    font-size: 10px;
+  }
+
+  .brand-reg-hint {
+    font-size: 11px;
+  }
+
+  .brand-reg-input,
+  .brand-reg-textarea {
+    font-size: 14px;
+    height: 46px;
+    padding: 12px 10px;
+  }
+
+  .brand-reg-textarea {
+    height: auto;
+    min-height: 110px;
+  }
+
+  .brand-reg-radio-label {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .brand-reg-radio-label input[type="radio"] {
+    width: 18px;
+    height: 18px;
+  }
+
+  .brand-reg-social-block {
+    padding-left: 16px;
+  }
+
+  .brand-reg-checkbox-label {
+    font-size: 13px;
+    gap: 12px;
+  }
+
+  .brand-reg-term-desc {
+    font-size: 14px;
+  }
+
+  .brand-reg-checkbox-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  .brand-reg-checkbox-desc {
+    font-size: 14px;
+  }
+
+  .btn-brand-reg {
+    align-self: stretch;
+    text-align: center;
+    padding: 16px;
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  .brand-reg-fallback {
+    font-size: 12px;
+  }
+
+  .brand-reg-success {
+    padding: 60px 0;
+  }
+
+  .brand-reg-success-text {
+    font-size: 15px;
+  }
+}

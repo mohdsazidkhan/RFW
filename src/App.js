@@ -13,6 +13,8 @@ import Calendar from './pages/Calendar';
 import Designers from './pages/Designers';
 import DesignerDetail from './pages/DesignerDetail';
 import Livestream from './pages/Livestream';
+import BrandRegistration from './pages/BrandRegistration';
+import BrandRequests from './pages/BrandRequests';
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
               <Route path="/livestream" element={<Livestream />} />
               <Route path="/designers" element={<Designers />} />
               <Route path="/designer/:designerSlug" element={<DesignerDetail />} />
+              <Route path="/brand-registration" element={<BrandRegistration />} />
+              <Route path="/brand-requests" element={<BrandRequests />} />
             </Routes>
           </main>
           <Footer />

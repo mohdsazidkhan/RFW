@@ -18,12 +18,12 @@ const Header = () => {
   // Detect theme based on page - UPDATED LOGIC
   const getTheme = () => {
     // Only these pages should have dark theme
-    const darkPages = ['/press', '/contact']; 
+    const darkPages = ['/press', '/contact'];
     return darkPages.includes(location.pathname) ? 'dark' : 'light';
   };
 
   const theme = getTheme();
-  
+
   // Check if logo and menu should be white (when menu is open on any page)
   const shouldBeWhite = isMenuOpen;
 
@@ -33,53 +33,53 @@ const Header = () => {
         {/* Logo */}
         <div className="header-logo">
           <Link to="/" onClick={closeMenu}>
-          <img
-          src="/logo.webp"
-          alt="RFW Logo"
-          className="logo-image"
-          style={{ filter: shouldBeWhite ? "none" : (theme === "dark" ? "invert(1)" : "none") }}
-        />
+            <img
+              src="/logo.webp"
+              alt="RFW Logo"
+              className="logo-image"
+              style={{ filter: shouldBeWhite ? "none" : (theme === "dark" ? "invert(1)" : "none") }}
+            />
 
           </Link>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="header-nav header-nav-desktop">
-          {['/', '/about', 
-          '/designers', 
-          '/calendar', 
-          '/livestream', 
-          '/sponsorship', '/press', '/contact'].map((path) => (
-            <Link
-              key={path}
-              to={path}
-              className={`nav-link ${isActive(path) ? 'active' : ''}`}
-              onClick={closeMenu}
-              style={{ filter: theme === "dark" ? "invert(1)" : "none" }}
-            >
-              {path === '/' ? t.nav.home :
-               path === '/about' ? t.nav.about :
-               path === '/designers' ? t.nav.designers :
-               path === '/calendar' ? t.nav.calendar :
-               path === '/livestream' ? t.nav.stream :
-               path === '/sponsorship' ? t.nav.sponsorship :
-               path === '/press' ? t.nav.press : t.nav.contact}
-            </Link>
-          ))}
+          {['/', '/about',
+            '/designers',
+            // '/calendar',
+            '/livestream',
+            '/sponsorship', '/press', '/contact'].map((path) => (
+              <Link
+                key={path}
+                to={path}
+                className={`nav-link ${isActive(path) ? 'active' : ''}`}
+                onClick={closeMenu}
+                style={{ filter: theme === "dark" ? "invert(1)" : "none" }}
+              >
+                {path === '/' ? t.nav.home :
+                  path === '/about' ? t.nav.about :
+                    path === '/designers' ? t.nav.designers :
+                      // path === '/calendar' ? t.nav.calendar :
+                      path === '/livestream' ? t.nav.stream :
+                        path === '/sponsorship' ? t.nav.sponsorship :
+                          path === '/press' ? t.nav.press : t.nav.contact}
+              </Link>
+            ))}
         </nav>
 
         {/* Language Toggle Button */}
-        <button 
+        {/* <button 
           className="language-toggle"
           onClick={toggleLanguage}
           aria-label={language === 'ar' ? 'Switch to English' : 'التبديل إلى العربية'}
           style={{ filter: shouldBeWhite ? "none" : (theme === "dark" ? "invert(1)" : "none") }}
         >
           {language === 'ar' ? 'EN' : 'AR'}
-        </button>
+        </button> */}
 
         {/* Mobile Menu Toggle Button */}
-        <button 
+        <button
           className="header-menu-toggle"
           onClick={toggleMenu}
           aria-label="Toggle menu"
@@ -92,33 +92,33 @@ const Header = () => {
         {/* Mobile Navigation Overlay */}
         <div className={`mobile-nav-overlay ${isMenuOpen ? 'open' : ''}`}>
           <nav className="header-nav header-nav-mobile">
-            {['/', '/about', 
-            '/designers', 
-            '/calendar', 
-            '/livestream', 
-            '/sponsorship', '/press', '/contact'].map((path) => (
-              <Link
-                key={path}
-                to={path}
-                className={`nav-link ${isActive(path) ? 'active' : ''}`}
-                onClick={closeMenu}
-              >
-                {path === '/' ? t.nav.home :
-                 path === '/about' ? t.nav.about :
-                 path === '/designers' ? t.nav.designers :
-                 path === '/calendar' ? t.nav.calendar :
-                 path === '/livestream' ? t.nav.stream :
-                 path === '/sponsorship' ? t.nav.sponsorship :
-                 path === '/press' ? t.nav.press : t.nav.contact}
-              </Link>
-            ))}
-            <button 
+            {['/', '/about',
+              '/designers',
+              // '/calendar',
+              '/livestream',
+              '/sponsorship', '/press', '/contact'].map((path) => (
+                <Link
+                  key={path}
+                  to={path}
+                  className={`nav-link ${isActive(path) ? 'active' : ''}`}
+                  onClick={closeMenu}
+                >
+                  {path === '/' ? t.nav.home :
+                    path === '/about' ? t.nav.about :
+                      path === '/designers' ? t.nav.designers :
+                        //  path === '/calendar' ? t.nav.calendar :
+                        path === '/livestream' ? t.nav.stream :
+                          path === '/sponsorship' ? t.nav.sponsorship :
+                            path === '/press' ? t.nav.press : t.nav.contact}
+                </Link>
+              ))}
+            {/* <button 
               className="language-toggle-mobile"
               onClick={toggleLanguage}
               aria-label={language === 'ar' ? 'Switch to English' : 'التبديل إلى العربية'}
             >
               {language === 'ar' ? 'EN' : 'AR'}
-            </button>
+            </button> */}
           </nav>
         </div>
       </div>

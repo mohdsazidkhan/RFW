@@ -17,13 +17,13 @@ export const translations = {
     heroDates: "15 - 20",
     heroMonth: "OCTOBER",
     latestTitle: "THE LATEST\nFROM RIYADH\nFASHION WEEK",
-    latestDescription: "STEP INTO THE CAPTIVATING REALM OF RIYADH FASHION WEEK, WHERE STYLE INTERTWINES WITH INNOVATION, TRADITION FINDS ITS MUSE IN CREATIVITY, AND ASPIRATIONS GRACE THE RUNWAY. PREPARE TO IMMERSE YOURSELF IN THE VIBRANT SAUDI ARABIA'S FASHION SCENE, AS WE PRESENT A WEEK-LONG CELEBRATION THAT HONORS ELEGANCE, ARTISTIC EXPRESSION, AND CULTURAL FUSION. THIS WORLD RENOUNED EVENT HELD ITS INNAUGURAL EDITION IN 2023, AND SINCE THEN, RIYADH FASHION WEEK HAS GRACED THE KINDGOM’S CAPITAL EVERY FALL, BRINGING A VARIED SELECTION OF DESIGNERs EVERY YEAR TO HIGHLIGHT TALENTS.",
+    latestDescription: "Step into the captivating realm of THE THIRD EDITION OF Riyadh Fashion Week, where style intertwines with innovation, tradition finds its muse in creativity, and aspirations grace the runway. Prepare to immerse yourself in the vibrant Saudi Arabia's fashion scene, as we present a week-long celebration that honors elegance, artistic expression, and cultural fusion.",
     learnMore: "LEARN MORE",
     calendarSubtitle: "FEATURED",
     calendarTitle: "CALENDAR",
     calendarDescription: "Delve into the meticulously crafted Riyadh Fashion Week Calendar, a portal into a world of refined creativity and sophisticated style.\n\n With each day unfolding a thoughtfully curated array of captivating runway shows.",
     designersTitle: "RFW DESIGNERS 2025",
-    designersDescription: "RIYADH FASHION WEEK SPOTLIGHTS A DIVERSE LINEUP OF VISIONARY DESIGNERS LEAVING AN INDELIBLE MARK. HAILING FROM VARIED BACKGROUNDS, THEY HARMONIOUSLY MERGE TRADITION AND INNOVATION, PROMISING DESIGNS THAT CAPTIVATE AND INSPIRE. AVANT-GARDE TO TIMELESS ELEGANCE, THEY REDEFINE SAUDI ARABIAN FASHION'S FUTURE WITH BOUNDLESS CREATIVITY",
+    designersDescription: "Riyadh Fashion Week spotlights a diverse lineup of visionary designers leaving an indelible mark. Hailing from varied backgrounds, they harmoniously merge tradition and innovation, promising designs that captivate and inspire. Avant-garde to timeless elegance, they redefine Saudi Arabian fashion's future with boundless creativity.",
     newsletterTitle: "BE THE FIRST TO KNOW",
     newsletterDescription: "REGISTER YOUR EMAIL TO GET THE LATEST NEWS AND UPDATES FROM RIYADH FASHION WEEK.",
     newsletterPlaceholder: "Email Address",
@@ -42,7 +42,7 @@ export const translations = {
   // Designers Page
   designers: {
     title: "MEET THE RFW DESIGNERS 2025",
-    description: "THE RIYADH FASHION WEEK IS SET TO SHOWCASE A DIVERSE ARRAY OF EXCEPTIONALLY TALENTED DESIGNERS WHO ARE POISED TO LEAVE THEIR MARK ON THE FASHION LANDSCAPE. THESE VISIONARY CREATORS COME FROM VARIOUS BACKGROUNDS, EACH CONTRIBUTING A UNIQUE PERSPECTIVE. WITH A HARMONIOUS BLEND OF INNOVATION AND TRADITION, THEIR DESIGNS PROMISE TO CAPTIVATE AND INSPIRE. FROM AVANT-GARDE CONCEPTS TO TIMELESS ELEGANCE, THE DESIGNERS PARTICIPATING IN THE RIYADH FASHION WEEK EMBODY THE RICHNESS AND CREATIVITY OF SAUDI ARABIAN FASHION, TRANSCENDING BOUNDARIES AND REDEFINING THE FUTURE OF STYLE."
+    description: "The Riyadh Fashion Week is set to showcase a diverse array of exceptionally talented designers who are poised to leave their mark on the fashion landscape. These visionary creators come from various backgrounds, each contributing a unique perspective. With a harmonious blend of innovation and tradition, their designs promise to captivate and inspire. From avant-garde concepts to timeless elegance, the designers participating in the Riyadh Fashion Week embody the richness and creativity of Saudi Arabian fashion, transcending boundaries and redefining the future of style."
   },
 
   // Calendar Page

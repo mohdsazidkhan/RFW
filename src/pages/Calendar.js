@@ -45,19 +45,21 @@ const Calendar = () => {
         <div className="calendar-accordions">
           {designers.map((day, dayIndex) => (
             <div key={dayIndex} className="day-accordion-item">
-              <div className={`day-accordion-header ${expandedDay === dayIndex ? "bgblack" : "transparent" }`} onClick={() => toggleDay(dayIndex)}>
+              <div className={`day-accordion-header ${expandedDay === dayIndex ? "bgblack" : "transparent"}`}
+              // onClick={() => toggleDay(dayIndex)}
+              >
                 <h2 className="day-accordion-title">{translateMonth(language, day.date)}</h2>
                 <div className="day-expand-icon">
-                  {expandedDay === dayIndex ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown /> }
+                  {/* {expandedDay === dayIndex ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />} */}
                 </div>
               </div>
-              
+
               {expandedDay === dayIndex && (
-                
+
                 <div className="day-accordion-content">
                   <div className='designerText'>
-                      <div>{translateCalendarText(language, day?.text)}</div>
-                      <div>{day?.subText}</div>
+                    <div>{translateCalendarText(language, day?.text)}</div>
+                    <div>{day?.subText}</div>
                   </div>
                   <div className="designers-list">
                     {day?.designers?.map((designer) => (
@@ -96,10 +98,10 @@ const Calendar = () => {
                     ))}
                   </div>
                   {day?.extraDay &&
-                  <div className='designerText'>
+                    <div className='designerText'>
                       <div>{translateCalendarText(language, day?.extraDay.text)}</div>
                       <div>{day?.extraDay.subText}</div>
-                  </div>
+                    </div>
                   }
                   <div className="designers-list">
                     {day?.extraDay?.designers.map((designer) => (

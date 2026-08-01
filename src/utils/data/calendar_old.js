@@ -38,6 +38,23 @@ export const designers = [
         endTime: "21:15",
         logo: require("../../images/designers/vivienne.png"),
       },
+    ],
+  },
+  {
+    day: "2",
+    date: "OCTOBER 16",
+    year: "2025",
+    text: "RUNWAY SHOWS",
+    // subText:"BEDROCK",
+    designers: [
+      {
+        id: "leem",
+        name: "LEEM",
+        desc: "COUTURE",
+        time: "17:00",
+        endTime: "17:15",
+        logo: require("../../images/designers/leem.jpg"),
+      },
       {
         id: "re-birth",
         name: "REBIRTH",
@@ -83,7 +100,6 @@ export const designers = [
       },
     ],
   },
-
   {
     day: "3",
     date: "OCTOBER 17",
