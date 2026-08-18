@@ -154,7 +154,7 @@ const BrandRequests = () => {
               <div className="brand-modal-section-label">RUNWAY OR COLLECTION PRESENTATION</div>
               <div className="brand-modal-grid brand-modal-grid--full">
                 <div className="brand-modal-field">
-                  <span className="brand-modal-key">Applying for / هل تتقدم بطلب للمشاركة في عرض أزياء أم لعرض تقديمي؟</span>
+                  <span className="brand-modal-key">Preferred Participation Format / صيغة المشاركة المفضلة</span>
                   <span className="brand-modal-val">{selectedRequest.runwayOrPresentation || '—'}</span>
                 </div>
               </div>

@@ -266,6 +266,10 @@
   cursor: pointer;
 }
 
+.brand-reg-select {
+  cursor: pointer;
+}
+
 .brand-reg-textarea {
   height: auto;
   min-height: 120px;

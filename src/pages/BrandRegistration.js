@@ -120,12 +120,11 @@ const BrandRegistration = () => {
       </section>
 
       {/* What Participation Includes */}
-      <section className="brand-reg-includes-section">
+      {/* <section className="brand-reg-includes-section">
         <div className="brand-reg-container">
           <div className="brand-reg-includes-text">
             <h2 className="brand-reg-section-heading">WHAT PARTICIPATION INCLUDES</h2>
             <ol className="brand-reg-includes-list">
-              {/* <li>25 to 30 runway looks</li> */}
               <li>Venue</li>
               <li>Hair &amp; Makeup</li>
               <li>Photo &amp; video from the show</li>
@@ -133,45 +132,8 @@ const BrandRegistration = () => {
               <li>Designs are kept away from political matters</li>
             </ol>
           </div>
-          <div className="brand-reg-includes-terms">
-            <h2 className="brand-reg-section-heading">TERMS &amp; CONDITIONS</h2>
-            <ol className="brand-reg-terms-list">
-              <li>
-                <strong className="brand-reg-term-title">Originality of Collection</strong>
-                <p className="brand-reg-term-desc">The Designer shall provide a minimum of 25 looks that have not been previously presented at any fashion week or fashion-related event.</p>
-              </li>
-              <li>
-                <strong className="brand-reg-term-title">Brand Eligibility</strong>
-                <p className="brand-reg-term-desc">The Designer's brand must be legally registered with a valid commercial registration, and must have maintained active market presence for a minimum of two (2) years.</p>
-              </li>
-              <li>
-                <strong className="brand-reg-term-title">Accessories and Jewelry</strong>
-                <p className="brand-reg-term-desc">It is the sole responsibility of the Designer to supply all jewelry, accessories, and related items necessary to complement and complete the presented looks.</p>
-              </li>
-              <li>
-                <strong className="brand-reg-term-title">Compliance with 'Abde'a' Terms</strong>
-                <p className="brand-reg-term-desc">The Designer agrees to abide by the applicable terms set forth by 'Abde'a':{' '}
-                  <a
-                    href="https://abdea.moc.gov.sa/permits/fashion/fashion-show-permit"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    https://abdea.moc.gov.sa/permits/fashion/fashion-show-permit
-                  </a>
-                </p>
-              </li>
-              <li>
-                <strong className="brand-reg-term-title">Submission of Collection Materials</strong>
-                <p className="brand-reg-term-desc">The Designer shall submit a collection mood board illustrating the overarching creative concept.</p>
-              </li>
-              <li>
-                <strong className="brand-reg-term-title">Sketch Requirements</strong>
-                <p className="brand-reg-term-desc">The Designer shall provide a minimum of 8 looks sketches, accurately representing the designs to be showcased.</p>
-              </li>
-            </ol>
-          </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Form */}
       <section className="brand-reg-form-section">
@@ -273,23 +235,26 @@ const BrandRegistration = () => {
 
             {/* ── SECTION 2b: RUNWAY OR COLLECTION PRESENTATION ── */}
             <div className="brand-reg-form-section-block">
-              <h2 className="brand-reg-form-section-title">RUNWAY OR COLLECTION PRESENTATION</h2>
+              <h2 className="brand-reg-form-section-title">PREFERRED PARTICIPATION FORMAT</h2>
 
               <div className="brand-reg-field">
                 <label className="brand-reg-label" htmlFor="runwayOrPresentation">
-                  Are you applying for runway collection or presentation? <span className="brand-reg-required">*</span>
-                  <span className="brand-reg-label-ar"> هل تتقدم بطلب للمشاركة في عرض أزياء (على المنصة) أم لعرض تقديمي؟</span>
+                  Preferred Participation Format <span className="brand-reg-required">*</span>
+                  <span className="brand-reg-label-ar"> صيغة المشاركة المفضلة</span>
                 </label>
-                <input
+                <select
                   id="runwayOrPresentation"
-                  type="text"
                   name="runwayOrPresentation"
-                  className="brand-reg-input"
-                  placeholder="Runway / Collection Presentation / عرض أزياء / عرض تقديمي"
+                  className="brand-reg-input brand-reg-select"
                   value={formData.runwayOrPresentation}
                   onChange={handleChange}
                   required
-                />
+                >
+                  <option value="" disabled>Select an option</option>
+                  <option value="Runway">Runway</option>
+                  <option value="Collection Presentation">Collection Presentation</option>
+                  <option value="Showroom">Showroom</option>
+                </select>
               </div>
             </div>
 
@@ -624,7 +589,7 @@ const BrandRegistration = () => {
 
               <div className="brand-reg-field">
                 <label className="brand-reg-label">
-                  PRODUCT PRICE RANGE (SAR) <span className="brand-reg-required">*</span>
+                  PRODUCT PRICE RANGE (Average Unit Price) <span className="brand-reg-required">*</span>
                   <span className="brand-reg-label-ar"> نطاق أسعار المنتجات</span>
                 </label>
                 <p className="brand-reg-hint">Select one:</p>
@@ -689,6 +654,44 @@ const BrandRegistration = () => {
 
             {/* ── SECTION 9: DECLARATION & SUBMISSION ── */}
             <div className="brand-reg-form-section-block">
+
+              <div className="brand-reg-includes-terms">
+                <h3 className="brand-reg-section-heading">TERMS &amp; CONDITIONS</h3>
+                <ol className="brand-reg-terms-list">
+                  <li>
+                    <strong className="brand-reg-term-title">Originality of Collection</strong>
+                    <p className="brand-reg-term-desc">The Designer shall provide a minimum of 25 looks that have not been previously presented at any fashion week or fashion-related event.</p>
+                  </li>
+                  <li>
+                    <strong className="brand-reg-term-title">Brand Eligibility</strong>
+                    <p className="brand-reg-term-desc">The Designer's brand must be legally registered with a valid commercial registration, and must have maintained active market presence for a minimum of two (2) years.</p>
+                  </li>
+                  <li>
+                    <strong className="brand-reg-term-title">Accessories and Jewelry</strong>
+                    <p className="brand-reg-term-desc">It is the sole responsibility of the Designer to supply all jewelry, accessories, and related items necessary to complement and complete the presented looks.</p>
+                  </li>
+                  <li>
+                    <strong className="brand-reg-term-title">Compliance with 'Abde'a' Terms</strong>
+                    <p className="brand-reg-term-desc">The Designer agrees to abide by the applicable terms set forth by 'Abde'a':{' '}
+                      <a
+                        href="https://abdea.moc.gov.sa/permits/fashion/fashion-show-permit"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        https://abdea.moc.gov.sa/permits/fashion/fashion-show-permit
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <strong className="brand-reg-term-title">Submission of Collection Materials</strong>
+                    <p className="brand-reg-term-desc">The Designer shall submit a collection mood board illustrating the overarching creative concept.</p>
+                  </li>
+                  <li>
+                    <strong className="brand-reg-term-title">Sketch Requirements</strong>
+                    <p className="brand-reg-term-desc">The Designer shall provide a minimum of 8 looks sketches, accurately representing the designs to be showcased.</p>
+                  </li>
+                </ol>
+              </div>
               <h2 className="brand-reg-form-section-title">DECLARATION &amp; SUBMISSION</h2>
 
               <div className="brand-reg-field">
@@ -705,7 +708,7 @@ const BrandRegistration = () => {
                     <span className="brand-reg-label-ar"> الموافقة على الشروط والأحكام</span>
                     <br />
                     <span className="brand-reg-checkbox-desc">
-                      Yes, I agree to all terms and conditions / نعم، أوافق على جميع الشروط والأحكام
+                      Yes, I acknowledge and agree to all terms and conditions above / نعم، أقر وأوافق على جميع الشروط والأحكام أعلاه
                     </span>
                   </span>
                 </label>
