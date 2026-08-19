@@ -491,6 +491,7 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .hero-dates-numbers {
@@ -1628,7 +1629,19 @@ strong {
   background: var(--rfw-black);
   color: var(--rfw-white);
 }
-
+.should_apply_btn{
+  background: white;
+  color: black;
+  border-radius: 8px;
+  padding: 10px 16px;
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  max-width: 200px;
+  min-width: 200px;
+  text-transform: uppercase;
+  margin: 0px auto 0 auto;
+}
 .expand-icon {
   width: 32px;
   height: 32px;
@@ -1939,6 +1952,9 @@ strong {
     font-size: 14px;
     line-height: 20px;
     text-align: justify;
+  }
+  .should_apply_btn{
+    margin-top: 20px;
   }
 
   .section-container {

@@ -1,7 +1,7 @@
 import React from 'react';
 import VideoBackground from '../components/VideoBackground';
 import homeAbout from '../images/home_about.jpg'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { translations } from '../translations/en';
 import { translations as arTranslations } from '../translations/ar';
@@ -24,6 +24,7 @@ const Home = () => {
               <span className="hero-dates-numbers">{t.home.heroDates}</span>
               <span className="hero-dates-month">{t.home.heroMonth}</span>
             </div>
+            <Link class="should_apply_btn" to={'brand-registration'}>Should be Apply</Link>
           </div>
         </section>
       </VideoBackground>
