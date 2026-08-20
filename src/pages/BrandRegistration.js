@@ -60,7 +60,6 @@ const BrandRegistration = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
-  const [formError, setFormError] = useState('');
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -75,18 +74,10 @@ const BrandRegistration = () => {
       }
       return next;
     });
-    setFormError('');
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const form = e.currentTarget;
-    if (!form.checkValidity()) {
-      setFormError('Please Fill All Required (Star Mark) Fields to Submit Form');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
-    }
-    setFormError('');
     try {
       const apiUrl = process.env.REACT_APP_API_URL || '';
       const response = await fetch(`${apiUrl}/api/save_brand.php`, {
@@ -162,13 +153,7 @@ const BrandRegistration = () => {
       {/* Form */}
       <section className="brand-reg-form-section">
         <div className="brand-reg-form-container">
-          <form className="brand-reg-form" onSubmit={handleSubmit} noValidate>
-
-            {formError && (
-              <div className="brand-reg-form-error" role="alert">
-                {formError}
-              </div>
-            )}
+          <form className="brand-reg-form" onSubmit={handleSubmit}>
 
             {/* ── SECTION 1: ELIGIBILITY ── */}
             <div className="brand-reg-form-section-block">
@@ -191,7 +176,6 @@ const BrandRegistration = () => {
                         value={opt}
                         checked={formData.priorParticipation === opt}
                         onChange={handleChange}
-                        required
                       />
                       <span>{opt}</span>
                     </label>
@@ -213,7 +197,6 @@ const BrandRegistration = () => {
                         value={opt}
                         checked={formData.commercialRegistration === opt}
                         onChange={handleChange}
-                        required
                       />
                       <span>{opt}</span>
                     </label>
@@ -240,7 +223,6 @@ const BrandRegistration = () => {
                   placeholder="https://"
                   value={formData.commercialRegistrationLink}
                   onChange={handleChange}
-                  required
                 />
               </div>
 
@@ -258,7 +240,6 @@ const BrandRegistration = () => {
                   placeholder="https://"
                   value={formData.logoLink}
                   onChange={handleChange}
-                  required
                 />
               </div>
             </div>
@@ -278,7 +259,6 @@ const BrandRegistration = () => {
                   className="brand-reg-input brand-reg-select"
                   value={formData.runwayOrPresentation}
                   onChange={handleChange}
-                  required
                 >
                   <option value="" disabled>Select an option</option>
                   <option value="Runway">Runway</option>
@@ -311,7 +291,6 @@ const BrandRegistration = () => {
                         value={opt}
                         checked={formData.storeType === opt}
                         onChange={handleChange}
-                        required
                       />
                       <span>{opt}</span>
                     </label>
@@ -337,7 +316,6 @@ const BrandRegistration = () => {
                     className="brand-reg-input"
                     value={formData.brandNameEn}
                     onChange={handleChange}
-                    required
                   />
                 </div>
                 <div className="brand-reg-field">
@@ -353,7 +331,6 @@ const BrandRegistration = () => {
                     dir="rtl"
                     value={formData.brandNameAr}
                     onChange={handleChange}
-                    required
                   />
                 </div>
               </div>
@@ -371,7 +348,6 @@ const BrandRegistration = () => {
                     className="brand-reg-input"
                     value={formData.designerNameEn}
                     onChange={handleChange}
-                    required
                   />
                 </div>
                 <div className="brand-reg-field">
@@ -387,7 +363,6 @@ const BrandRegistration = () => {
                     dir="rtl"
                     value={formData.designerNameAr}
                     onChange={handleChange}
-                    required
                   />
                 </div>
               </div>
@@ -405,7 +380,6 @@ const BrandRegistration = () => {
                     className="brand-reg-input"
                     value={formData.mobile}
                     onChange={handleChange}
-                    required
                   />
                 </div>
                 <div className="brand-reg-field">
@@ -420,7 +394,6 @@ const BrandRegistration = () => {
                     className="brand-reg-input"
                     value={formData.email}
                     onChange={handleChange}
-                    required
                   />
                 </div>
               </div>
@@ -467,7 +440,6 @@ const BrandRegistration = () => {
                         placeholder="https://"
                         value={formData[nameLink]}
                         onChange={handleChange}
-                        required
                       />
                     </div>
                   )}
@@ -491,7 +463,6 @@ const BrandRegistration = () => {
                   rows="5"
                   value={formData.designerProfileEn}
                   onChange={handleChange}
-                  required
                 />
               </div>
 
@@ -508,7 +479,6 @@ const BrandRegistration = () => {
                   dir="rtl"
                   value={formData.designerProfileAr}
                   onChange={handleChange}
-                  required
                 />
               </div>
 
@@ -524,7 +494,6 @@ const BrandRegistration = () => {
                   rows="5"
                   value={formData.brandProfileEn}
                   onChange={handleChange}
-                  required
                 />
               </div>
 
@@ -541,7 +510,6 @@ const BrandRegistration = () => {
                   dir="rtl"
                   value={formData.brandProfileAr}
                   onChange={handleChange}
-                  required
                 />
               </div>
             </div>
@@ -562,7 +530,6 @@ const BrandRegistration = () => {
                   className="brand-reg-input brand-reg-input--date"
                   value={formData.dateOfEstablishment}
                   onChange={handleChange}
-                  required
                 />
               </div>
 
@@ -580,7 +547,6 @@ const BrandRegistration = () => {
                   placeholder="https://"
                   value={formData.brandLogoLink}
                   onChange={handleChange}
-                  required
                 />
               </div>
 
@@ -607,7 +573,6 @@ const BrandRegistration = () => {
                         value={opt}
                         checked={formData.brandCategory === opt}
                         onChange={handleChange}
-                        required
                       />
                       <span>{opt}</span>
                     </label>
@@ -630,7 +595,6 @@ const BrandRegistration = () => {
                         value={opt}
                         checked={formData.priceRange === opt}
                         onChange={handleChange}
-                        required
                       />
                       <span>{opt}</span>
                     </label>
@@ -657,7 +621,6 @@ const BrandRegistration = () => {
                   placeholder="https://"
                   value={formData.moodboardLink}
                   onChange={handleChange}
-                  required
                 />
               </div>
 
@@ -675,7 +638,6 @@ const BrandRegistration = () => {
                   placeholder="https://"
                   value={formData.sketchbookLink}
                   onChange={handleChange}
-                  required
                 />
               </div>
             </div>
@@ -729,7 +691,6 @@ const BrandRegistration = () => {
                     name="agreesToTerms"
                     checked={formData.agreesToTerms}
                     onChange={handleChange}
-                    required
                   />
                   <span>
                     AGREEMENT TO TERMS &amp; CONDITIONS <span className="brand-reg-required">*</span>
