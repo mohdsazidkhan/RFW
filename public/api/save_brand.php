@@ -44,11 +44,62 @@ CREATE TABLE IF NOT EXISTS brand_registrations (
     priceRange VARCHAR(100),
     moodboardLink TEXT,
     sketchbookLink TEXT,
+    agreesToTerms TINYINT(1) NOT NULL DEFAULT 0,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ";
 
-$pdo->exec($createTableSql);
+try {
+    $pdo->exec($createTableSql);
+} catch (Exception $e) {
+    // Table likely already exists or the DB user lacks CREATE privileges; ignore and continue.
+}
+
+// Backfill any columns missing from an older version of the table schema.
+$requiredColumns = [
+    'priorParticipation' => 'VARCHAR(50)',
+    'commercialRegistration' => 'VARCHAR(50)',
+    'commercialRegistrationLink' => 'TEXT',
+    'logoLink' => 'TEXT',
+    'runwayOrPresentation' => 'VARCHAR(100)',
+    'storeType' => 'VARCHAR(100)',
+    'brandNameEn' => 'VARCHAR(255)',
+    'brandNameAr' => 'VARCHAR(255)',
+    'designerNameEn' => 'VARCHAR(255)',
+    'designerNameAr' => 'VARCHAR(255)',
+    'mobile' => 'VARCHAR(50)',
+    'email' => 'VARCHAR(255)',
+    'hasX' => 'VARCHAR(50)',
+    'xLink' => 'TEXT',
+    'hasInstagram' => 'VARCHAR(50)',
+    'instagramLink' => 'TEXT',
+    'hasTikTok' => 'VARCHAR(50)',
+    'tikTokLink' => 'TEXT',
+    'hasYouTube' => 'VARCHAR(50)',
+    'youTubeLink' => 'TEXT',
+    'designerProfileEn' => 'TEXT',
+    'designerProfileAr' => 'TEXT',
+    'brandProfileEn' => 'TEXT',
+    'brandProfileAr' => 'TEXT',
+    'dateOfEstablishment' => 'DATE',
+    'brandLogoLink' => 'TEXT',
+    'brandCategory' => 'VARCHAR(100)',
+    'priceRange' => 'VARCHAR(100)',
+    'moodboardLink' => 'TEXT',
+    'sketchbookLink' => 'TEXT',
+    'agreesToTerms' => 'TINYINT(1) NOT NULL DEFAULT 0',
+];
+
+try {
+    $existingColumns = $pdo->query("SHOW COLUMNS FROM brand_registrations")->fetchAll(PDO::FETCH_COLUMN);
+    foreach ($requiredColumns as $col => $type) {
+        if (!in_array($col, $existingColumns, true)) {
+            $pdo->exec("ALTER TABLE brand_registrations ADD COLUMN `$col` $type");
+        }
+    }
+} catch (Exception $e) {
+    // If this fails, the insert below will surface the specific missing-column error.
+}
 
 $data = json_decode(file_get_contents("php://input"));
 
@@ -58,9 +109,10 @@ if ($data) {
         runwayOrPresentation, storeType, brandNameEn, brandNameAr, designerNameEn, designerNameAr, mobile, email,
         hasX, xLink, hasInstagram, instagramLink, hasTikTok, tikTokLink, hasYouTube, youTubeLink,
         designerProfileEn, designerProfileAr, brandProfileEn, brandProfileAr,
-        dateOfEstablishment, brandLogoLink, brandCategory, priceRange, moodboardLink, sketchbookLink
+        dateOfEstablishment, brandLogoLink, brandCategory, priceRange, moodboardLink, sketchbookLink,
+        agreesToTerms
     ) VALUES (
-        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+        ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
     )");
 
     try {
@@ -89,12 +141,13 @@ if ($data) {
             $data->designerProfileAr ?? '',
             $data->brandProfileEn ?? '',
             $data->brandProfileAr ?? '',
-            $data->dateOfEstablishment ?? null,
+            !empty($data->dateOfEstablishment) ? $data->dateOfEstablishment : null,
             $data->brandLogoLink ?? '',
             $data->brandCategory ?? '',
             $data->priceRange ?? '',
             $data->moodboardLink ?? '',
-            $data->sketchbookLink ?? ''
+            $data->sketchbookLink ?? '',
+            !empty($data->agreesToTerms) ? 1 : 0
         ]);
         echo json_encode(['status' => 'success', 'message' => 'Registration saved successfully.']);
     } catch(Exception $e) {

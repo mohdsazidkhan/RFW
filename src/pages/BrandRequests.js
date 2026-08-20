@@ -1,5 +1,54 @@
 import React, { useState, useEffect } from 'react';
+import * as XLSX from 'xlsx';
 import '../styles/BrandRequests.css';
+
+const buildExportRow = (req) => ({
+  'ID': req.id,
+  'Brand Name (EN)': req.brandNameEn || '',
+  'Brand Name (AR)': req.brandNameAr || '',
+  'Designer Name (EN)': req.designerNameEn || '',
+  'Designer Name (AR)': req.designerNameAr || '',
+  'Email': req.email || '',
+  'Mobile': req.mobile || '',
+  'Prior Participation': req.priorParticipation || '',
+  'Commercial Registration': req.commercialRegistration || '',
+  'Commercial Registration Link': req.commercialRegistrationLink || '',
+  'Logo Link': req.logoLink || '',
+  'Preferred Participation Format': req.runwayOrPresentation || '',
+  'Store Type': req.storeType || '',
+  'Has X (Twitter)': req.hasX || '',
+  'X (Twitter) Link': req.xLink || '',
+  'Has Instagram': req.hasInstagram || '',
+  'Instagram Link': req.instagramLink || '',
+  'Has TikTok': req.hasTikTok || '',
+  'TikTok Link': req.tikTokLink || '',
+  'Has YouTube': req.hasYouTube || '',
+  'YouTube Link': req.youTubeLink || '',
+  'Designer Profile (EN)': req.designerProfileEn || '',
+  'Designer Profile (AR)': req.designerProfileAr || '',
+  'Brand Profile (EN)': req.brandProfileEn || '',
+  'Brand Profile (AR)': req.brandProfileAr || '',
+  'Date of Establishment': req.dateOfEstablishment || '',
+  'Brand Logo Link': req.brandLogoLink || '',
+  'Brand Category': req.brandCategory || '',
+  'Price Range': req.priceRange || '',
+  'Moodboard Link': req.moodboardLink || '',
+  'Sketchbook Link': req.sketchbookLink || '',
+  'Agreed to Terms': Number(req.agreesToTerms) === 1 ? 'Yes' : 'No',
+  'Submitted At': req.created_at ? new Date(req.created_at).toLocaleString() : '',
+});
+
+const downloadAsXlsx = (rows, filename) => {
+  const worksheet = XLSX.utils.json_to_sheet(rows);
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, 'Registrations');
+  XLSX.writeFile(workbook, filename);
+};
+
+const sanitizeFilenamePart = (value) =>
+  String(value || '').replace(/[^a-z0-9]+/gi, '_').replace(/^_+|_+$/g, '');
+
+const BRAND_REQUESTS_PIN = '4321';
 
 const BrandRequests = () => {
   const [requests, setRequests] = useState([]);
@@ -8,9 +57,30 @@ const BrandRequests = () => {
 
   const [selectedRequest, setSelectedRequest] = useState(null);
 
+  const [isUnlocked, setIsUnlocked] = useState(
+    () => sessionStorage.getItem('brandRequestsUnlocked') === 'true'
+  );
+  const [pin, setPin] = useState('');
+  const [pinError, setPinError] = useState('');
+
   useEffect(() => {
-    fetchRequests();
-  }, []);
+    if (isUnlocked) {
+      fetchRequests();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isUnlocked]);
+
+  const handlePinSubmit = (e) => {
+    e.preventDefault();
+    if (pin === BRAND_REQUESTS_PIN) {
+      sessionStorage.setItem('brandRequestsUnlocked', 'true');
+      setIsUnlocked(true);
+      setPinError('');
+    } else {
+      setPinError('Incorrect PIN. Please try again.');
+      setPin('');
+    }
+  };
 
   const fetchRequests = async () => {
     try {
@@ -44,6 +114,42 @@ const BrandRequests = () => {
     return url;
   };
 
+  const handleDownloadOne = (req) => {
+    downloadAsXlsx(
+      [buildExportRow(req)],
+      `brand_registration_${req.id}_${sanitizeFilenamePart(req.brandNameEn)}.xlsx`
+    );
+  };
+
+  const handleDownloadAll = () => {
+    downloadAsXlsx(requests.map(buildExportRow), 'brand_registrations_all.xlsx');
+  };
+
+  if (!isUnlocked) {
+    return (
+      <div className="brand-pin-overlay">
+        <form className="brand-pin-box" onSubmit={handlePinSubmit}>
+          <h2 className="brand-pin-title">Enter PIN to Continue</h2>
+          <input
+            type="password"
+            inputMode="numeric"
+            pattern="[0-9]*"
+            maxLength={4}
+            className="brand-pin-input"
+            value={pin}
+            onChange={(e) => {
+              setPin(e.target.value.replace(/\D/g, '').slice(0, 4));
+              setPinError('');
+            }}
+            autoFocus
+          />
+          {pinError && <p className="brand-pin-error">{pinError}</p>}
+          <button type="submit" className="brand-pin-submit">Unlock</button>
+        </form>
+      </div>
+    );
+  }
+
   if (loading) {
     return <div className="brand-requests-page"><div className="brand-requests-container">Loading...</div></div>;
   }
@@ -65,6 +171,15 @@ const BrandRequests = () => {
 
       <section className="brand-requests-section">
         <div className="brand-requests-container">
+          <div className="brand-requests-toolbar">
+            <button
+              className="btn-download-all"
+              onClick={handleDownloadAll}
+              disabled={!requests || requests.length === 0}
+            >
+              Download All (.xlsx)
+            </button>
+          </div>
           <div className="table-responsive">
             <table className="brand-requests-table">
               <thead>
@@ -88,9 +203,12 @@ const BrandRequests = () => {
                       <td>{req.email}</td>
                       <td>{req.mobile}</td>
                       <td>{new Date(req.created_at).toLocaleDateString()}</td>
-                      <td>
+                      <td className="brand-requests-actions">
                         <button className="btn-view" onClick={() => setSelectedRequest(req)}>
                           View Details
+                        </button>
+                        <button className="btn-download" onClick={() => handleDownloadOne(req)}>
+                          Download (.xlsx)
                         </button>
                       </td>
                     </tr>
@@ -113,6 +231,12 @@ const BrandRequests = () => {
             <button className="brand-modal-close" onClick={closeModal}>&times;</button>
             <h2 className="brand-modal-title">
               Registration Details (ID: {selectedRequest.id}) — {selectedRequest.brandNameEn}
+              <button
+                className="btn-download btn-download--modal"
+                onClick={() => handleDownloadOne(selectedRequest)}
+              >
+                Download (.xlsx)
+              </button>
             </h2>
             <div className="brand-modal-body">
 
@@ -302,8 +426,8 @@ const BrandRequests = () => {
               <div className="brand-modal-grid brand-modal-grid--full">
                 <div className="brand-modal-field">
                   <span className="brand-modal-key">Agreement to Terms &amp; Conditions الموافقة على الشروط والأحكام</span>
-                  <span className={`brand-modal-val brand-modal-val--badge ${selectedRequest.agreesToTerms === '1' || selectedRequest.agreesToTerms === true ? 'brand-modal-val--yes' : 'brand-modal-val--no'}`}>
-                    {selectedRequest.agreesToTerms === '1' || selectedRequest.agreesToTerms === true ? '✓ Agreed' : '✗ Not agreed'}
+                  <span className={`brand-modal-val brand-modal-val--badge ${Number(selectedRequest.agreesToTerms) === 1 ? 'brand-modal-val--yes' : 'brand-modal-val--no'}`}>
+                    {Number(selectedRequest.agreesToTerms) === 1 ? '✓ Agreed' : '✗ Not agreed'}
                   </span>
                 </div>
                 <div className="brand-modal-field">

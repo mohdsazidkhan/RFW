@@ -1,6 +1,18 @@
 import React, { useState } from 'react';
 import '../styles/BrandRegistration.css';
 
+const SOCIAL_PLATFORMS = [
+  { platform: 'X (TWITTER)', nameHas: 'hasX', nameLink: 'xLink', ar: 'حساب X', arLink: 'رابط حساب X' },
+  { platform: 'INSTAGRAM', nameHas: 'hasInstagram', nameLink: 'instagramLink', ar: 'حساب إنستغرام', arLink: 'رابط حساب إنستغرام' },
+  { platform: 'TIKTOK', nameHas: 'hasTikTok', nameLink: 'tikTokLink', ar: 'حساب تيك توك', arLink: 'رابط حساب تيك توك' },
+  { platform: 'YOUTUBE', nameHas: 'hasYouTube', nameLink: 'youTubeLink', ar: 'حساب يوتيوب', arLink: 'رابط حساب يوتيوب' },
+];
+
+const SOCIAL_LINK_BY_HAS = SOCIAL_PLATFORMS.reduce((acc, { nameHas, nameLink }) => {
+  acc[nameHas] = nameLink;
+  return acc;
+}, {});
+
 const BrandRegistration = () => {
 
   const [formData, setFormData] = useState({
@@ -48,21 +60,33 @@ const BrandRegistration = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [formError, setFormError] = useState('');
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: type === 'checkbox' ? checked : value,
-    }));
+    setFormData((prev) => {
+      const next = {
+        ...prev,
+        [name]: type === 'checkbox' ? checked : value,
+      };
+      const linkField = SOCIAL_LINK_BY_HAS[name];
+      if (linkField && value !== 'Yes / نعم') {
+        next[linkField] = '';
+      }
+      return next;
+    });
+    setFormError('');
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.agreesToTerms) {
-      alert('Please agree to the Terms & Conditions before submitting.');
+    const form = e.currentTarget;
+    if (!form.checkValidity()) {
+      setFormError('Please Fill All Required (Star Mark) Fields to Submit Form');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
+    setFormError('');
     try {
       const apiUrl = process.env.REACT_APP_API_URL || '';
       const response = await fetch(`${apiUrl}/api/save_brand.php`, {
@@ -139,6 +163,12 @@ const BrandRegistration = () => {
       <section className="brand-reg-form-section">
         <div className="brand-reg-form-container">
           <form className="brand-reg-form" onSubmit={handleSubmit} noValidate>
+
+            {formError && (
+              <div className="brand-reg-form-error" role="alert">
+                {formError}
+              </div>
+            )}
 
             {/* ── SECTION 1: ELIGIBILITY ── */}
             <div className="brand-reg-form-section-block">
@@ -400,12 +430,7 @@ const BrandRegistration = () => {
             <div className="brand-reg-form-section-block">
               <h2 className="brand-reg-form-section-title">SOCIAL MEDIA ACCOUNTS</h2>
 
-              {[
-                { platform: 'X (TWITTER)', nameHas: 'hasX', nameLink: 'xLink', ar: 'حساب X', arLink: 'رابط حساب X' },
-                { platform: 'INSTAGRAM', nameHas: 'hasInstagram', nameLink: 'instagramLink', ar: 'حساب إنستغرام', arLink: 'رابط حساب إنستغرام' },
-                { platform: 'TIKTOK', nameHas: 'hasTikTok', nameLink: 'tikTokLink', ar: 'حساب تيك توك', arLink: 'رابط حساب تيك توك' },
-                { platform: 'YOUTUBE', nameHas: 'hasYouTube', nameLink: 'youTubeLink', ar: 'حساب يوتيوب', arLink: 'رابط حساب يوتيوب' },
-              ].map(({ platform, nameHas, nameLink, ar, arLink }) => (
+              {SOCIAL_PLATFORMS.map(({ platform, nameHas, nameLink, ar, arLink }) => (
                 <div key={platform} className="brand-reg-social-block">
                   <div className="brand-reg-field">
                     <label className="brand-reg-label">
@@ -427,22 +452,25 @@ const BrandRegistration = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="brand-reg-field">
-                    <label className="brand-reg-label" htmlFor={nameLink}>
-                      {platform} ACCOUNT LINK
-                      <span className="brand-reg-label-ar"> {arLink}</span>
-                    </label>
-                    <p className="brand-reg-hint">If yes, paste the full URL</p>
-                    <input
-                      id={nameLink}
-                      type="url"
-                      name={nameLink}
-                      className="brand-reg-input"
-                      placeholder="https://"
-                      value={formData[nameLink]}
-                      onChange={handleChange}
-                    />
-                  </div>
+                  {formData[nameHas] === 'Yes / نعم' && (
+                    <div className="brand-reg-field">
+                      <label className="brand-reg-label" htmlFor={nameLink}>
+                        {platform} ACCOUNT LINK
+                        <span className="brand-reg-label-ar"> {arLink}</span>
+                      </label>
+                      <p className="brand-reg-hint">Paste the full URL</p>
+                      <input
+                        id={nameLink}
+                        type="url"
+                        name={nameLink}
+                        className="brand-reg-input"
+                        placeholder="https://"
+                        value={formData[nameLink]}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

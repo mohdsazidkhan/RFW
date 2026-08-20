@@ -24,7 +24,7 @@ const Home = () => {
               <span className="hero-dates-numbers">{t.home.heroDates}</span>
               <span className="hero-dates-month">{t.home.heroMonth}</span>
             </div>
-            <Link class="should_apply_btn" to={'brand-registration'}>Should be Apply</Link>
+            <Link className="should_apply_btn" to={'brand-registration'}>Apply</Link>
           </div>
         </section>
       </VideoBackground>
